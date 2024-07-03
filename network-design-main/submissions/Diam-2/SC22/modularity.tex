@@ -1,0 +1,33 @@
+\section{Modularity}
+
+\subsection{ER Graphs}
+
+\subsubsection{Method 1}
+    \begin{itemize}
+        \item  Replicate $C_0$ cluster/rack, easy to implement
+        \item  $q+1$ increase in no. of nodes for $2$ units increase in degree
+        \item  Diameter preserved
+        \item  Repeated incremental growth can lead to bandwidth issues
+    \end{itemize}
+
+\subsubsection{Method 2}
+    \begin{itemize}
+        \item  Replicate $C_i$ cluster/rack, easy to implement
+        \item  $q$ increase in no. of nodes per increment in degree
+        \item  Diameter increases to $3$ but average path length $<=2$
+        \item  Potentially better bandwidth
+    \end{itemize}
+
+\subsubsection{Method 3}
+    \begin{itemize}
+        \item Move to the next available ER graph topology
+        \item Gives best scale, performance
+        \item Requires adding nodes to each rack/cluster, and reconfiguring all 
+              shuffle boxes
+    \end{itemize}
+
+
+\subsection{Abas Graphs}
+\klcomment{TODO}
+       
+

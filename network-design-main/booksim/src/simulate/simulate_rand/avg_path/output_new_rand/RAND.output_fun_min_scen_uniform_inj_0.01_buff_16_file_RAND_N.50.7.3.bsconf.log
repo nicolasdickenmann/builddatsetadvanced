@@ -1,0 +1,566 @@
+BEGIN Configuration File: ./RAND.conf
+injection_rate = 0.01;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND_N.50.7.3.bsconf;
+load_routing_file = no;
+routing_table_file = RAND_N.50.7.3.bsconf.route;
+topology = anynet;
+//use_noc_latency = 0;
+//hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+
+END Configuration File: ./RAND.conf
+========================Network File Parsed=================
+******************node listing**********************
+
+****************router to node listing*************
+
+*****************router to router listing************
+Number of nodes: 150
+Number of routers: 50
+==========================Node to Router =====================
+==========================Router to Router =====================
+========================== Build Routing table  =====================
+Start searching...Routing table for router 0 done  |
+Start searching...Routing table for router 1 done  |
+Start searching...Routing table for router 2 done  |
+Start searching...Routing table for router 3 done  |
+Start searching...Routing table for router 4 done  |
+Start searching...Routing table for router 5 done  |
+Start searching...Routing table for router 6 done  |
+Start searching...Routing table for router 7 done  |
+Start searching...Routing table for router 8 done  |
+Start searching...Routing table for router 9 done  |
+Start searching...Routing table for router 10 done  |
+Start searching...Routing table for router 11 done  |
+Start searching...Routing table for router 12 done  |
+Start searching...Routing table for router 13 done  |
+Start searching...Routing table for router 14 done  |
+Start searching...Routing table for router 15 done  |
+Start searching...Routing table for router 16 done  |
+Start searching...Routing table for router 17 done  |
+Start searching...Routing table for router 18 done  |
+Start searching...Routing table for router 19 done  |
+Start searching...Routing table for router 20 done  |
+Start searching...Routing table for router 21 done  |
+Start searching...Routing table for router 22 done  |
+Start searching...Routing table for router 23 done  |
+Start searching...Routing table for router 24 done  |
+Start searching...Routing table for router 25 done  |
+Start searching...Routing table for router 26 done  |
+Start searching...Routing table for router 27 done  |
+Start searching...Routing table for router 28 done  |
+Start searching...Routing table for router 29 done  |
+Start searching...Routing table for router 30 done  |
+Start searching...Routing table for router 31 done  |
+Start searching...Routing table for router 32 done  |
+Start searching...Routing table for router 33 done  |
+Start searching...Routing table for router 34 done  |
+Start searching...Routing table for router 35 done  |
+Start searching...Routing table for router 36 done  |
+Start searching...Routing table for router 37 done  |
+Start searching...Routing table for router 38 done  |
+Start searching...Routing table for router 39 done  |
+Start searching...Routing table for router 40 done  |
+Start searching...Routing table for router 41 done  |
+Start searching...Routing table for router 42 done  |
+Start searching...Routing table for router 43 done  |
+Start searching...Routing table for router 44 done  |
+Start searching...Routing table for router 45 done  |
+Start searching...Routing table for router 46 done  |
+Start searching...Routing table for router 47 done  |
+Start searching...Routing table for router 48 done  |
+Start searching...Routing table for router 49 done  |
+
+========================== Build Routing table done  =====================
+
+Saving routing table...
+========================== Building Bad traffic pattern, type 3... ============================
+>>>>>>>>> Routers selected for traffic: 17, 39
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 8, 43
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 15, 45
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 41, 3
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 11, 35
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 1, 35
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 7, 6
+********************* SUCCESS: selected 7 and 6
+>>>>>>>>> Routers selected for traffic: 48, 3
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 48, 21
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 11, 13
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 26, 25
+Repeating (used 2)...>>>>>>>>> Routers selected for traffic: 14, 39
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 0, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 3, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 45, 0
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 23, 21
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 41, 48
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 35, 8
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 3, 28
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 39, 0
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 48, 11
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 4, 11
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 35, 35
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 8, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 4, 45
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 48, 13
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 16, 10
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 45, 8
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 14
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 13, 48
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 8
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 10, 45
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 17, 41
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 13
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 43, 35
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 16, 11
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 16
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 17, 16
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 43, 49
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 4, 48
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 35, 44
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 38, 47
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 41, 8
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 41, 43
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 38, 13
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 47, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 13
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 13, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 47, 13
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 46, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 8
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 14, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 49, 14
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 8, 8
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 37, 49
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 14, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 14, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 8, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 8, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 14, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 8
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 33, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 14
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 8, 8
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 40, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 14, 8
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 33, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 40
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 46, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 33
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 38, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 38
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 40, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 40
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 33, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 33
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 38, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 40
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 33, 33
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 38, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 33
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 40, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 33
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 38, 38
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 33, 33
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 33, 33
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 33, 33
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 40, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 40, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 33
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 46, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 38, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 40
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 38, 38
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 40, 40
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 38, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 38
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 38, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 38
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 38, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 40
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 40, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 46, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 33, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 40
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 40, 40
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 33, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 46, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 40
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 40, 40
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 38, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 38
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 46, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 40
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 33, 33
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 46, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 38
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 33, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 40, 40
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 38, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 38
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 40, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 33, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 46
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 38, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 33
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 38, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 40
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 38, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 38
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 40, 40
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 46, 33
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 38
+Too many failed attempts, finishing...
+Repeating (used)...=================== Finished building worst-case traffic pattern... ====================
+Sum of nodes sending: 30
+Sum of nodes: 150
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.3818
+Maximum packet latency = 15
+Minimum network latency = 5
+Average network latency = 11.3818
+Maximum network latency = 15
+Slowest packet = 243
+Minimum flit latency = 5
+Average flit latency = 11.3818
+Maximum flit latency = 15
+Slowest flit = 243
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0 (at node 34)
+Average injected packet rate = 0.00961333
+Maximum injected packet rate = 0.026 (at node 0)
+Minimum accepted packet rate = 0 (at node 10)
+Average accepted packet rate = 0.00936
+Maximum accepted packet rate = 0.022 (at node 14)
+Minimum injected flit rate = 0 (at node 34)
+Average injected flit rate = 0.00961333
+Maximum injected flit rate = 0.026 (at node 0)
+Minimum accepted flit rate = 0 (at node 10)
+Average accepted flit rate = 0.00936
+Maximum accepted flit rate = 0.022 (at node 14)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 19 (0 measured)
+latency change    = 1
+throughput change = 1
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.3845
+Maximum packet latency = 17
+Minimum network latency = 5
+Average network latency = 11.3845
+Maximum network latency = 17
+Slowest packet = 1411
+Minimum flit latency = 5
+Average flit latency = 11.3845
+Maximum flit latency = 17
+Slowest flit = 1411
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.002 (at node 80)
+Average injected packet rate = 0.00996667
+Maximum injected packet rate = 0.019 (at node 135)
+Minimum accepted packet rate = 0.003 (at node 10)
+Average accepted packet rate = 0.0099
+Maximum accepted packet rate = 0.02 (at node 119)
+Minimum injected flit rate = 0.002 (at node 80)
+Average injected flit rate = 0.00996667
+Maximum injected flit rate = 0.019 (at node 135)
+Minimum accepted flit rate = 0.003 (at node 10)
+Average accepted flit rate = 0.0099
+Maximum accepted flit rate = 0.02 (at node 119)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 10 (0 measured)
+latency change    = 0.000241152
+throughput change = 0.0545455
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.3559
+Maximum packet latency = 15
+Minimum network latency = 5
+Average network latency = 11.3559
+Maximum network latency = 15
+Slowest packet = 1728
+Minimum flit latency = 5
+Average flit latency = 11.3559
+Maximum flit latency = 15
+Slowest flit = 1728
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0 (at node 103)
+Average injected packet rate = 0.0100667
+Maximum injected packet rate = 0.022 (at node 1)
+Minimum accepted packet rate = 0 (at node 81)
+Average accepted packet rate = 0.01004
+Maximum accepted packet rate = 0.03 (at node 99)
+Minimum injected flit rate = 0 (at node 103)
+Average injected flit rate = 0.0100667
+Maximum injected flit rate = 0.022 (at node 1)
+Minimum accepted flit rate = 0 (at node 81)
+Average accepted flit rate = 0.01004
+Maximum accepted flit rate = 0.03 (at node 99)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 12 (0 measured)
+latency change    = 0.0025187
+throughput change = 0.0139442
+Warmed up ...Time used is 1500 cycles
+1
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.2964
+Maximum packet latency = 17
+Minimum network latency = 5
+Average network latency = 11.2964
+Maximum network latency = 17
+Slowest packet = 2451
+Minimum flit latency = 5
+Average flit latency = 11.2997
+Maximum flit latency = 17
+Slowest flit = 2451
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0 (at node 3)
+Average injected packet rate = 0.00977333
+Maximum injected packet rate = 0.024 (at node 84)
+Minimum accepted packet rate = 0.002 (at node 62)
+Average accepted packet rate = 0.00978667
+Maximum accepted packet rate = 0.024 (at node 55)
+Minimum injected flit rate = 0 (at node 3)
+Average injected flit rate = 0.00977333
+Maximum injected flit rate = 0.024 (at node 84)
+Minimum accepted flit rate = 0.002 (at node 62)
+Average accepted flit rate = 0.00978667
+Maximum accepted flit rate = 0.024 (at node 55)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 11 (11 measured)
+latency change    = 0.00526812
+throughput change = 0.0258856
+1
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.3029
+Maximum packet latency = 17
+Minimum network latency = 5
+Average network latency = 11.3029
+Maximum network latency = 17
+Slowest packet = 2451
+Minimum flit latency = 5
+Average flit latency = 11.3046
+Maximum flit latency = 17
+Slowest flit = 2451
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.004 (at node 83)
+Average injected packet rate = 0.00965333
+Maximum injected packet rate = 0.019 (at node 84)
+Minimum accepted packet rate = 0.003 (at node 79)
+Average accepted packet rate = 0.00965333
+Maximum accepted packet rate = 0.022 (at node 64)
+Minimum injected flit rate = 0.004 (at node 83)
+Average injected flit rate = 0.00965333
+Maximum injected flit rate = 0.019 (at node 84)
+Minimum accepted flit rate = 0.003 (at node 79)
+Average accepted flit rate = 0.00965333
+Maximum accepted flit rate = 0.022 (at node 64)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 12 (12 measured)
+latency change    = 0.000577364
+throughput change = 0.0138122
+1
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.3088
+Maximum packet latency = 17
+Minimum network latency = 5
+Average network latency = 11.3088
+Maximum network latency = 17
+Slowest packet = 2451
+Minimum flit latency = 5
+Average flit latency = 11.3098
+Maximum flit latency = 17
+Slowest flit = 2451
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.00466667 (at node 48)
+Average injected packet rate = 0.00972889
+Maximum injected packet rate = 0.0206667 (at node 84)
+Minimum accepted packet rate = 0.00333333 (at node 79)
+Average accepted packet rate = 0.00971111
+Maximum accepted packet rate = 0.0173333 (at node 64)
+Minimum injected flit rate = 0.00466667 (at node 48)
+Average injected flit rate = 0.00972889
+Maximum injected flit rate = 0.0206667 (at node 84)
+Minimum accepted flit rate = 0.00333333 (at node 79)
+Average accepted flit rate = 0.00971111
+Maximum accepted flit rate = 0.0173333 (at node 64)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 16 (16 measured)
+latency change    = 0.000518614
+throughput change = 0.00594966
+Draining all recorded packets ...
+Draining remaining packets ...
+Time taken is 3028 cycles
+====== Traffic class 0 ======
+Overall minimum packet latency = 5 (1 samples)
+Overall average packet latency = 11.3093 (1 samples)
+Overall maximum packet latency = 17 (1 samples)
+Overall minimum network latency = 5 (1 samples)
+Overall average network latency = 11.3093 (1 samples)
+Overall maximum network latency = 17 (1 samples)
+Overall minimum flit latency = 5 (1 samples)
+Overall average flit latency = 11.3136 (1 samples)
+Overall maximum flit latency = 17 (1 samples)
+Overall minimum fragmentation = 0 (1 samples)
+Overall average fragmentation = 0 (1 samples)
+Overall maximum fragmentation = 0 (1 samples)
+Overall minimum injected packet rate = 0.00466667 (1 samples)
+Overall average injected packet rate = 0.00972889 (1 samples)
+Overall maximum injected packet rate = 0.0206667 (1 samples)
+Overall minimum accepted packet rate = 0.00333333 (1 samples)
+Overall average accepted packet rate = 0.00971111 (1 samples)
+Overall maximum accepted packet rate = 0.0173333 (1 samples)
+Overall minimum injected flit rate = 0.00466667 (1 samples)
+Overall average injected flit rate = 0.00972889 (1 samples)
+Overall maximum injected flit rate = 0.0206667 (1 samples)
+Overall minimum accepted flit rate = 0.00333333 (1 samples)
+Overall average accepted flit rate = 0.00971111 (1 samples)
+Overall maximum accepted flit rate = 0.0173333 (1 samples)
+Overall average injected packet size = 1 (1 samples)
+Overall average accepted packet size = 1 (1 samples)
+Overall average hops = 3.09776 (1 samples)
+Total run time 0.776571

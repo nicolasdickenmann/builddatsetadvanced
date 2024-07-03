@@ -1,0 +1,160 @@
+BEGIN Configuration File: ./RAND.conf
+injection_rate = 0.4;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = ugall3hops;
+vc_buf_size = 16;
+network_file = RAND.98.11.5.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.98.11.5.route;
+topology = anynet;
+use_noc_latency = 0;
+//KURWAhold_switch_for_packet=0;
+
+k = 16;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+
+END Configuration File: ./RAND.conf
+========================Network File Parsed=================
+******************node listing**********************
+
+****************router to node listing*************
+
+*****************router to router listing************
+Number of nodes: 490
+Number of routers: 98
+==========================Node to Router =====================
+==========================Router to Router =====================
+========================== Build Routing table  =====================
+Start searching...Routing table for router 0 done  |
+Start searching...Routing table for router 1 done  |
+Start searching...Routing table for router 2 done  |
+Start searching...Routing table for router 3 done  |
+Start searching...Routing table for router 4 done  |
+Start searching...Routing table for router 5 done  |
+Start searching...Routing table for router 6 done  |
+Start searching...Routing table for router 7 done  |
+Start searching...Routing table for router 8 done  |
+Start searching...Routing table for router 9 done  |
+Start searching...Routing table for router 10 done  |
+Start searching...Routing table for router 11 done  |
+Start searching...Routing table for router 12 done  |
+Start searching...Routing table for router 13 done  |
+Start searching...Routing table for router 14 done  |
+Start searching...Routing table for router 15 done  |
+Start searching...Routing table for router 16 done  |
+Start searching...Routing table for router 17 done  |
+Start searching...Routing table for router 18 done  |
+Start searching...Routing table for router 19 done  |
+Start searching...Routing table for router 20 done  |
+Start searching...Routing table for router 21 done  |
+Start searching...Routing table for router 22 done  |
+Start searching...Routing table for router 23 done  |
+Start searching...Routing table for router 24 done  |
+Start searching...Routing table for router 25 done  |
+Start searching...Routing table for router 26 done  |
+Start searching...Routing table for router 27 done  |
+Start searching...Routing table for router 28 done  |
+Start searching...Routing table for router 29 done  |
+Start searching...Routing table for router 30 done  |
+Start searching...Routing table for router 31 done  |
+Start searching...Routing table for router 32 done  |
+Start searching...Routing table for router 33 done  |
+Start searching...Routing table for router 34 done  |
+Start searching...Routing table for router 35 done  |
+Start searching...Routing table for router 36 done  |
+Start searching...Routing table for router 37 done  |
+Start searching...Routing table for router 38 done  |
+Start searching...Routing table for router 39 done  |
+Start searching...Routing table for router 40 done  |
+Start searching...Routing table for router 41 done  |
+Start searching...Routing table for router 42 done  |
+Start searching...Routing table for router 43 done  |
+Start searching...Routing table for router 44 done  |
+Start searching...Routing table for router 45 done  |
+Start searching...Routing table for router 46 done  |
+Start searching...Routing table for router 47 done  |
+Start searching...Routing table for router 48 done  |
+Start searching...Routing table for router 49 done  |
+Start searching...Routing table for router 50 done  |
+Start searching...Routing table for router 51 done  |
+Start searching...Routing table for router 52 done  |
+Start searching...Routing table for router 53 done  |
+Start searching...Routing table for router 54 done  |
+Start searching...Routing table for router 55 done  |
+Start searching...Routing table for router 56 done  |
+Start searching...Routing table for router 57 done  |
+Start searching...Routing table for router 58 done  |
+Start searching...Routing table for router 59 done  |
+Start searching...Routing table for router 60 done  |
+Start searching...Routing table for router 61 done  |
+Start searching...Routing table for router 62 done  |
+Start searching...Routing table for router 63 done  |
+Start searching...Routing table for router 64 done  |
+Start searching...Routing table for router 65 done  |
+Start searching...Routing table for router 66 done  |
+Start searching...Routing table for router 67 done  |
+Start searching...Routing table for router 68 done  |
+Start searching...Routing table for router 69 done  |
+Start searching...Routing table for router 70 done  |
+Start searching...Routing table for router 71 done  |
+Start searching...Routing table for router 72 done  |
+Start searching...Routing table for router 73 done  |
+Start searching...Routing table for router 74 done  |
+Start searching...Routing table for router 75 done  |
+Start searching...Routing table for router 76 done  |
+Start searching...Routing table for router 77 done  |
+Start searching...Routing table for router 78 done  |
+Start searching...Routing table for router 79 done  |
+Start searching...Routing table for router 80 done  |
+Start searching...Routing table for router 81 done  |
+Start searching...Routing table for router 82 done  |
+Start searching...Routing table for router 83 done  |
+Start searching...Routing table for router 84 done  |
+Start searching...Routing table for router 85 done  |
+Start searching...Routing table for router 86 done  |
+Start searching...Routing table for router 87 done  |
+Start searching...Routing table for router 88 done  |
+Start searching...Routing table for router 89 done  |
+Start searching...Routing table for router 90 done  |
+Start searching...Routing table for router 91 done  |
+Start searching...Routing table for router 92 done  |
+Start searching...Routing table for router 93 done  |
+Start searching...Routing table for router 94 done  |
+Start searching...Routing table for router 95 done  |
+Start searching...Routing table for router 96 done  |
+Start searching...Routing table for router 97 done  |
+
+========================== Build Routing table done  =====================
+
+Saving routing table...
+========================== Building Bad traffic pattern, type 2... ============================
+=================== Finished building bad traffic pattern... ====================
+Sum of nodes sending: 490
+Sum of nodes: 490

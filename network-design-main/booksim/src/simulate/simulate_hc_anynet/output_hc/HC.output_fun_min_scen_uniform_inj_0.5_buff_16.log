@@ -1,0 +1,1093 @@
+BEGIN Configuration File: ./HC.conf
+injection_rate = 0.6;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.10.bsconf;
+load_routing_file = no;
+routing_table_file = HC.10.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.01;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.10.bsconf;
+load_routing_file = no;
+routing_table_file = HC.10.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.1;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.10.bsconf;
+load_routing_file = no;
+routing_table_file = HC.10.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.2;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.10.bsconf;
+load_routing_file = no;
+routing_table_file = HC.10.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.3;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.10.bsconf;
+load_routing_file = no;
+routing_table_file = HC.10.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.4;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.10.bsconf;
+load_routing_file = no;
+routing_table_file = HC.10.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.5;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.10.bsconf;
+load_routing_file = no;
+routing_table_file = HC.10.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.6;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.10.bsconf;
+load_routing_file = no;
+routing_table_file = HC.10.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.7;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.10.bsconf;
+load_routing_file = no;
+routing_table_file = HC.10.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.8;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.10.bsconf;
+load_routing_file = no;
+routing_table_file = HC.10.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.01;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.10.bsconf;
+load_routing_file = no;
+routing_table_file = HC.10.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.01;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.7.bsconf;
+load_routing_file = no;
+routing_table_file = HC.7.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.1;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.7.bsconf;
+load_routing_file = no;
+routing_table_file = HC.7.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.2;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.7.bsconf;
+load_routing_file = no;
+routing_table_file = HC.7.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.3;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.7.bsconf;
+load_routing_file = no;
+routing_table_file = HC.7.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.4;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.7.bsconf;
+load_routing_file = no;
+routing_table_file = HC.7.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.5;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.7.bsconf;
+load_routing_file = no;
+routing_table_file = HC.7.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.6;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.7.bsconf;
+load_routing_file = no;
+routing_table_file = HC.7.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.7;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.7.bsconf;
+load_routing_file = no;
+routing_table_file = HC.7.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.8;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.7.bsconf;
+load_routing_file = no;
+routing_table_file = HC.7.bsconf;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.5;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = HC.7.bsconf;
+load_routing_file = no;
+routing_table_file = HC.7.bsconf.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+
+END Configuration File: ./HC.conf
+========================Network File Parsed=================
+******************node listing**********************
+
+****************router to node listing*************
+
+*****************router to router listing************
+Number of nodes: 128
+Number of routers: 128
+==========================Node to Router =====================
+==========================Router to Router =====================
+========================== Build Routing table  =====================
+Start searching...Routing table for router 0 done  |
+Start searching...Routing table for router 1 done  |
+Start searching...Routing table for router 2 done  |
+Start searching...Routing table for router 3 done  |
+Start searching...Routing table for router 4 done  |
+Start searching...Routing table for router 5 done  |
+Start searching...Routing table for router 6 done  |
+Start searching...Routing table for router 7 done  |
+Start searching...Routing table for router 8 done  |
+Start searching...Routing table for router 9 done  |
+Start searching...Routing table for router 10 done  |
+Start searching...Routing table for router 11 done  |
+Start searching...Routing table for router 12 done  |
+Start searching...Routing table for router 13 done  |
+Start searching...Routing table for router 14 done  |
+Start searching...Routing table for router 15 done  |
+Start searching...Routing table for router 16 done  |
+Start searching...Routing table for router 17 done  |
+Start searching...Routing table for router 18 done  |
+Start searching...Routing table for router 19 done  |
+Start searching...Routing table for router 20 done  |
+Start searching...Routing table for router 21 done  |
+Start searching...Routing table for router 22 done  |
+Start searching...Routing table for router 23 done  |
+Start searching...Routing table for router 24 done  |
+Start searching...Routing table for router 25 done  |
+Start searching...Routing table for router 26 done  |
+Start searching...Routing table for router 27 done  |
+Start searching...Routing table for router 28 done  |
+Start searching...Routing table for router 29 done  |
+Start searching...Routing table for router 30 done  |
+Start searching...Routing table for router 31 done  |
+Start searching...Routing table for router 32 done  |
+Start searching...Routing table for router 33 done  |
+Start searching...Routing table for router 34 done  |
+Start searching...Routing table for router 35 done  |
+Start searching...Routing table for router 36 done  |
+Start searching...Routing table for router 37 done  |
+Start searching...Routing table for router 38 done  |
+Start searching...Routing table for router 39 done  |
+Start searching...Routing table for router 40 done  |
+Start searching...Routing table for router 41 done  |
+Start searching...Routing table for router 42 done  |
+Start searching...Routing table for router 43 done  |
+Start searching...Routing table for router 44 done  |
+Start searching...Routing table for router 45 done  |
+Start searching...Routing table for router 46 done  |
+Start searching...Routing table for router 47 done  |
+Start searching...Routing table for router 48 done  |
+Start searching...Routing table for router 49 done  |
+Start searching...Routing table for router 50 done  |
+Start searching...Routing table for router 51 done  |
+Start searching...Routing table for router 52 done  |
+Start searching...Routing table for router 53 done  |
+Start searching...Routing table for router 54 done  |
+Start searching...Routing table for router 55 done  |
+Start searching...Routing table for router 56 done  |
+Start searching...Routing table for router 57 done  |
+Start searching...Routing table for router 58 done  |
+Start searching...Routing table for router 59 done  |
+Start searching...Routing table for router 60 done  |
+Start searching...Routing table for router 61 done  |
+Start searching...Routing table for router 62 done  |
+Start searching...Routing table for router 63 done  |
+Start searching...Routing table for router 64 done  |
+Start searching...Routing table for router 65 done  |
+Start searching...Routing table for router 66 done  |
+Start searching...Routing table for router 67 done  |
+Start searching...Routing table for router 68 done  |
+Start searching...Routing table for router 69 done  |
+Start searching...Routing table for router 70 done  |
+Start searching...Routing table for router 71 done  |
+Start searching...Routing table for router 72 done  |
+Start searching...Routing table for router 73 done  |
+Start searching...Routing table for router 74 done  |
+Start searching...Routing table for router 75 done  |
+Start searching...Routing table for router 76 done  |
+Start searching...Routing table for router 77 done  |
+Start searching...Routing table for router 78 done  |
+Start searching...Routing table for router 79 done  |
+Start searching...Routing table for router 80 done  |
+Start searching...Routing table for router 81 done  |
+Start searching...Routing table for router 82 done  |
+Start searching...Routing table for router 83 done  |
+Start searching...Routing table for router 84 done  |
+Start searching...Routing table for router 85 done  |
+Start searching...Routing table for router 86 done  |
+Start searching...Routing table for router 87 done  |
+Start searching...Routing table for router 88 done  |
+Start searching...Routing table for router 89 done  |
+Start searching...Routing table for router 90 done  |
+Start searching...Routing table for router 91 done  |
+Start searching...Routing table for router 92 done  |
+Start searching...Routing table for router 93 done  |
+Start searching...Routing table for router 94 done  |
+Start searching...Routing table for router 95 done  |
+Start searching...Routing table for router 96 done  |
+Start searching...Routing table for router 97 done  |
+Start searching...Routing table for router 98 done  |
+Start searching...Routing table for router 99 done  |
+Start searching...Routing table for router 100 done  |
+Start searching...Routing table for router 101 done  |
+Start searching...Routing table for router 102 done  |
+Start searching...Routing table for router 103 done  |
+Start searching...Routing table for router 104 done  |
+Start searching...Routing table for router 105 done  |
+Start searching...Routing table for router 106 done  |
+Start searching...Routing table for router 107 done  |
+Start searching...Routing table for router 108 done  |
+Start searching...Routing table for router 109 done  |
+Start searching...Routing table for router 110 done  |
+Start searching...Routing table for router 111 done  |
+Start searching...Routing table for router 112 done  |
+Start searching...Routing table for router 113 done  |
+Start searching...Routing table for router 114 done  |
+Start searching...Routing table for router 115 done  |
+Start searching...Routing table for router 116 done  |
+Start searching...Routing table for router 117 done  |
+Start searching...Routing table for router 118 done  |
+Start searching...Routing table for router 119 done  |
+Start searching...Routing table for router 120 done  |
+Start searching...Routing table for router 121 done  |
+Start searching...Routing table for router 122 done  |
+Start searching...Routing table for router 123 done  |
+Start searching...Routing table for router 124 done  |
+Start searching...Routing table for router 125 done  |
+Start searching...Routing table for router 126 done  |
+Start searching...Routing table for router 127 done  |
+
+========================== Build Routing table done  =====================
+
+Saving routing table...
+========================== Building Bad traffic pattern, type 2... ============================
+=================== Finished building bad traffic pattern... ====================
+Sum of nodes sending: 128
+Sum of nodes: 128
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 33.5626
+Maximum packet latency = 418
+Minimum network latency = 5
+Average network latency = 33.5626
+Maximum network latency = 418
+Slowest packet = 4091
+Minimum flit latency = 5
+Average flit latency = 33.5626
+Maximum flit latency = 418
+Slowest flit = 4091
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.268 (at node 7)
+Average injected packet rate = 0.474781
+Maximum injected packet rate = 0.55 (at node 64)
+Minimum accepted packet rate = 0.118 (at node 1)
+Average accepted packet rate = 0.337203
+Maximum accepted packet rate = 0.47 (at node 114)
+Minimum injected flit rate = 0.268 (at node 7)
+Average injected flit rate = 0.474781
+Maximum injected flit rate = 0.55 (at node 64)
+Minimum accepted flit rate = 0.118 (at node 1)
+Average accepted flit rate = 0.337203
+Maximum accepted flit rate = 0.47 (at node 114)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 8838 (0 measured)
+latency change    = 1
+throughput change = 1
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 81.0354
+Maximum packet latency = 903
+Minimum network latency = 5
+Average network latency = 80.2101
+Maximum network latency = 903
+Slowest packet = 6044
+Minimum flit latency = 5
+Average flit latency = 80.2101
+Maximum flit latency = 903
+Slowest flit = 6044
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.151 (at node 7)
+Average injected packet rate = 0.373508
+Maximum injected packet rate = 0.54 (at node 97)
+Minimum accepted packet rate = 0.124 (at node 1)
+Average accepted packet rate = 0.25475
+Maximum accepted packet rate = 0.356 (at node 115)
+Minimum injected flit rate = 0.151 (at node 7)
+Average injected flit rate = 0.373508
+Maximum injected flit rate = 0.54 (at node 97)
+Minimum accepted flit rate = 0.124 (at node 1)
+Average accepted flit rate = 0.25475
+Maximum accepted flit rate = 0.356 (at node 115)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 15294 (0 measured)
+latency change    = 0.585828
+throughput change = 0.323663
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 481.722
+Maximum packet latency = 1320
+Minimum network latency = 5
+Average network latency = 440.971
+Maximum network latency = 1320
+Slowest packet = 8799
+Minimum flit latency = 5
+Average flit latency = 440.971
+Maximum flit latency = 1320
+Slowest flit = 8799
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0 (at node 31)
+Average injected packet rate = 0.145609
+Maximum injected packet rate = 0.524 (at node 112)
+Minimum accepted packet rate = 0.094 (at node 110)
+Average accepted packet rate = 0.135672
+Maximum accepted packet rate = 0.176 (at node 84)
+Minimum injected flit rate = 0 (at node 31)
+Average injected flit rate = 0.145609
+Maximum injected flit rate = 0.524 (at node 112)
+Minimum accepted flit rate = 0.094 (at node 110)
+Average accepted flit rate = 0.135672
+Maximum accepted flit rate = 0.176 (at node 84)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 15947 (0 measured)
+latency change    = 0.83178
+throughput change = 0.877692
+Average latency for class 0 exceeded 500 cycles. Aborting simulation.
+Too many sample periods needed to converge
+Simulation unstable, ending ...
+Total run time 5.09852

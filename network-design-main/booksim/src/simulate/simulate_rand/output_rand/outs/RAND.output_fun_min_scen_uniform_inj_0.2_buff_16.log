@@ -1,0 +1,2271 @@
+BEGIN Configuration File: ./RAND.conf
+injection_rate = 0.01;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.05;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.1;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.2;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.3;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.4;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.5;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.6;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.7;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.8;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.01;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.05;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.1;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.2;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.3;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.4;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.5;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.6;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.7;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.8;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.01;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.05;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.1;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.2;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.3;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.4;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.5;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.6;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.7;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.8;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.01;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.01;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.05;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.1;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.2;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.3;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.4;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.5;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.6;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.7;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.6;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 16;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.05;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 16;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.1;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 16;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.2;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 16;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.3;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 16;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.4;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 16;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.5;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 16;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.6;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 16;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.6;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 8;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.05;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 8;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.1;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 8;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+injection_rate = 0.2;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.722.29.13.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.722.29.13.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 13;
+
+packet_size  = 1;
+num_vcs      = 8;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+
+END Configuration File: ./RAND.conf
+========================Network File Parsed=================
+******************node listing**********************
+
+****************router to node listing*************
+
+*****************router to router listing************
+Number of nodes: 9386
+Number of routers: 722
+==========================Node to Router =====================
+==========================Router to Router =====================
+========================== Build Routing table  =====================
+Start searching...Routing table for router 0 done  |Start searching...Routing table for router 1 done  |Start searching...Routing table for router 2 done  |Start searching...Routing table for router 3 done  |Start searching...Routing table for router 4 done  |Start searching...Routing table for router 5 done  |Start searching...Routing table for router 6 done  |Start searching...Routing table for router 7 done  |Start searching...Routing table for router 8 done  |Start searching...Routing table for router 9 done  |Start searching...Routing table for router 10 done  |Start searching...Routing table for router 11 done  |Start searching...Routing table for router 12 done  |Start searching...Routing table for router 13 done  |Start searching...Routing table for router 14 done  |Start searching...Routing table for router 15 done  |Start searching...Routing table for router 16 done  |Start searching...Routing table for router 17 done  |Start searching...Routing table for router 18 done  |Start searching...Routing table for router 19 done  |Start searching...Routing table for router 20 done  |Start searching...Routing table for router 21 done  |Start searching...Routing table for router 22 done  |Start searching...Routing table for router 23 done  |Start searching...Routing table for router 24 done  |Start searching...Routing table for router 25 done  |Start searching...Routing table for router 26 done  |Start searching...Routing table for router 27 done  |Start searching...Routing table for router 28 done  |Start searching...Routing table for router 29 done  |Start searching...Routing table for router 30 done  |Start searching...Routing table for router 31 done  |Start searching...Routing table for router 32 done  |Start searching...Routing table for router 33 done  |Start searching...Routing table for router 34 done  |Start searching...Routing table for router 35 done  |Start searching...Routing table for router 36 done  |Start searching...Routing table for router 37 done  |Start searching...Routing table for router 38 done  |Start searching...Routing table for router 39 done  |Start searching...Routing table for router 40 done  |Start searching...Routing table for router 41 done  |Start searching...Routing table for router 42 done  |Start searching...Routing table for router 43 done  |Start searching...Routing table for router 44 done  |Start searching...Routing table for router 45 done  |Start searching...Routing table for router 46 done  |Start searching...Routing table for router 47 done  |Start searching...Routing table for router 48 done  |Start searching...Routing table for router 49 done  |Start searching...Routing table for router 50 done  |Start searching...Routing table for router 51 done  |Start searching...Routing table for router 52 done  |Start searching...Routing table for router 53 done  |Start searching...Routing table for router 54 done  |Start searching...Routing table for router 55 done  |Start searching...Routing table for router 56 done  |Start searching...Routing table for router 57 done  |Start searching...Routing table for router 58 done  |Start searching...Routing table for router 59 done  |Start searching...Routing table for router 60 done  |Start searching...Routing table for router 61 done  |Start searching...Routing table for router 62 done  |Start searching...Routing table for router 63 done  |Start searching...Routing table for router 64 done  |Start searching...Routing table for router 65 done  |Start searching...Routing table for router 66 done  |Start searching...Routing table for router 67 done  |Start searching...Routing table for router 68 done  |Start searching...Routing table for router 69 done  |Start searching...Routing table for router 70 done  |Start searching...Routing table for router 71 done  |Start searching...Routing table for router 72 done  |Start searching...Routing table for router 73 done  |Start searching...Routing table for router 74 done  |Start searching...Routing table for router 75 done  |Start searching...Routing table for router 76 done  |Start searching...Routing table for router 77 done  |Start searching...Routing table for router 78 done  |Start searching...Routing table for router 79 done  |Start searching...Routing table for router 80 done  |Start searching...Routing table for router 81 done  |Start searching...Routing table for router 82 done  |Start searching...Routing table for router 83 done  |Start searching...Routing table for router 84 done  |Start searching...Routing table for router 85 done  |Start searching...Routing table for router 86 done  |Start searching...Routing table for router 87 done  |Start searching...Routing table for router 88 done  |Start searching...Routing table for router 89 done  |Start searching...Routing table for router 90 done  |Start searching...Routing table for router 91 done  |Start searching...Routing table for router 92 done  |Start searching...Routing table for router 93 done  |Start searching...Routing table for router 94 done  |Start searching...Routing table for router 95 done  |Start searching...Routing table for router 96 done  |Start searching...Routing table for router 97 done  |Start searching...Routing table for router 98 done  |Start searching...Routing table for router 99 done  |Start searching...Routing table for router 100 done  |Start searching...Routing table for router 101 done  |Start searching...Routing table for router 102 done  |Start searching...Routing table for router 103 done  |Start searching...Routing table for router 104 done  |Start searching...Routing table for router 105 done  |Start searching...Routing table for router 106 done  |Start searching...Routing table for router 107 done  |Start searching...Routing table for router 108 done  |Start searching...Routing table for router 109 done  |Start searching...Routing table for router 110 done  |Start searching...Routing table for router 111 done  |Start searching...Routing table for router 112 done  |Start searching...Routing table for router 113 done  |Start searching...Routing table for router 114 done  |Start searching...Routing table for router 115 done  |Start searching...Routing table for router 116 done  |Start searching...Routing table for router 117 done  |Start searching...Routing table for router 118 done  |Start searching...Routing table for router 119 done  |Start searching...Routing table for router 120 done  |Start searching...Routing table for router 121 done  |Start searching...Routing table for router 122 done  |Start searching...Routing table for router 123 done  |Start searching...Routing table for router 124 done  |Start searching...Routing table for router 125 done  |Start searching...Routing table for router 126 done  |Start searching...Routing table for router 127 done  |Start searching...Routing table for router 128 done  |Start searching...Routing table for router 129 done  |Start searching...Routing table for router 130 done  |Start searching...Routing table for router 131 done  |Start searching...Routing table for router 132 done  |Start searching...Routing table for router 133 done  |Start searching...Routing table for router 134 done  |Start searching...Routing table for router 135 done  |Start searching...Routing table for router 136 done  |Start searching...Routing table for router 137 done  |Start searching...Routing table for router 138 done  |Start searching...Routing table for router 139 done  |Start searching...Routing table for router 140 done  |Start searching...Routing table for router 141 done  |Start searching...Routing table for router 142 done  |Start searching...Routing table for router 143 done  |Start searching...Routing table for router 144 done  |Start searching...Routing table for router 145 done  |Start searching...Routing table for router 146 done  |Start searching...Routing table for router 147 done  |Start searching...Routing table for router 148 done  |Start searching...Routing table for router 149 done  |Start searching...Routing table for router 150 done  |Start searching...Routing table for router 151 done  |Start searching...Routing table for router 152 done  |Start searching...Routing table for router 153 done  |Start searching...Routing table for router 154 done  |Start searching...Routing table for router 155 done  |Start searching...Routing table for router 156 done  |Start searching...Routing table for router 157 done  |Start searching...Routing table for router 158 done  |Start searching...Routing table for router 159 done  |Start searching...Routing table for router 160 done  |Start searching...Routing table for router 161 done  |Start searching...Routing table for router 162 done  |Start searching...Routing table for router 163 done  |Start searching...Routing table for router 164 done  |Start searching...Routing table for router 165 done  |Start searching...Routing table for router 166 done  |Start searching...Routing table for router 167 done  |Start searching...Routing table for router 168 done  |Start searching...Routing table for router 169 done  |Start searching...Routing table for router 170 done  |Start searching...Routing table for router 171 done  |Start searching...Routing table for router 172 done  |Start searching...Routing table for router 173 done  |Start searching...Routing table for router 174 done  |Start searching...Routing table for router 175 done  |Start searching...Routing table for router 176 done  |Start searching...Routing table for router 177 done  |Start searching...Routing table for router 178 done  |Start searching...Routing table for router 179 done  |Start searching...Routing table for router 180 done  |Start searching...Routing table for router 181 done  |Start searching...Routing table for router 182 done  |Start searching...Routing table for router 183 done  |Start searching...Routing table for router 184 done  |Start searching...Routing table for router 185 done  |Start searching...Routing table for router 186 done  |Start searching...Routing table for router 187 done  |Start searching...Routing table for router 188 done  |Start searching...Routing table for router 189 done  |Start searching...Routing table for router 190 done  |Start searching...Routing table for router 191 done  |Start searching...Routing table for router 192 done  |Start searching...Routing table for router 193 done  |Start searching...Routing table for router 194 done  |Start searching...Routing table for router 195 done  |Start searching...Routing table for router 196 done  |Start searching...Routing table for router 197 done  |Start searching...Routing table for router 198 done  |Start searching...Routing table for router 199 done  |Start searching...Routing table for router 200 done  |Start searching...Routing table for router 201 done  |Start searching...Routing table for router 202 done  |Start searching...Routing table for router 203 done  |Start searching...Routing table for router 204 done  |Start searching...Routing table for router 205 done  |Start searching...Routing table for router 206 done  |Start searching...Routing table for router 207 done  |Start searching...Routing table for router 208 done  |Start searching...Routing table for router 209 done  |Start searching...Routing table for router 210 done  |Start searching...Routing table for router 211 done  |Start searching...Routing table for router 212 done  |Start searching...Routing table for router 213 done  |Start searching...Routing table for router 214 done  |Start searching...Routing table for router 215 done  |Start searching...Routing table for router 216 done  |Start searching...Routing table for router 217 done  |Start searching...Routing table for router 218 done  |Start searching...Routing table for router 219 done  |Start searching...Routing table for router 220 done  |Start searching...Routing table for router 221 done  |Start searching...Routing table for router 222 done  |Start searching...Routing table for router 223 done  |Start searching...Routing table for router 224 done  |Start searching...Routing table for router 225 done  |Start searching...Routing table for router 226 done  |Start searching...Routing table for router 227 done  |Start searching...Routing table for router 228 done  |Start searching...Routing table for router 229 done  |Start searching...Routing table for router 230 done  |Start searching...Routing table for router 231 done  |Start searching...Routing table for router 232 done  |Start searching...Routing table for router 233 done  |Start searching...Routing table for router 234 done  |Start searching...Routing table for router 235 done  |Start searching...Routing table for router 236 done  |Start searching...Routing table for router 237 done  |Start searching...Routing table for router 238 done  |Start searching...Routing table for router 239 done  |Start searching...Routing table for router 240 done  |Start searching...Routing table for router 241 done  |Start searching...Routing table for router 242 done  |Start searching...Routing table for router 243 done  |Start searching...Routing table for router 244 done  |Start searching...Routing table for router 245 done  |Start searching...Routing table for router 246 done  |Start searching...Routing table for router 247 done  |Start searching...Routing table for router 248 done  |Start searching...Routing table for router 249 done  |Start searching...Routing table for router 250 done  |Start searching...Routing table for router 251 done  |Start searching...Routing table for router 252 done  |Start searching...Routing table for router 253 done  |Start searching...Routing table for router 254 done  |Start searching...Routing table for router 255 done  |Start searching...Routing table for router 256 done  |Start searching...Routing table for router 257 done  |Start searching...Routing table for router 258 done  |Start searching...Routing table for router 259 done  |Start searching...Routing table for router 260 done  |Start searching...Routing table for router 261 done  |Start searching...Routing table for router 262 done  |Start searching...Routing table for router 263 done  |Start searching...Routing table for router 264 done  |Start searching...Routing table for router 265 done  |Start searching...Routing table for router 266 done  |Start searching...Routing table for router 267 done  |Start searching...Routing table for router 268 done  |Start searching...Routing table for router 269 done  |Start searching...Routing table for router 270 done  |Start searching...Routing table for router 271 done  |Start searching...Routing table for router 272 done  |Start searching...Routing table for router 273 done  |Start searching...Routing table for router 274 done  |Start searching...Routing table for router 275 done  |Start searching...Routing table for router 276 done  |Start searching...Routing table for router 277 done  |Start searching...Routing table for router 278 done  |Start searching...Routing table for router 279 done  |Start searching...Routing table for router 280 done  |Start searching...Routing table for router 281 done  |Start searching...Routing table for router 282 done  |Start searching...Routing table for router 283 done  |Start searching...Routing table for router 284 done  |Start searching...Routing table for router 285 done  |Start searching...Routing table for router 286 done  |Start searching...Routing table for router 287 done  |Start searching...Routing table for router 288 done  |Start searching...Routing table for router 289 done  |Start searching...Routing table for router 290 done  |Start searching...Routing table for router 291 done  |Start searching...Routing table for router 292 done  |Start searching...Routing table for router 293 done  |Start searching...Routing table for router 294 done  |Start searching...Routing table for router 295 done  |Start searching...Routing table for router 296 done  |Start searching...Routing table for router 297 done  |Start searching...Routing table for router 298 done  |Start searching...Routing table for router 299 done  |Start searching...Routing table for router 300 done  |Start searching...Routing table for router 301 done  |Start searching...Routing table for router 302 done  |Start searching...Routing table for router 303 done  |Start searching...Routing table for router 304 done  |Start searching...Routing table for router 305 done  |Start searching...Routing table for router 306 done  |Start searching...Routing table for router 307 done  |Start searching...Routing table for router 308 done  |Start searching...Routing table for router 309 done  |Start searching...Routing table for router 310 done  |Start searching...Routing table for router 311 done  |Start searching...Routing table for router 312 done  |Start searching...Routing table for router 313 done  |Start searching...Routing table for router 314 done  |Start searching...Routing table for router 315 done  |Start searching...Routing table for router 316 done  |Start searching...Routing table for router 317 done  |Start searching...Routing table for router 318 done  |Start searching...Routing table for router 319 done  |Start searching...Routing table for router 320 done  |Start searching...Routing table for router 321 done  |Start searching...Routing table for router 322 done  |Start searching...Routing table for router 323 done  |Start searching...Routing table for router 324 done  |Start searching...Routing table for router 325 done  |Start searching...Routing table for router 326 done  |Start searching...Routing table for router 327 done  |Start searching...Routing table for router 328 done  |Start searching...Routing table for router 329 done  |Start searching...Routing table for router 330 done  |Start searching...Routing table for router 331 done  |Start searching...Routing table for router 332 done  |Start searching...Routing table for router 333 done  |Start searching...Routing table for router 334 done  |Start searching...Routing table for router 335 done  |Start searching...Routing table for router 336 done  |Start searching...Routing table for router 337 done  |Start searching...Routing table for router 338 done  |Start searching...Routing table for router 339 done  |Start searching...Routing table for router 340 done  |Start searching...Routing table for router 341 done  |Start searching...Routing table for router 342 done  |Start searching...Routing table for router 343 done  |Start searching...Routing table for router 344 done  |Start searching...Routing table for router 345 done  |Start searching...Routing table for router 346 done  |Start searching...Routing table for router 347 done  |Start searching...Routing table for router 348 done  |Start searching...Routing table for router 349 done  |Start searching...Routing table for router 350 done  |Start searching...Routing table for router 351 done  |Start searching...Routing table for router 352 done  |Start searching...Routing table for router 353 done  |Start searching...Routing table for router 354 done  |Start searching...Routing table for router 355 done  |Start searching...Routing table for router 356 done  |Start searching...Routing table for router 357 done  |Start searching...Routing table for router 358 done  |Start searching...Routing table for router 359 done  |Start searching...Routing table for router 360 done  |Start searching...Routing table for router 361 done  |Start searching...Routing table for router 362 done  |Start searching...Routing table for router 363 done  |Start searching...Routing table for router 364 done  |Start searching...Routing table for router 365 done  |Start searching...Routing table for router 366 done  |Start searching...Routing table for router 367 done  |Start searching...Routing table for router 368 done  |Start searching...Routing table for router 369 done  |Start searching...Routing table for router 370 done  |Start searching...Routing table for router 371 done  |Start searching...Routing table for router 372 done  |Start searching...Routing table for router 373 done  |Start searching...Routing table for router 374 done  |Start searching...Routing table for router 375 done  |Start searching...Routing table for router 376 done  |Start searching...Routing table for router 377 done  |Start searching...Routing table for router 378 done  |Start searching...Routing table for router 379 done  |Start searching...Routing table for router 380 done  |Start searching...Routing table for router 381 done  |Start searching...Routing table for router 382 done  |Start searching...Routing table for router 383 done  |Start searching...Routing table for router 384 done  |Start searching...Routing table for router 385 done  |Start searching...Routing table for router 386 done  |Start searching...Routing table for router 387 done  |Start searching...Routing table for router 388 done  |Start searching...Routing table for router 389 done  |Start searching...Routing table for router 390 done  |Start searching...Routing table for router 391 done  |Start searching...Routing table for router 392 done  |Start searching...Routing table for router 393 done  |Start searching...Routing table for router 394 done  |Start searching...Routing table for router 395 done  |Start searching...Routing table for router 396 done  |Start searching...Routing table for router 397 done  |Start searching...Routing table for router 398 done  |Start searching...Routing table for router 399 done  |Start searching...Routing table for router 400 done  |Start searching...Routing table for router 401 done  |Start searching...Routing table for router 402 done  |Start searching...Routing table for router 403 done  |Start searching...Routing table for router 404 done  |Start searching...Routing table for router 405 done  |Start searching...Routing table for router 406 done  |Start searching...Routing table for router 407 done  |Start searching...Routing table for router 408 done  |Start searching...Routing table for router 409 done  |Start searching...Routing table for router 410 done  |Start searching...Routing table for router 411 done  |Start searching...Routing table for router 412 done  |Start searching...Routing table for router 413 done  |Start searching...Routing table for router 414 done  |Start searching...Routing table for router 415 done  |Start searching...Routing table for router 416 done  |Start searching...Routing table for router 417 done  |Start searching...Routing table for router 418 done  |Start searching...Routing table for router 419 done  |Start searching...Routing table for router 420 done  |Start searching...Routing table for router 421 done  |Start searching...Routing table for router 422 done  |Start searching...Routing table for router 423 done  |Start searching...Routing table for router 424 done  |Start searching...Routing table for router 425 done  |Start searching...Routing table for router 426 done  |Start searching...Routing table for router 427 done  |Start searching...Routing table for router 428 done  |Start searching...Routing table for router 429 done  |Start searching...Routing table for router 430 done  |Start searching...Routing table for router 431 done  |Start searching...Routing table for router 432 done  |Start searching...Routing table for router 433 done  |Start searching...Routing table for router 434 done  |Start searching...Routing table for router 435 done  |Start searching...Routing table for router 436 done  |Start searching...Routing table for router 437 done  |Start searching...Routing table for router 438 done  |Start searching...Routing table for router 439 done  |Start searching...Routing table for router 440 done  |Start searching...Routing table for router 441 done  |Start searching...Routing table for router 442 done  |Start searching...Routing table for router 443 done  |Start searching...Routing table for router 444 done  |Start searching...Routing table for router 445 done  |Start searching...Routing table for router 446 done  |Start searching...Routing table for router 447 done  |Start searching...Routing table for router 448 done  |Start searching...Routing table for router 449 done  |Start searching...Routing table for router 450 done  |Start searching...Routing table for router 451 done  |Start searching...Routing table for router 452 done  |Start searching...Routing table for router 453 done  |Start searching...Routing table for router 454 done  |Start searching...Routing table for router 455 done  |Start searching...Routing table for router 456 done  |Start searching...Routing table for router 457 done  |Start searching...Routing table for router 458 done  |Start searching...Routing table for router 459 done  |Start searching...Routing table for router 460 done  |Start searching...Routing table for router 461 done  |Start searching...Routing table for router 462 done  |Start searching...Routing table for router 463 done  |Start searching...Routing table for router 464 done  |Start searching...Routing table for router 465 done  |Start searching...Routing table for router 466 done  |Start searching...Routing table for router 467 done  |Start searching...Routing table for router 468 done  |Start searching...Routing table for router 469 done  |Start searching...Routing table for router 470 done  |Start searching...Routing table for router 471 done  |Start searching...Routing table for router 472 done  |Start searching...Routing table for router 473 done  |Start searching...Routing table for router 474 done  |Start searching...Routing table for router 475 done  |Start searching...Routing table for router 476 done  |Start searching...Routing table for router 477 done  |Start searching...Routing table for router 478 done  |Start searching...Routing table for router 479 done  |Start searching...Routing table for router 480 done  |Start searching...Routing table for router 481 done  |Start searching...Routing table for router 482 done  |Start searching...Routing table for router 483 done  |Start searching...Routing table for router 484 done  |Start searching...Routing table for router 485 done  |Start searching...Routing table for router 486 done  |Start searching...Routing table for router 487 done  |Start searching...Routing table for router 488 done  |Start searching...Routing table for router 489 done  |Start searching...Routing table for router 490 done  |Start searching...Routing table for router 491 done  |Start searching...Routing table for router 492 done  |Start searching...Routing table for router 493 done  |Start searching...Routing table for router 494 done  |Start searching...Routing table for router 495 done  |Start searching...Routing table for router 496 done  |Start searching...Routing table for router 497 done  |Start searching...Routing table for router 498 done  |Start searching...Routing table for router 499 done  |Start searching...Routing table for router 500 done  |Start searching...Routing table for router 501 done  |Start searching...Routing table for router 502 done  |Start searching...Routing table for router 503 done  |Start searching...Routing table for router 504 done  |Start searching...Routing table for router 505 done  |Start searching...Routing table for router 506 done  |Start searching...Routing table for router 507 done  |Start searching...Routing table for router 508 done  |Start searching...Routing table for router 509 done  |Start searching...Routing table for router 510 done  |Start searching...Routing table for router 511 done  |Start searching...Routing table for router 512 done  |Start searching...Routing table for router 513 done  |Start searching...Routing table for router 514 done  |Start searching...Routing table for router 515 done  |Start searching...Routing table for router 516 done  |Start searching...Routing table for router 517 done  |Start searching...Routing table for router 518 done  |Start searching...Routing table for router 519 done  |Start searching...Routing table for router 520 done  |Start searching...Routing table for router 521 done  |Start searching...Routing table for router 522 done  |Start searching...Routing table for router 523 done  |Start searching...Routing table for router 524 done  |Start searching...Routing table for router 525 done  |Start searching...Routing table for router 526 done  |Start searching...Routing table for router 527 done  |Start searching...Routing table for router 528 done  |Start searching...Routing table for router 529 done  |Start searching...Routing table for router 530 done  |Start searching...Routing table for router 531 done  |Start searching...Routing table for router 532 done  |Start searching...Routing table for router 533 done  |Start searching...Routing table for router 534 done  |Start searching...Routing table for router 535 done  |Start searching...Routing table for router 536 done  |Start searching...Routing table for router 537 done  |Start searching...Routing table for router 538 done  |Start searching...Routing table for router 539 done  |Start searching...Routing table for router 540 done  |Start searching...Routing table for router 541 done  |Start searching...Routing table for router 542 done  |Start searching...Routing table for router 543 done  |Start searching...Routing table for router 544 done  |Start searching...Routing table for router 545 done  |Start searching...Routing table for router 546 done  |Start searching...Routing table for router 547 done  |Start searching...Routing table for router 548 done  |Start searching...Routing table for router 549 done  |Start searching...Routing table for router 550 done  |Start searching...Routing table for router 551 done  |Start searching...Routing table for router 552 done  |Start searching...Routing table for router 553 done  |Start searching...Routing table for router 554 done  |Start searching...Routing table for router 555 done  |Start searching...Routing table for router 556 done  |Start searching...Routing table for router 557 done  |Start searching...Routing table for router 558 done  |Start searching...Routing table for router 559 done  |Start searching...Routing table for router 560 done  |Start searching...Routing table for router 561 done  |Start searching...Routing table for router 562 done  |Start searching...Routing table for router 563 done  |Start searching...Routing table for router 564 done  |Start searching...Routing table for router 565 done  |Start searching...Routing table for router 566 done  |Start searching...Routing table for router 567 done  |Start searching...Routing table for router 568 done  |Start searching...Routing table for router 569 done  |Start searching...Routing table for router 570 done  |Start searching...Routing table for router 571 done  |Start searching...Routing table for router 572 done  |Start searching...Routing table for router 573 done  |Start searching...Routing table for router 574 done  |Start searching...Routing table for router 575 done  |Start searching...Routing table for router 576 done  |Start searching...Routing table for router 577 done  |Start searching...Routing table for router 578 done  |Start searching...Routing table for router 579 done  |Start searching...Routing table for router 580 done  |Start searching...Routing table for router 581 done  |Start searching...Routing table for router 582 done  |Start searching...Routing table for router 583 done  |Start searching...Routing table for router 584 done  |Start searching...Routing table for router 585 done  |Start searching...Routing table for router 586 done  |Start searching...Routing table for router 587 done  |Start searching...Routing table for router 588 done  |Start searching...Routing table for router 589 done  |Start searching...Routing table for router 590 done  |Start searching...Routing table for router 591 done  |Start searching...Routing table for router 592 done  |Start searching...Routing table for router 593 done  |Start searching...Routing table for router 594 done  |Start searching...Routing table for router 595 done  |Start searching...Routing table for router 596 done  |Start searching...Routing table for router 597 done  |Start searching...Routing table for router 598 done  |Start searching...Routing table for router 599 done  |Start searching...Routing table for router 600 done  |Start searching...Routing table for router 601 done  |Start searching...Routing table for router 602 done  |Start searching...Routing table for router 603 done  |Start searching...Routing table for router 604 done  |Start searching...Routing table for router 605 done  |Start searching...Routing table for router 606 done  |Start searching...Routing table for router 607 done  |Start searching...Routing table for router 608 done  |Start searching...Routing table for router 609 done  |Start searching...Routing table for router 610 done  |Start searching...Routing table for router 611 done  |Start searching...Routing table for router 612 done  |Start searching...Routing table for router 613 done  |Start searching...Routing table for router 614 done  |Start searching...Routing table for router 615 done  |Start searching...Routing table for router 616 done  |Start searching...Routing table for router 617 done  |Start searching...Routing table for router 618 done  |Start searching...Routing table for router 619 done  |Start searching...Routing table for router 620 done  |Start searching...Routing table for router 621 done  |Start searching...Routing table for router 622 done  |Start searching...Routing table for router 623 done  |Start searching...Routing table for router 624 done  |Start searching...Routing table for router 625 done  |Start searching...Routing table for router 626 done  |Start searching...Routing table for router 627 done  |Start searching...Routing table for router 628 done  |Start searching...Routing table for router 629 done  |Start searching...Routing table for router 630 done  |Start searching...Routing table for router 631 done  |Start searching...Routing table for router 632 done  |Start searching...Routing table for router 633 done  |Start searching...Routing table for router 634 done  |Start searching...Routing table for router 635 done  |Start searching...Routing table for router 636 done  |Start searching...Routing table for router 637 done  |Start searching...Routing table for router 638 done  |Start searching...Routing table for router 639 done  |Start searching...Routing table for router 640 done  |Start searching...Routing table for router 641 done  |Start searching...Routing table for router 642 done  |Start searching...Routing table for router 643 done  |Start searching...Routing table for router 644 done  |Start searching...Routing table for router 645 done  |Start searching...Routing table for router 646 done  |Start searching...Routing table for router 647 done  |Start searching...Routing table for router 648 done  |Start searching...Routing table for router 649 done  |Start searching...Routing table for router 650 done  |Start searching...Routing table for router 651 done  |Start searching...Routing table for router 652 done  |Start searching...Routing table for router 653 done  |Start searching...Routing table for router 654 done  |Start searching...Routing table for router 655 done  |Start searching...Routing table for router 656 done  |Start searching...Routing table for router 657 done  |Start searching...Routing table for router 658 done  |Start searching...Routing table for router 659 done  |Start searching...Routing table for router 660 done  |Start searching...Routing table for router 661 done  |Start searching...Routing table for router 662 done  |Start searching...Routing table for router 663 done  |Start searching...Routing table for router 664 done  |Start searching...Routing table for router 665 done  |Start searching...Routing table for router 666 done  |Start searching...Routing table for router 667 done  |Start searching...Routing table for router 668 done  |Start searching...Routing table for router 669 done  |Start searching...Routing table for router 670 done  |Start searching...Routing table for router 671 done  |Start searching...Routing table for router 672 done  |Start searching...Routing table for router 673 done  |Start searching...Routing table for router 674 done  |Start searching...Routing table for router 675 done  |Start searching...Routing table for router 676 done  |Start searching...Routing table for router 677 done  |Start searching...Routing table for router 678 done  |Start searching...Routing table for router 679 done  |Start searching...Routing table for router 680 done  |Start searching...Routing table for router 681 done  |Start searching...Routing table for router 682 done  |Start searching...Routing table for router 683 done  |Start searching...Routing table for router 684 done  |Start searching...Routing table for router 685 done  |Start searching...Routing table for router 686 done  |Start searching...Routing table for router 687 done  |Start searching...Routing table for router 688 done  |Start searching...Routing table for router 689 done  |Start searching...Routing table for router 690 done  |Start searching...Routing table for router 691 done  |Start searching...Routing table for router 692 done  |Start searching...Routing table for router 693 done  |Start searching...Routing table for router 694 done  |Start searching...Routing table for router 695 done  |Start searching...Routing table for router 696 done  |Start searching...Routing table for router 697 done  |Start searching...Routing table for router 698 done  |Start searching...Routing table for router 699 done  |Start searching...Routing table for router 700 done  |Start searching...Routing table for router 701 done  |Start searching...Routing table for router 702 done  |Start searching...Routing table for router 703 done  |Start searching...Routing table for router 704 done  |Start searching...Routing table for router 705 done  |Start searching...Routing table for router 706 done  |Start searching...Routing table for router 707 done  |Start searching...Routing table for router 708 done  |Start searching...Routing table for router 709 done  |Start searching...Routing table for router 710 done  |Start searching...Routing table for router 711 done  |Start searching...Routing table for router 712 done  |Start searching...Routing table for router 713 done  |Start searching...Routing table for router 714 done  |Start searching...Routing table for router 715 done  |Start searching...Routing table for router 716 done  |Start searching...Routing table for router 717 done  |Start searching...Routing table for router 718 done  |Start searching...Routing table for router 719 done  |Start searching...Routing table for router 720 done  |Start searching...Routing table for router 721 done  |
+========================== Build Routing table done  =====================
+
+========================== Building Bad traffic pattern, type 2... ============================
+=================== Finished building bad traffic pattern... ====================
+Sum of nodes sending: 9386
+Sum of nodes: 9386
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 14.8844
+Maximum packet latency = 291
+Minimum network latency = 5
+Average network latency = 14.8844
+Maximum network latency = 291
+Slowest packet = 391442
+Minimum flit latency = 5
+Average flit latency = 14.8844
+Maximum flit latency = 291
+Slowest flit = 391442
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.13 (at node 3327)
+Average injected packet rate = 0.199789
+Maximum injected packet rate = 0.262 (at node 3813)
+Minimum accepted packet rate = 0.108 (at node 8294)
+Average accepted packet rate = 0.190454
+Maximum accepted packet rate = 0.266 (at node 1217)
+Minimum injected flit rate = 0.13 (at node 3327)
+Average injected flit rate = 0.199789
+Maximum injected flit rate = 0.262 (at node 3813)
+Minimum accepted flit rate = 0.108 (at node 8294)
+Average accepted flit rate = 0.190454
+Maximum accepted flit rate = 0.266 (at node 1217)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 43809 (0 measured)
+latency change    = 1
+throughput change = 1
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 20.5069
+Maximum packet latency = 703
+Minimum network latency = 5
+Average network latency = 20.5069
+Maximum network latency = 703
+Slowest packet = 506103
+Minimum flit latency = 5
+Average flit latency = 20.5069
+Maximum flit latency = 703
+Slowest flit = 506103
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.15 (at node 2250)
+Average injected packet rate = 0.200018
+Maximum injected packet rate = 0.247 (at node 707)
+Minimum accepted packet rate = 0.089 (at node 27)
+Average accepted packet rate = 0.182511
+Maximum accepted packet rate = 0.246 (at node 1225)
+Minimum injected flit rate = 0.15 (at node 2250)
+Average injected flit rate = 0.200018
+Maximum injected flit rate = 0.247 (at node 707)
+Minimum accepted flit rate = 0.089 (at node 27)
+Average accepted flit rate = 0.182511
+Maximum accepted flit rate = 0.246 (at node 1225)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 164318 (0 measured)
+latency change    = 0.274175
+throughput change = 0.0435189
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 32.949
+Maximum packet latency = 970
+Minimum network latency = 5
+Average network latency = 32.949
+Maximum network latency = 970
+Slowest packet = 481850
+Minimum flit latency = 5
+Average flit latency = 32.949
+Maximum flit latency = 970
+Slowest flit = 481850
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.106 (at node 31)
+Average injected packet rate = 0.199788
+Maximum injected packet rate = 0.278 (at node 7942)
+Minimum accepted packet rate = 0.002 (at node 31)
+Average accepted packet rate = 0.0795131
+Maximum accepted packet rate = 0.16 (at node 5002)
+Minimum injected flit rate = 0.106 (at node 31)
+Average injected flit rate = 0.199788
+Maximum injected flit rate = 0.278 (at node 7942)
+Minimum accepted flit rate = 0.002 (at node 31)
+Average accepted flit rate = 0.0795131
+Maximum accepted flit rate = 0.16 (at node 5002)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 728790 (0 measured)
+latency change    = 0.377618
+throughput change = 1.29536
+Warmed up ...Time used is 1500 cycles
+1
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 15.6597
+Maximum packet latency = 423
+Minimum network latency = 5
+Average network latency = 15.6597
+Maximum network latency = 423
+Slowest packet = 2828938
+Minimum flit latency = 5
+Average flit latency = 46.1619
+Maximum flit latency = 1430
+Slowest flit = 474307
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0 (at node 31)
+Average injected packet rate = 0.186595
+Maximum injected packet rate = 0.268 (at node 8124)
+Minimum accepted packet rate = 0 (at node 1)
+Average accepted packet rate = 0.0169565
+Maximum accepted packet rate = 0.068 (at node 263)
+Minimum injected flit rate = 0 (at node 31)
+Average injected flit rate = 0.186595
+Maximum injected flit rate = 0.268 (at node 8124)
+Minimum accepted flit rate = 0 (at node 1)
+Average accepted flit rate = 0.0169565
+Maximum accepted flit rate = 0.068 (at node 263)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 1527066 (807513 measured)
+latency change    = 1.10406
+throughput change = 3.68923
+1
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 15.1059
+Maximum packet latency = 423
+Minimum network latency = 5
+Average network latency = 15.1059
+Maximum network latency = 423
+Slowest packet = 2828938
+Minimum flit latency = 5
+Average flit latency = 42.4302
+Maximum flit latency = 1430
+Slowest flit = 474307
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0 (at node 31)
+Average injected packet rate = 0.133613
+Maximum injected packet rate = 0.237 (at node 8938)
+Minimum accepted packet rate = 0 (at node 4)
+Average accepted packet rate = 0.00948423
+Maximum accepted packet rate = 0.037 (at node 8468)
+Minimum injected flit rate = 0 (at node 31)
+Average injected flit rate = 0.133613
+Maximum injected flit rate = 0.237 (at node 8938)
+Minimum accepted flit rate = 0 (at node 4)
+Average accepted flit rate = 0.00948423
+Maximum accepted flit rate = 0.037 (at node 8468)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 1902251 (1182698 measured)
+latency change    = 0.0366661
+throughput change = 0.787866
+Average latency for class 0 exceeded 500 cycles. Aborting simulation.
+Too many sample periods needed to converge
+Simulation unstable, ending ...
+Total run time 557.932

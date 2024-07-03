@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="84">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df name="src" root=".">
+      <df name="allocators">
+        <in>allocator.cpp</in>
+        <in>allocator.hpp</in>
+        <in>islip.cpp</in>
+        <in>islip.hpp</in>
+        <in>loa.cpp</in>
+        <in>loa.hpp</in>
+        <in>maxsize.cpp</in>
+        <in>maxsize.hpp</in>
+        <in>pim.cpp</in>
+        <in>pim.hpp</in>
+        <in>selalloc.cpp</in>
+        <in>selalloc.hpp</in>
+        <in>separable.cpp</in>
+        <in>separable.hpp</in>
+        <in>separable_input_first.cpp</in>
+        <in>separable_input_first.hpp</in>
+        <in>separable_output_first.cpp</in>
+        <in>separable_output_first.hpp</in>
+        <in>wavefront.cpp</in>
+        <in>wavefront.hpp</in>
+      </df>
+      <df name="arbiters">
+        <in>arbiter.cpp</in>
+        <in>arbiter.hpp</in>
+        <in>matrix_arb.cpp</in>
+        <in>matrix_arb.hpp</in>
+        <in>prio_arb.cpp</in>
+        <in>prio_arb.hpp</in>
+        <in>roundrobin_arb.cpp</in>
+        <in>roundrobin_arb.hpp</in>
+        <in>tree_arb.cpp</in>
+        <in>tree_arb.hpp</in>
+      </df>
+      <df name="examples">
+      </df>
+      <df name="for_torsten">
+        <df name="output_ugalg_badmms">
+        </df>
+        <df name="scripts">
+        </df>
+      </df>
+      <df name="mms">
+        <df name="MMS.11">
+        </df>
+        <df name="MMS.17">
+        </df>
+        <df name="MMS.19">
+        </df>
+        <df name="MMS.25">
+        </df>
+        <df name="MMS.29">
+        </df>
+        <df name="MMS.7">
+        </df>
+      </df>
+      <df name="mms_config_ugalg_uniform_64_p21">
+      </df>
+      <df name="networks">
+        <in>anynet.cpp</in>
+        <in>anynet.hpp</in>
+        <in>cmesh.cpp</in>
+        <in>cmesh.hpp</in>
+        <in>dragonfly.cpp</in>
+        <in>dragonfly.hpp</in>
+        <in>fattree.cpp</in>
+        <in>fattree.hpp</in>
+        <in>flatfly_onchip.cpp</in>
+        <in>flatfly_onchip.hpp</in>
+        <in>fly.cpp</in>
+        <in>fly.hpp</in>
+        <in>kncube.cpp</in>
+        <in>kncube.hpp</in>
+        <in>network.cpp</in>
+        <in>network.hpp</in>
+        <in>qtree.cpp</in>
+        <in>qtree.hpp</in>
+        <in>tree4.cpp</in>
+        <in>tree4.hpp</in>
+      </df>
+      <df name="obj">
+      </df>
+      <df name="output_11.11.12">
+      </df>
+      <df name="output_12.11.12">
+      </df>
+      <df name="output_13.11.12_val">
+      </df>
+      <df name="output_14.11.12_ugalgnew">
+      </df>
+      <df name="output_15.11.12_ugall8_others">
+      </df>
+      <df name="output_min_bitrev">
+        <in>MMS.output_scen=bitrev_inj=0.01_fun=min_buff=64.log</in>
+      </df>
+      <df name="output_ugalg_badmms">
+      </df>
+      <df name="output_ugalg_shuffle">
+      </df>
+      <df name="output_ugalg_uniform_64_p21">
+      </df>
+      <df name="output_val_shuffle">
+      </df>
+      <df name="power">
+        <in>buffer_monitor.cpp</in>
+        <in>buffer_monitor.hpp</in>
+        <in>power_module.cpp</in>
+        <in>power_module.hpp</in>
+        <in>switch_monitor.cpp</in>
+        <in>switch_monitor.hpp</in>
+      </df>
+      <df name="routers">
+        <in>chaos_router.cpp</in>
+        <in>chaos_router.hpp</in>
+        <in>event_router.cpp</in>
+        <in>event_router.hpp</in>
+        <in>iq_router.cpp</in>
+        <in>iq_router.hpp</in>
+        <in>router.cpp</in>
+        <in>router.hpp</in>
+      </df>
+      <in>batchtrafficmanager.cpp</in>
+      <in>batchtrafficmanager.hpp</in>
+      <in>bgui.cpp</in>
+      <in>bgui.hpp</in>
+      <in>booksim.hpp</in>
+      <in>booksim_config.cpp</in>
+      <in>booksim_config.hpp</in>
+      <in>buffer.cpp</in>
+      <in>buffer.hpp</in>
+      <in>buffer_state.cpp</in>
+      <in>buffer_state.hpp</in>
+      <in>channel.hpp</in>
+      <in>config_utils.cpp</in>
+      <in>config_utils.hpp</in>
+      <in>credit.cpp</in>
+      <in>credit.hpp</in>
+      <in>flit.cpp</in>
+      <in>flit.hpp</in>
+      <in>flitchannel.cpp</in>
+      <in>flitchannel.hpp</in>
+      <in>globals.hpp</in>
+      <in>injection.cpp</in>
+      <in>injection.hpp</in>
+      <in>lex.yy.c</in>
+      <in>main.cpp</in>
+      <in>misc_utils.cpp</in>
+      <in>misc_utils.hpp</in>
+      <in>module.cpp</in>
+      <in>module.hpp</in>
+      <in>outputset.cpp</in>
+      <in>outputset.hpp</in>
+      <in>packet_reply_info.cpp</in>
+      <in>packet_reply_info.hpp</in>
+      <in>pipefifo.hpp</in>
+      <in>random_utils.hpp</in>
+      <in>rng-double.c</in>
+      <in>rng.c</in>
+      <in>rng_double_wrapper.cpp</in>
+      <in>rng_wrapper.cpp</in>
+      <in>routefunc.cpp</in>
+      <in>routefunc.hpp</in>
+      <in>stats.cpp</in>
+      <in>stats.hpp</in>
+      <in>timed_module.hpp</in>
+      <in>traffic.cpp</in>
+      <in>traffic.hpp</in>
+      <in>trafficmanager.cpp</in>
+      <in>trafficmanager.hpp</in>
+      <in>vc.cpp</in>
+      <in>vc.hpp</in>
+      <in>y.tab.c</in>
+      <in>y.tab.h</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>booksim</executablePath>
+          <cTool>
+            <incDir>
+              <pElem>allocators</pElem>
+              <pElem>networks</pElem>
+              <pElem>power</pElem>
+              <pElem>arbiters</pElem>
+              <pElem>routers</pElem>
+              <pElem>.</pElem>
+            </incDir>
+          </cTool>
+          <ccTool>
+            <incDir>
+              <pElem>allocators</pElem>
+              <pElem>networks</pElem>
+              <pElem>power</pElem>
+              <pElem>arbiters</pElem>
+              <pElem>routers</pElem>
+              <pElem>.</pElem>
+            </incDir>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+      <item path="allocators/allocator.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="allocators/islip.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="allocators/loa.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="allocators/maxsize.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="allocators/pim.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="allocators/selalloc.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="allocators/separable.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="allocators/separable_input_first.hpp"
+            ex="true"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="allocators/separable_output_first.hpp"
+            ex="true"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="allocators/wavefront.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="arbiters/arbiter.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="arbiters/matrix_arb.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="arbiters/prio_arb.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="arbiters/roundrobin_arb.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="arbiters/tree_arb.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="bgui.cpp" ex="true" tool="1" flavor2="0">
+      </item>
+      <item path="bgui.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="pipefifo.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="rng-double.c" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="rng.c" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="routers/chaos_router.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="routers/event_router.hpp" ex="true" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

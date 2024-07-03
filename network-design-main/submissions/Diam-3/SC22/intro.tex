@@ -1,0 +1,35 @@
+\section{Introduction}
+\label{sec:intro}
+
+- Recent low-diameter networks such as Slim Fly pushed the margin in terms of
+  reducing cost and power while keeping high performance and resilience.
+
+- However, these designs have fundamental flaws: 
+%
+(1) They either have diameter two, and are thus fundamentally limited in their
+scale (e.g., Slim Fly, Slim NoC).
+%
+(2) Or, they have diameter three, but are very far away from the Moore Bound,
+thus they have suboptimal scales, which increases cost and power consumption,
+and suffering from performance loss due to the higher diameter.
+%
+(3) Or, they have even higher diameters, and are also far away from the MB,
+which means they have all the issues from point~(2), while suffering even more
+from performance loss because the diameter and thus average path length as even
+higher.
+
+- We propose a new family of network topologies that tackle these issues, based
+  on a concept of polarity.  These networks:
+%
+(1) Have diameter 3 and are either very close or not far from the MB (Delorme +
+Kronecker Product graphs).
+%
+(2) Have diameter 4 BUT very low average path length, close to 3 (Del-4).
+%
+Using the above we secure networks with very high scales, more (?) performance
+and more resilience and lower cost than modern Diam-3 and Diam-4 topologies
+such as Dragonfly or Fat Tree.
+
+
+\maciej{Do we add modularity as a central paper part? May be a good idea (my
+definition!), BUT - only if we have a design that actually is modular}

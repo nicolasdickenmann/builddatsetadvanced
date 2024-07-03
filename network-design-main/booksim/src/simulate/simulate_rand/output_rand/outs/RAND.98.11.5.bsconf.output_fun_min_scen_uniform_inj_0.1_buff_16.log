@@ -1,0 +1,391 @@
+BEGIN Configuration File: ./RAND.conf
+injection_rate = 0.1;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND.98.11.5.bsconf;
+load_routing_file = no;
+routing_table_file = RAND.98.11.5.route;
+topology = anynet;
+use_noc_latency = 0;
+//KURWAhold_switch_for_packet=0;
+
+k = 16;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+
+END Configuration File: ./RAND.conf
+========================Network File Parsed=================
+******************node listing**********************
+
+****************router to node listing*************
+
+*****************router to router listing************
+Number of nodes: 490
+Number of routers: 98
+==========================Node to Router =====================
+==========================Router to Router =====================
+========================== Build Routing table  =====================
+Start searching...Routing table for router 0 done  |
+Start searching...Routing table for router 1 done  |
+Start searching...Routing table for router 2 done  |
+Start searching...Routing table for router 3 done  |
+Start searching...Routing table for router 4 done  |
+Start searching...Routing table for router 5 done  |
+Start searching...Routing table for router 6 done  |
+Start searching...Routing table for router 7 done  |
+Start searching...Routing table for router 8 done  |
+Start searching...Routing table for router 9 done  |
+Start searching...Routing table for router 10 done  |
+Start searching...Routing table for router 11 done  |
+Start searching...Routing table for router 12 done  |
+Start searching...Routing table for router 13 done  |
+Start searching...Routing table for router 14 done  |
+Start searching...Routing table for router 15 done  |
+Start searching...Routing table for router 16 done  |
+Start searching...Routing table for router 17 done  |
+Start searching...Routing table for router 18 done  |
+Start searching...Routing table for router 19 done  |
+Start searching...Routing table for router 20 done  |
+Start searching...Routing table for router 21 done  |
+Start searching...Routing table for router 22 done  |
+Start searching...Routing table for router 23 done  |
+Start searching...Routing table for router 24 done  |
+Start searching...Routing table for router 25 done  |
+Start searching...Routing table for router 26 done  |
+Start searching...Routing table for router 27 done  |
+Start searching...Routing table for router 28 done  |
+Start searching...Routing table for router 29 done  |
+Start searching...Routing table for router 30 done  |
+Start searching...Routing table for router 31 done  |
+Start searching...Routing table for router 32 done  |
+Start searching...Routing table for router 33 done  |
+Start searching...Routing table for router 34 done  |
+Start searching...Routing table for router 35 done  |
+Start searching...Routing table for router 36 done  |
+Start searching...Routing table for router 37 done  |
+Start searching...Routing table for router 38 done  |
+Start searching...Routing table for router 39 done  |
+Start searching...Routing table for router 40 done  |
+Start searching...Routing table for router 41 done  |
+Start searching...Routing table for router 42 done  |
+Start searching...Routing table for router 43 done  |
+Start searching...Routing table for router 44 done  |
+Start searching...Routing table for router 45 done  |
+Start searching...Routing table for router 46 done  |
+Start searching...Routing table for router 47 done  |
+Start searching...Routing table for router 48 done  |
+Start searching...Routing table for router 49 done  |
+Start searching...Routing table for router 50 done  |
+Start searching...Routing table for router 51 done  |
+Start searching...Routing table for router 52 done  |
+Start searching...Routing table for router 53 done  |
+Start searching...Routing table for router 54 done  |
+Start searching...Routing table for router 55 done  |
+Start searching...Routing table for router 56 done  |
+Start searching...Routing table for router 57 done  |
+Start searching...Routing table for router 58 done  |
+Start searching...Routing table for router 59 done  |
+Start searching...Routing table for router 60 done  |
+Start searching...Routing table for router 61 done  |
+Start searching...Routing table for router 62 done  |
+Start searching...Routing table for router 63 done  |
+Start searching...Routing table for router 64 done  |
+Start searching...Routing table for router 65 done  |
+Start searching...Routing table for router 66 done  |
+Start searching...Routing table for router 67 done  |
+Start searching...Routing table for router 68 done  |
+Start searching...Routing table for router 69 done  |
+Start searching...Routing table for router 70 done  |
+Start searching...Routing table for router 71 done  |
+Start searching...Routing table for router 72 done  |
+Start searching...Routing table for router 73 done  |
+Start searching...Routing table for router 74 done  |
+Start searching...Routing table for router 75 done  |
+Start searching...Routing table for router 76 done  |
+Start searching...Routing table for router 77 done  |
+Start searching...Routing table for router 78 done  |
+Start searching...Routing table for router 79 done  |
+Start searching...Routing table for router 80 done  |
+Start searching...Routing table for router 81 done  |
+Start searching...Routing table for router 82 done  |
+Start searching...Routing table for router 83 done  |
+Start searching...Routing table for router 84 done  |
+Start searching...Routing table for router 85 done  |
+Start searching...Routing table for router 86 done  |
+Start searching...Routing table for router 87 done  |
+Start searching...Routing table for router 88 done  |
+Start searching...Routing table for router 89 done  |
+Start searching...Routing table for router 90 done  |
+Start searching...Routing table for router 91 done  |
+Start searching...Routing table for router 92 done  |
+Start searching...Routing table for router 93 done  |
+Start searching...Routing table for router 94 done  |
+Start searching...Routing table for router 95 done  |
+Start searching...Routing table for router 96 done  |
+Start searching...Routing table for router 97 done  |
+
+========================== Build Routing table done  =====================
+
+Saving routing table...
+========================== Building Bad traffic pattern, type 2... ============================
+=================== Finished building bad traffic pattern... ====================
+Sum of nodes sending: 490
+Sum of nodes: 490
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.6437
+Maximum packet latency = 19
+Minimum network latency = 5
+Average network latency = 11.6437
+Maximum network latency = 19
+Slowest packet = 8496
+Minimum flit latency = 5
+Average flit latency = 11.6437
+Maximum flit latency = 19
+Slowest flit = 8496
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.06 (at node 398)
+Average injected packet rate = 0.0989837
+Maximum injected packet rate = 0.142 (at node 52)
+Minimum accepted packet rate = 0.058 (at node 143)
+Average accepted packet rate = 0.0967388
+Maximum accepted packet rate = 0.136 (at node 296)
+Minimum injected flit rate = 0.06 (at node 398)
+Average injected flit rate = 0.0989837
+Maximum injected flit rate = 0.142 (at node 52)
+Minimum accepted flit rate = 0.058 (at node 143)
+Average accepted flit rate = 0.0967388
+Maximum accepted flit rate = 0.136 (at node 296)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 550 (0 measured)
+latency change    = 1
+throughput change = 1
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.6431
+Maximum packet latency = 19
+Minimum network latency = 5
+Average network latency = 11.6431
+Maximum network latency = 19
+Slowest packet = 8496
+Minimum flit latency = 5
+Average flit latency = 11.6431
+Maximum flit latency = 19
+Slowest flit = 8496
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.077 (at node 0)
+Average injected packet rate = 0.0990939
+Maximum injected packet rate = 0.128 (at node 52)
+Minimum accepted packet rate = 0.072 (at node 429)
+Average accepted packet rate = 0.0979531
+Maximum accepted packet rate = 0.136 (at node 296)
+Minimum injected flit rate = 0.077 (at node 0)
+Average injected flit rate = 0.0990939
+Maximum injected flit rate = 0.128 (at node 52)
+Minimum accepted flit rate = 0.072 (at node 429)
+Average accepted flit rate = 0.0979531
+Maximum accepted flit rate = 0.136 (at node 296)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 559 (0 measured)
+latency change    = 4.83025e-05
+throughput change = 0.0123966
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.6359
+Maximum packet latency = 19
+Minimum network latency = 5
+Average network latency = 11.6359
+Maximum network latency = 19
+Slowest packet = 59373
+Minimum flit latency = 5
+Average flit latency = 11.6359
+Maximum flit latency = 19
+Slowest flit = 59373
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.06 (at node 96)
+Average injected packet rate = 0.100563
+Maximum injected packet rate = 0.146 (at node 43)
+Minimum accepted packet rate = 0.064 (at node 487)
+Average accepted packet rate = 0.100388
+Maximum accepted packet rate = 0.144 (at node 48)
+Minimum injected flit rate = 0.06 (at node 96)
+Average injected flit rate = 0.100563
+Maximum injected flit rate = 0.146 (at node 43)
+Minimum accepted flit rate = 0.064 (at node 487)
+Average accepted flit rate = 0.100388
+Maximum accepted flit rate = 0.144 (at node 48)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 602 (0 measured)
+latency change    = 0.000620659
+throughput change = 0.0242529
+Warmed up ...Time used is 1500 cycles
+1
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.641
+Maximum packet latency = 19
+Minimum network latency = 5
+Average network latency = 11.641
+Maximum network latency = 19
+Slowest packet = 80491
+Minimum flit latency = 5
+Average flit latency = 11.6525
+Maximum flit latency = 19
+Slowest flit = 80491
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.066 (at node 138)
+Average injected packet rate = 0.100286
+Maximum injected packet rate = 0.144 (at node 372)
+Minimum accepted packet rate = 0.064 (at node 58)
+Average accepted packet rate = 0.100371
+Maximum accepted packet rate = 0.142 (at node 159)
+Minimum injected flit rate = 0.066 (at node 138)
+Average injected flit rate = 0.100286
+Maximum injected flit rate = 0.144 (at node 372)
+Minimum accepted flit rate = 0.064 (at node 58)
+Average accepted flit rate = 0.100371
+Maximum accepted flit rate = 0.142 (at node 159)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 581 (581 measured)
+latency change    = 0.000434572
+throughput change = 0.000162661
+1
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.6416
+Maximum packet latency = 19
+Minimum network latency = 5
+Average network latency = 11.6416
+Maximum network latency = 19
+Slowest packet = 80491
+Minimum flit latency = 5
+Average flit latency = 11.6474
+Maximum flit latency = 19
+Slowest flit = 80491
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.071 (at node 331)
+Average injected packet rate = 0.10049
+Maximum injected packet rate = 0.131 (at node 21)
+Minimum accepted packet rate = 0.071 (at node 408)
+Average accepted packet rate = 0.100582
+Maximum accepted packet rate = 0.138 (at node 258)
+Minimum injected flit rate = 0.071 (at node 331)
+Average injected flit rate = 0.10049
+Maximum injected flit rate = 0.131 (at node 21)
+Minimum accepted flit rate = 0.071 (at node 408)
+Average accepted flit rate = 0.100582
+Maximum accepted flit rate = 0.138 (at node 258)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 557 (557 measured)
+latency change    = 5.66792e-05
+throughput change = 0.00208989
+1
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.6505
+Maximum packet latency = 19
+Minimum network latency = 5
+Average network latency = 11.6505
+Maximum network latency = 19
+Slowest packet = 80491
+Minimum flit latency = 5
+Average flit latency = 11.6542
+Maximum flit latency = 19
+Slowest flit = 80491
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.074 (at node 43)
+Average injected packet rate = 0.100494
+Maximum injected packet rate = 0.123333 (at node 382)
+Minimum accepted packet rate = 0.0753333 (at node 408)
+Average accepted packet rate = 0.100525
+Maximum accepted packet rate = 0.127333 (at node 124)
+Minimum injected flit rate = 0.074 (at node 43)
+Average injected flit rate = 0.100494
+Maximum injected flit rate = 0.123333 (at node 382)
+Minimum accepted flit rate = 0.0753333 (at node 408)
+Average accepted flit rate = 0.100525
+Maximum accepted flit rate = 0.127333 (at node 124)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 579 (579 measured)
+latency change    = 0.000758381
+throughput change = 0.000561676
+Draining all recorded packets ...
+Draining remaining packets ...
+Time taken is 3035 cycles
+====== Traffic class 0 ======
+Overall minimum packet latency = 5 (1 samples)
+Overall average packet latency = 11.6511 (1 samples)
+Overall maximum packet latency = 19 (1 samples)
+Overall minimum network latency = 5 (1 samples)
+Overall average network latency = 11.6511 (1 samples)
+Overall maximum network latency = 19 (1 samples)
+Overall minimum flit latency = 5 (1 samples)
+Overall average flit latency = 11.6547 (1 samples)
+Overall maximum flit latency = 19 (1 samples)
+Overall minimum fragmentation = 0 (1 samples)
+Overall average fragmentation = 0 (1 samples)
+Overall maximum fragmentation = 0 (1 samples)
+Overall minimum injected packet rate = 0.074 (1 samples)
+Overall average injected packet rate = 0.100494 (1 samples)
+Overall maximum injected packet rate = 0.123333 (1 samples)
+Overall minimum accepted packet rate = 0.0753333 (1 samples)
+Overall average accepted packet rate = 0.100525 (1 samples)
+Overall maximum accepted packet rate = 0.127333 (1 samples)
+Overall minimum injected flit rate = 0.074 (1 samples)
+Overall average injected flit rate = 0.100494 (1 samples)
+Overall maximum injected flit rate = 0.123333 (1 samples)
+Overall minimum accepted flit rate = 0.0753333 (1 samples)
+Overall average accepted flit rate = 0.100525 (1 samples)
+Overall maximum accepted flit rate = 0.127333 (1 samples)
+Overall average injected packet size = 1 (1 samples)
+Overall average accepted packet size = 1 (1 samples)
+Overall average hops = 3.14932 (1 samples)
+Total run time 22.5165

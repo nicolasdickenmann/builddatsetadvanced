@@ -1,0 +1,204 @@
+\section{Topologies}
+
+\maciej{Kartik, maybe focus on BCube for a start?}
+
+
+\subsection{Slim Fly}
+ 
+Slim Fly~\cite{besta2014slim} is a state-of-the-art cost-effective
+topology for large computing centers that uses mathematical optimization to
+minimize diameter $D$ for a given radix $k$ while maximizing size $N$.  SF's
+low diameter ($D = 2$) ensures the lowest latency for many traffic patterns and
+it reduces the number of required network resources (packets traverse fewer
+routers and cables), lowering cost, static, and dynamic power consumption. 
+%
+SF is based on graphs approaching the Moore Bound (MB): The upper bound on the
+number of vertices in a graph with a given $D$ and $k'$. This ensures full
+global bandwidth and high resilience to link failures due to good expansion
+properties.
+%
+Next, SF is group hierarchical. A group is not necessarily complete but all the
+groups are connected to one another (with the same number of global links) and
+form a complete network of groups.
+%
+We select SF because it is a state-of-the-art design based on optimization that
+outperforms virtually all other targets in most metrics and represents
+topologies with $D = 2$.
+
+\noindent
+\macb{Associated Parameters}
+%
+$N_r$ and $k'$ depend on a parameter $q$ that is a prime power with certain
+properties (detailed in the original work~\cite{besta2014slim}). Some
+flexibility is ensured by allowing changes to $p$ and with a large number of
+suitable values of the parameter~$q$. We use the suggested value of $p = \left\lceil {k'}/{2}
+\right\rceil$.
+
+\subsection{Dragonfly}
+ 
+Dragonfly~\cite{kim2008technology} is a group hierarchical network with $D
+= 3$ and a layout that reduces the number of global wires.  Routers form
+complete {groups}; groups are connected to one another to form a complete
+network of groups with one link between any two groups.
+%
+DF comes with an intuitive design and represents deployed networks with $D =
+3$.
+
+\noindent
+\macb{Associated Parameters}
+%
+Input is: the group size $a$, the number of channels from one
+router to routers in other groups $h$, and concentration $p$. We use the
+\emph{maximum capacity} DF (with the number of groups $g = ah+1$) that is
+\emph{balanced}, i.e., the load on global links is balanced to avoid
+bottlenecks ($a = 2p = 2h$).
+In such a DF, a single parameter $p$ determines all others.
+
+\subsection{Jellyfish}
+ 
+Jellyfish~\cite{singla2012jellyfish} networks are random regular graphs
+constructed by a simple greedy algorithm that adds randomly selected edges
+until no additions as possible. The resulting construction has good expansion
+properties~\cite{bondy1976graph}. Yet, all guarantees are probabilistic and
+rare degenerate cases, although unlikely, do exist. Even if $D$ can be
+arbitrarily high in degenerate cases, usually $D < 4$ with much lower $d$.
+%
+We select JF as it represents flexible topologies that use randomization and
+offer very good performance properties.
+
+
+\noindent
+\macb{Associated Parameters}
+%
+JF is flexible. $N_r$ and $k'$ can be arbitrary; we use parameters matching
+less flexible  topologies.
+%
+% Since $D$ and $d$ depend on $k'$ and $N_r$, arbitrarily low-diameter JF
+% networks can be constructed by growing $k'$ asymptotically faster with $N$
+% than other topologies do. This can lead to cost savings when very high radix
+% routers are available. We do not consider such topologies.
+% 
+% In JF, $k'$ and $p$ need not be constant in the network, however we only
+% consider \emph{homogeneous} configurations.
+%
+To compensate for the different amounts of hardware used in different
+topologies, we include a Jellyfish network constructed from the same routers
+for each topology; the performance differences observed between those networks
+are due to the different hardware and need to be factored in when comparing
+the deterministic topologies. 
+
+\subsection{Xpander}
+
+Xpander~\cite{valadarsky2015} networks resemble JF but have a
+deterministic variant.  They are constructed by applying one or more so called
+$\ell$-\emph{lifts} to a $k'$-clique  $G$.
+%
+The $\ell$-lift of $G$ consists of $\ell$ copies of $G$, where for each edge
+$e$ in $G$, the copies of $e$ that connect vertices $s_1, \dots, s_\ell$ to
+$t_1, \dots, t_\ell$, are replaced with a \emph{random matching} (can be
+derandomized): $s_i$ is connected to $t_{\pi(i)}$ for a random
+$\ell$-permutation $\pi$.
+%
+This construction yields a $k'$-regular graph with $N = \ell k'$ and good
+expansion properties. The randomized $\ell$-lifts ensure good properties in the
+expectation.
+%
+% We omit the deterministic variant as it is significantly more complex and
+% only prevents rare degenerate cases.
+% 
+% To create an Xpander with given dimensions, different sequences of lifts can
+% be used. The most basic solution is to use a single lift for some (large)
+% value of $k$.  However, it is not clear if the guarantees apply to lifts for
+% high $k$.  Therefore, we also consider networks that are obtained using only
+% repeated 2-lifts, which are proven to preserve good
+% properties~\cite{valadarsky2015}.
+%
+We select XP as it offers the advantages of JF in a deterministically
+constructed topology.
+
+
+\noindent
+\macb{Associated Parameters}
+%
+We create XP with a single lift of arbitrary $\ell$. Such XP is
+flexible although there are more constraints than in JF.  Thus, we cannot
+create matching instances for each topology. We select $k' \in \{16, 32\}$ and
+$\ell = k'$, which is comparable to diameter-2 topologies. We also consider
+$\ell = 2$ with multiple lifts as this ensures good
+properties~\cite{valadarsky2015}, but we do not notice any additional speedup.
+We use $p = \frac{k'}2$, matching the diameter-2 topologies. 
+
+\subsection{HyperX}
+ 
+HyperX~\cite{ahn2009hyperx} is formed by arranging vertices in an
+$L$-dimensional array and forming a clique along each 1-dimensional row.
+Several topologies are special cases of HX, including complete graphs,
+hypercubes (HCs)~\cite{bondy1976graph}, and Flattened Butterflies
+(FBF)~\cite{kim2007flattened}. HX is a generic design that represents a wide
+range of networks. 
+
+
+\noindent
+\macb{Associated Parameters}
+%
+An HX is defined by a 4-tuple $(L, S, K, p)$. $L$ is the number of dimensions
+and $D=L$, $S$ and $K$ are $L$-dimensional vectors (they respectively denote
+the array size in each dimension and the relative capacity of links along each
+dimension). Networks with uniform $K$ and $S$ (for all dimensions) are called
+\emph{regular}. We only use regular $(L, S, 1, \cdot)$ networks with $L \in
+\{2,3\}$.
+%
+HX with $L=2$ is about a factor of two away from the MB ($k' \approx 2
+\sqrt{N_r}$) resulting in more edges than other topologies. Thus, we include
+higher-diameter variants with $k'$ similar to that of other networks.
+%
+Now, for full bisection bandwidth (BB), one should set $p = \frac{k'}{2D}$.
+Yet, since HX already has the highest $k'$ and $N_r$ (for a fixed $N$) among
+the considered topologies, we use a higher $p = \frac{k'}D$ as with the other
+topologies to reduce the amount of used hardware. As we do not consider
+worst-case bisections, we still expect HX to perform well.
+
+\subsection{Fat Tree}
+ 
+%\enlargethispage{\baselineskip}
+%
+Fat tree~\cite{leiserson1996cm5} is based on the Clos
+network~\cite{clos1953study} with disjoint inputs and outputs and
+unidirectional links. By ``folding'' inputs with outputs, a multistage fat tree
+that connects any two ports with bidirectional links is constructed. We use
+three-stage FTs with $D = 4$; fewer stages reduce scalability while more stages
+lead to high $D$.
+%
+% The fat tree topology~\cite{leiserson1996cm5} is based on the Clos
+% interconnection network, which originally has disjoint inputs and outputs and
+% is built of unidirectional links. By “folding” the inputs back to the
+% outputs, a hierarchical interconnection network that can connect any port to
+% any other using bidirectional links can be constructed. We only consider
+% three-stage folded Clos networks, which have a diameter of 4; with less
+% stages, not enough endpoints can be connected, while more stages lead to
+% overly large diameter.
+%
+FT represents designs that are in widespread use and feature excellent
+performance properties such as full BB and non-blocking routing. 
+
+
+\noindent
+\macb{Associated Parameters}
+%
+A three-stage FT with full BB can be constructed from routers with uniform
+radix $k$: It connects ${k^3}/4$ endpoints using five groups of ${k^2}/4$
+routers. Two of these groups, ${k^2}/2$ routers, form an \emph{edge group}
+with ${k}/2$ endpoints.  Another two groups form an \emph{aggregation layer}:
+each of the edge groups forms a complete bipartite graph with one of the
+aggregation groups using the remaining ${k}/2$ ports, which are called
+\emph{upstream}. Finally, the remaining group is called the \emph{core}: each
+of the two aggregation groups forms a fully connected bipartite graph with the
+core, again using the remaining ${k}/2$ upstream ports. This also uses all $k$
+ports of the core routers.
+%
+Now, for FT, it is not always possible to construct a matching JF as $N/N_r$
+can be fractional. In this case, we select $p$ and $k'$ such that $k = p+k'$
+and ${k'}/p \approx 4$, which potentially changes $N$. Note also that for FT,
+$p$ is the number of endpoints per edge router, while in the other topologies,
+all routers are edge routers.
+

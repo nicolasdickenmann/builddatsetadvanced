@@ -1,0 +1,1 @@
+endpoints radix k_r p routers total_cost total_power cost_per_endpoint_indir power_per_endpoint_indir cost_per_endpoint_dir power_per_endpoint_dir

@@ -1,0 +1,40 @@
+\section{Introduction}
+\label{sec:intro}
+
+\begin{enumerate}
+    \item Copackaging - technology, benefits, motivation 
+    \item Impact on network design - design constraints, growth/modularity, all-to-all BW
+    \item We restrict the discussion to diameter-2 topologies - higher ingestion
+bandwidth for given router radix, lower latency, scalable topologies that can support
+several thousands of nodes with few tens of ports. 
+\end{enumerate}
+
+Recent low-diameter networks such as Slim Fly pushed the margin in terms of
+reducing cost and power while keeping high performance and resilience.
+We explore it as a potential topology to build scalable copackaged networks.
+However, its practical applicability is limited because:
+\begin{enumerate}
+    \item Few design points (degrees for which topologies exist)
+    \item Lack of flexibility - need to rewire entire network to add few extra nodes
+    \item Low injection bandwidth for systems with overprovisioned degrees (what to do with empty ports).
+            \klcomment{We discussed this in the meeting with Prof. Toersten. Current solution
+                    is to have Abas' Cayley graphs in the arsenal to provide one more design point
+                    for given degree. Not sure if that is good enough.}
+    \item Complex Layout - what consequences does this have?
+\end{enumerate} 
+
+
+We propose new diameter-2 topologies based on polarity quotient graphs\klcomment{ER graphs} and 
+group product\klcomment{Abas graphs} that overcome these limitations:
+\begin{enumerate}
+    \item Cover all degrees. They complement Slim Fly 
+        by enhancing the design space of scalable algebraic graphs.
+    \item Are expandable - further racks can be added on empty ports without affecting performance.
+    \item Simplified Layout
+\end{enumerate}
+The proposed graphs provide even better scalability than Slimfly (MMS graphs), 
+asymptotically reaching the Moore bound for diameter-2.
+{\color{red}Laura and Kelly: A sentence to mention the plethora of math work that exists and also mention the specific graphs we are looking at here. Or should this be in the Background section?}
+
+
+ 

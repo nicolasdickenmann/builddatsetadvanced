@@ -1,0 +1,5 @@
+1) main input file (which is explicitly indicated while launching booksim) is anynet_config. It contains all the parameters.
+
+The remaining files contain structure description for ANYNET topology. The format of the names is: MMS.[ports-to-other-routers-per-router][processing-nodes-per-router].bsconf
+
+There is also one file containing description for Dragonfly (as ANYNET) - DF.3.bsconf, where 3 means the number of nodes per router.

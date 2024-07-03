@@ -1,0 +1,194 @@
+max_radix endpoints topology
+5.0 18 'Slim Fly'
+6.0 32 'Slim Fly'
+7.0 50 'Slim Fly'
+11.0 98 'Slim Fly'
+12.0 128 'Slim Fly'
+13.0 162 'Slim Fly'
+17.0 242 'Slim Fly'
+19.0 338 'Slim Fly'
+24.0 512 'Slim Fly'
+25.0 578 'Slim Fly'
+29.0 722 'Slim Fly'
+35.0 1058 'Slim Fly'
+37.0 1250 'Slim Fly'
+41.0 1458 'Slim Fly'
+43.0 1682 'Slim Fly'
+47.0 1922 'Slim Fly'
+48.0 2048 'Slim Fly'
+55.0 2738 'Slim Fly'
+61.0 3362 'Slim Fly'
+65.0 3698 'Slim Fly'
+4 13 ModuleFly
+5 21 ModuleFly
+6 31 ModuleFly
+8 57 ModuleFly
+9 73 ModuleFly
+10 91 ModuleFly
+12 133 ModuleFly
+14 183 ModuleFly
+17 273 ModuleFly
+18 307 ModuleFly
+20 381 ModuleFly
+24 553 ModuleFly
+26 651 ModuleFly
+28 757 ModuleFly
+30 871 ModuleFly
+32 993 ModuleFly
+33 1057 ModuleFly
+38 1407 ModuleFly
+42 1723 ModuleFly
+44 1893 ModuleFly
+48 2257 ModuleFly
+50 2451 ModuleFly
+54 2863 ModuleFly
+60 3541 ModuleFly
+62 3783 ModuleFly
+3 4 HyperX
+6 9 HyperX
+9 16 HyperX
+12 25 HyperX
+15 36 HyperX
+18 49 HyperX
+21 64 HyperX
+24 81 HyperX
+27 100 HyperX
+30 121 HyperX
+33 144 HyperX
+36 169 HyperX
+39 196 HyperX
+42 225 HyperX
+45 256 HyperX
+48 289 HyperX
+51 324 HyperX
+54 361 HyperX
+57 400 HyperX
+60 441 HyperX
+2 3 'Fat tree'
+2 3 'Orth. Fat tree'
+4 6 'Fat tree'
+4 9 'Orth. Fat tree'
+6 9 'Fat tree'
+6 21 'Orth. Fat tree'
+8 12 'Fat tree'
+8 39 'Orth. Fat tree'
+10 15 'Fat tree'
+10 63 'Orth. Fat tree'
+12 18 'Fat tree'
+12 93 'Orth. Fat tree'
+14 21 'Fat tree'
+14 129 'Orth. Fat tree'
+16 24 'Fat tree'
+16 171 'Orth. Fat tree'
+18 27 'Fat tree'
+18 219 'Orth. Fat tree'
+20 30 'Fat tree'
+20 273 'Orth. Fat tree'
+22 33 'Fat tree'
+22 333 'Orth. Fat tree'
+24 36 'Fat tree'
+24 399 'Orth. Fat tree'
+26 39 'Fat tree'
+26 471 'Orth. Fat tree'
+28 42 'Fat tree'
+28 549 'Orth. Fat tree'
+30 45 'Fat tree'
+30 633 'Orth. Fat tree'
+32 48 'Fat tree'
+32 723 'Orth. Fat tree'
+34 51 'Fat tree'
+34 819 'Orth. Fat tree'
+36 54 'Fat tree'
+36 921 'Orth. Fat tree'
+38 57 'Fat tree'
+38 1029 'Orth. Fat tree'
+40 60 'Fat tree'
+40 1143 'Orth. Fat tree'
+42 63 'Fat tree'
+42 1263 'Orth. Fat tree'
+44 66 'Fat tree'
+44 1389 'Orth. Fat tree'
+46 69 'Fat tree'
+46 1521 'Orth. Fat tree'
+48 72 'Fat tree'
+48 1659 'Orth. Fat tree'
+50 75 'Fat tree'
+50 1803 'Orth. Fat tree'
+52 78 'Fat tree'
+52 1953 'Orth. Fat tree'
+54 81 'Fat tree'
+54 2109 'Orth. Fat tree'
+56 84 'Fat tree'
+56 2271 'Orth. Fat tree'
+58 87 'Fat tree'
+58 2439 'Orth. Fat tree'
+60 90 'Fat tree'
+60 2613 'Orth. Fat tree'
+62 93 'Fat tree'
+62 2793 'Orth. Fat tree'
+64 96 'Fat tree'
+64 2979 'Orth. Fat tree'
+0 1 Moore_Bound
+1 2 Moore_Bound
+2 5 Moore_Bound
+3 10 Moore_Bound
+4 17 Moore_Bound
+5 26 Moore_Bound
+6 37 Moore_Bound
+7 50 Moore_Bound
+8 65 Moore_Bound
+9 82 Moore_Bound
+10 101 Moore_Bound
+11 122 Moore_Bound
+12 145 Moore_Bound
+13 170 Moore_Bound
+14 197 Moore_Bound
+15 226 Moore_Bound
+16 257 Moore_Bound
+17 290 Moore_Bound
+18 325 Moore_Bound
+19 362 Moore_Bound
+20 401 Moore_Bound
+21 442 Moore_Bound
+22 485 Moore_Bound
+23 530 Moore_Bound
+24 577 Moore_Bound
+25 626 Moore_Bound
+26 677 Moore_Bound
+27 730 Moore_Bound
+28 785 Moore_Bound
+29 842 Moore_Bound
+30 901 Moore_Bound
+31 962 Moore_Bound
+32 1025 Moore_Bound
+33 1090 Moore_Bound
+34 1157 Moore_Bound
+35 1226 Moore_Bound
+36 1297 Moore_Bound
+37 1370 Moore_Bound
+38 1445 Moore_Bound
+39 1522 Moore_Bound
+40 1601 Moore_Bound
+41 1682 Moore_Bound
+42 1765 Moore_Bound
+43 1850 Moore_Bound
+44 1937 Moore_Bound
+45 2026 Moore_Bound
+46 2117 Moore_Bound
+47 2210 Moore_Bound
+48 2305 Moore_Bound
+49 2402 Moore_Bound
+50 2501 Moore_Bound
+51 2602 Moore_Bound
+52 2705 Moore_Bound
+53 2810 Moore_Bound
+54 2917 Moore_Bound
+55 3026 Moore_Bound
+56 3137 Moore_Bound
+57 3250 Moore_Bound
+58 3365 Moore_Bound
+59 3482 Moore_Bound
+60 3601 Moore_Bound
+61 3722 Moore_Bound
+62 3845 Moore_Bound
+63 3970 Moore_Bound

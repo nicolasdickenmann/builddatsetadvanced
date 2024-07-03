@@ -1,0 +1,15 @@
+
+ primary “types” of SMPs creating Cluster
+ routing table:
+ • Directed routing (DR) table based on
+  Nodes GUIDS & port number
+  • This is the type primarily used by OpenSM
+  c. LID routing (LR)
+  • Topology and than packets routing table ,
+   Based on the LIDS which have been assigned to each node by the SM 
+
+
+
+- DLID ?
+- LMX ?
+- LFT tables ?

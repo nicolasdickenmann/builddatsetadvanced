@@ -1,0 +1,75 @@
+BEGIN Configuration File: ./HC
+injection_rate = 0.7;
+traffic = bitrev;
+routing_function = dim_order;
+vc_buf_size = 16;
+topology = torus;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 2;
+n = 7;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+
+END Configuration File: ./HC
+Number of nodes: 128
+Number of routers: 128
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 49.0059
+Maximum packet latency = 377
+Minimum network latency = 5
+Average network latency = 44.4111
+Maximum network latency = 377
+Slowest packet = 10820
+Minimum flit latency = 5
+Average flit latency = 44.4111
+Maximum flit latency = 377
+Slowest flit = 10820
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.306 (at node 83)
+Average injected packet rate = 0.584703
+Maximum injected packet rate = 0.748 (at node 21)
+Minimum accepted packet rate = 0.198 (at node 101)
+Average accepted packet rate = 0.51775
+Maximum accepted packet rate = 0.738 (at node 42)
+Minimum injected flit rate = 0.306 (at node 83)
+Average injected flit rate = 0.584703
+Maximum injected flit rate = 0.748 (at node 21)
+Minimum accepted flit rate = 0.198 (at node 101)
+Average accepted flit rate = 0.51775
+Maximum accepted flit rate = 0.738 (at node 42)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 4326 (0 measured)
+latency change    = 1
+throughput change = 1

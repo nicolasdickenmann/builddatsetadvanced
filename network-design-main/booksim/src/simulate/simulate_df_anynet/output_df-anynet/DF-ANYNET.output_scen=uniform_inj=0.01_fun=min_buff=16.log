@@ -1,0 +1,3713 @@
+BEGIN Configuration File: ./DF-ANYNET.conf
+injection_rate = 0.01;
+traffic = uniform;
+routing_function = min;
+vc_buf_size = 16;
+use_size_power_of_two = no;
+network_file = dfs/DF.342.3.0.bsconf;
+load_routing_file = no;
+routing_table_file = dfs/DF.343.3.0.route;
+topology = anynet;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 3;
+
+packet_size  = 1;
+num_vcs      = 2;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+
+END Configuration File: ./DF-ANYNET.conf
+========================Network File Parsed=================
+******************node listing**********************
+Node 0	Router 0
+Node 1	Router 0
+Node 2	Router 0
+Node 3	Router 1
+Node 4	Router 1
+Node 5	Router 1
+Node 6	Router 2
+Node 7	Router 2
+Node 8	Router 2
+Node 9	Router 3
+Node 10	Router 3
+Node 11	Router 3
+Node 12	Router 4
+Node 13	Router 4
+Node 14	Router 4
+Node 15	Router 5
+Node 16	Router 5
+Node 17	Router 5
+Node 18	Router 6
+Node 19	Router 6
+Node 20	Router 6
+Node 21	Router 7
+Node 22	Router 7
+Node 23	Router 7
+Node 24	Router 8
+Node 25	Router 8
+Node 26	Router 8
+Node 27	Router 9
+Node 28	Router 9
+Node 29	Router 9
+Node 30	Router 10
+Node 31	Router 10
+Node 32	Router 10
+Node 33	Router 11
+Node 34	Router 11
+Node 35	Router 11
+Node 36	Router 12
+Node 37	Router 12
+Node 38	Router 12
+Node 39	Router 13
+Node 40	Router 13
+Node 41	Router 13
+Node 42	Router 14
+Node 43	Router 14
+Node 44	Router 14
+Node 45	Router 15
+Node 46	Router 15
+Node 47	Router 15
+Node 48	Router 16
+Node 49	Router 16
+Node 50	Router 16
+Node 51	Router 17
+Node 52	Router 17
+Node 53	Router 17
+Node 54	Router 18
+Node 55	Router 18
+Node 56	Router 18
+Node 57	Router 19
+Node 58	Router 19
+Node 59	Router 19
+Node 60	Router 20
+Node 61	Router 20
+Node 62	Router 20
+Node 63	Router 21
+Node 64	Router 21
+Node 65	Router 21
+Node 66	Router 22
+Node 67	Router 22
+Node 68	Router 22
+Node 69	Router 23
+Node 70	Router 23
+Node 71	Router 23
+Node 72	Router 24
+Node 73	Router 24
+Node 74	Router 24
+Node 75	Router 25
+Node 76	Router 25
+Node 77	Router 25
+Node 78	Router 26
+Node 79	Router 26
+Node 80	Router 26
+Node 81	Router 27
+Node 82	Router 27
+Node 83	Router 27
+Node 84	Router 28
+Node 85	Router 28
+Node 86	Router 28
+Node 87	Router 29
+Node 88	Router 29
+Node 89	Router 29
+Node 90	Router 30
+Node 91	Router 30
+Node 92	Router 30
+Node 93	Router 31
+Node 94	Router 31
+Node 95	Router 31
+Node 96	Router 32
+Node 97	Router 32
+Node 98	Router 32
+Node 99	Router 33
+Node 100	Router 33
+Node 101	Router 33
+Node 102	Router 34
+Node 103	Router 34
+Node 104	Router 34
+Node 105	Router 35
+Node 106	Router 35
+Node 107	Router 35
+Node 108	Router 36
+Node 109	Router 36
+Node 110	Router 36
+Node 111	Router 37
+Node 112	Router 37
+Node 113	Router 37
+Node 114	Router 38
+Node 115	Router 38
+Node 116	Router 38
+Node 117	Router 39
+Node 118	Router 39
+Node 119	Router 39
+Node 120	Router 40
+Node 121	Router 40
+Node 122	Router 40
+Node 123	Router 41
+Node 124	Router 41
+Node 125	Router 41
+Node 126	Router 42
+Node 127	Router 42
+Node 128	Router 42
+Node 129	Router 43
+Node 130	Router 43
+Node 131	Router 43
+Node 132	Router 44
+Node 133	Router 44
+Node 134	Router 44
+Node 135	Router 45
+Node 136	Router 45
+Node 137	Router 45
+Node 138	Router 46
+Node 139	Router 46
+Node 140	Router 46
+Node 141	Router 47
+Node 142	Router 47
+Node 143	Router 47
+Node 144	Router 48
+Node 145	Router 48
+Node 146	Router 48
+Node 147	Router 49
+Node 148	Router 49
+Node 149	Router 49
+Node 150	Router 50
+Node 151	Router 50
+Node 152	Router 50
+Node 153	Router 51
+Node 154	Router 51
+Node 155	Router 51
+Node 156	Router 52
+Node 157	Router 52
+Node 158	Router 52
+Node 159	Router 53
+Node 160	Router 53
+Node 161	Router 53
+Node 162	Router 54
+Node 163	Router 54
+Node 164	Router 54
+Node 165	Router 55
+Node 166	Router 55
+Node 167	Router 55
+Node 168	Router 56
+Node 169	Router 56
+Node 170	Router 56
+Node 171	Router 57
+Node 172	Router 57
+Node 173	Router 57
+Node 174	Router 58
+Node 175	Router 58
+Node 176	Router 58
+Node 177	Router 59
+Node 178	Router 59
+Node 179	Router 59
+Node 180	Router 60
+Node 181	Router 60
+Node 182	Router 60
+Node 183	Router 61
+Node 184	Router 61
+Node 185	Router 61
+Node 186	Router 62
+Node 187	Router 62
+Node 188	Router 62
+Node 189	Router 63
+Node 190	Router 63
+Node 191	Router 63
+Node 192	Router 64
+Node 193	Router 64
+Node 194	Router 64
+Node 195	Router 65
+Node 196	Router 65
+Node 197	Router 65
+Node 198	Router 66
+Node 199	Router 66
+Node 200	Router 66
+Node 201	Router 67
+Node 202	Router 67
+Node 203	Router 67
+Node 204	Router 68
+Node 205	Router 68
+Node 206	Router 68
+Node 207	Router 69
+Node 208	Router 69
+Node 209	Router 69
+Node 210	Router 70
+Node 211	Router 70
+Node 212	Router 70
+Node 213	Router 71
+Node 214	Router 71
+Node 215	Router 71
+Node 216	Router 72
+Node 217	Router 72
+Node 218	Router 72
+Node 219	Router 73
+Node 220	Router 73
+Node 221	Router 73
+Node 222	Router 74
+Node 223	Router 74
+Node 224	Router 74
+Node 225	Router 75
+Node 226	Router 75
+Node 227	Router 75
+Node 228	Router 76
+Node 229	Router 76
+Node 230	Router 76
+Node 231	Router 77
+Node 232	Router 77
+Node 233	Router 77
+Node 234	Router 78
+Node 235	Router 78
+Node 236	Router 78
+Node 237	Router 79
+Node 238	Router 79
+Node 239	Router 79
+Node 240	Router 80
+Node 241	Router 80
+Node 242	Router 80
+Node 243	Router 81
+Node 244	Router 81
+Node 245	Router 81
+Node 246	Router 82
+Node 247	Router 82
+Node 248	Router 82
+Node 249	Router 83
+Node 250	Router 83
+Node 251	Router 83
+Node 252	Router 84
+Node 253	Router 84
+Node 254	Router 84
+Node 255	Router 85
+Node 256	Router 85
+Node 257	Router 85
+Node 258	Router 86
+Node 259	Router 86
+Node 260	Router 86
+Node 261	Router 87
+Node 262	Router 87
+Node 263	Router 87
+Node 264	Router 88
+Node 265	Router 88
+Node 266	Router 88
+Node 267	Router 89
+Node 268	Router 89
+Node 269	Router 89
+Node 270	Router 90
+Node 271	Router 90
+Node 272	Router 90
+Node 273	Router 91
+Node 274	Router 91
+Node 275	Router 91
+Node 276	Router 92
+Node 277	Router 92
+Node 278	Router 92
+Node 279	Router 93
+Node 280	Router 93
+Node 281	Router 93
+Node 282	Router 94
+Node 283	Router 94
+Node 284	Router 94
+Node 285	Router 95
+Node 286	Router 95
+Node 287	Router 95
+Node 288	Router 96
+Node 289	Router 96
+Node 290	Router 96
+Node 291	Router 97
+Node 292	Router 97
+Node 293	Router 97
+Node 294	Router 98
+Node 295	Router 98
+Node 296	Router 98
+Node 297	Router 99
+Node 298	Router 99
+Node 299	Router 99
+Node 300	Router 100
+Node 301	Router 100
+Node 302	Router 100
+Node 303	Router 101
+Node 304	Router 101
+Node 305	Router 101
+Node 306	Router 102
+Node 307	Router 102
+Node 308	Router 102
+Node 309	Router 103
+Node 310	Router 103
+Node 311	Router 103
+Node 312	Router 104
+Node 313	Router 104
+Node 314	Router 104
+Node 315	Router 105
+Node 316	Router 105
+Node 317	Router 105
+Node 318	Router 106
+Node 319	Router 106
+Node 320	Router 106
+Node 321	Router 107
+Node 322	Router 107
+Node 323	Router 107
+Node 324	Router 108
+Node 325	Router 108
+Node 326	Router 108
+Node 327	Router 109
+Node 328	Router 109
+Node 329	Router 109
+Node 330	Router 110
+Node 331	Router 110
+Node 332	Router 110
+Node 333	Router 111
+Node 334	Router 111
+Node 335	Router 111
+Node 336	Router 112
+Node 337	Router 112
+Node 338	Router 112
+Node 339	Router 113
+Node 340	Router 113
+Node 341	Router 113
+
+****************router to node listing*************
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+Router 1
+	 Node 3 lat 1
+	 Node 4 lat 1
+	 Node 5 lat 1
+Router 2
+	 Node 6 lat 1
+	 Node 7 lat 1
+	 Node 8 lat 1
+Router 3
+	 Node 9 lat 1
+	 Node 10 lat 1
+	 Node 11 lat 1
+Router 4
+	 Node 12 lat 1
+	 Node 13 lat 1
+	 Node 14 lat 1
+Router 5
+	 Node 15 lat 1
+	 Node 16 lat 1
+	 Node 17 lat 1
+Router 6
+	 Node 18 lat 1
+	 Node 19 lat 1
+	 Node 20 lat 1
+Router 7
+	 Node 21 lat 1
+	 Node 22 lat 1
+	 Node 23 lat 1
+Router 8
+	 Node 24 lat 1
+	 Node 25 lat 1
+	 Node 26 lat 1
+Router 9
+	 Node 27 lat 1
+	 Node 28 lat 1
+	 Node 29 lat 1
+Router 10
+	 Node 30 lat 1
+	 Node 31 lat 1
+	 Node 32 lat 1
+Router 11
+	 Node 33 lat 1
+	 Node 34 lat 1
+	 Node 35 lat 1
+Router 12
+	 Node 36 lat 1
+	 Node 37 lat 1
+	 Node 38 lat 1
+Router 13
+	 Node 39 lat 1
+	 Node 40 lat 1
+	 Node 41 lat 1
+Router 14
+	 Node 42 lat 1
+	 Node 43 lat 1
+	 Node 44 lat 1
+Router 15
+	 Node 45 lat 1
+	 Node 46 lat 1
+	 Node 47 lat 1
+Router 16
+	 Node 48 lat 1
+	 Node 49 lat 1
+	 Node 50 lat 1
+Router 17
+	 Node 51 lat 1
+	 Node 52 lat 1
+	 Node 53 lat 1
+Router 18
+	 Node 54 lat 1
+	 Node 55 lat 1
+	 Node 56 lat 1
+Router 19
+	 Node 57 lat 1
+	 Node 58 lat 1
+	 Node 59 lat 1
+Router 20
+	 Node 60 lat 1
+	 Node 61 lat 1
+	 Node 62 lat 1
+Router 21
+	 Node 63 lat 1
+	 Node 64 lat 1
+	 Node 65 lat 1
+Router 22
+	 Node 66 lat 1
+	 Node 67 lat 1
+	 Node 68 lat 1
+Router 23
+	 Node 69 lat 1
+	 Node 70 lat 1
+	 Node 71 lat 1
+Router 24
+	 Node 72 lat 1
+	 Node 73 lat 1
+	 Node 74 lat 1
+Router 25
+	 Node 75 lat 1
+	 Node 76 lat 1
+	 Node 77 lat 1
+Router 26
+	 Node 78 lat 1
+	 Node 79 lat 1
+	 Node 80 lat 1
+Router 27
+	 Node 81 lat 1
+	 Node 82 lat 1
+	 Node 83 lat 1
+Router 28
+	 Node 84 lat 1
+	 Node 85 lat 1
+	 Node 86 lat 1
+Router 29
+	 Node 87 lat 1
+	 Node 88 lat 1
+	 Node 89 lat 1
+Router 30
+	 Node 90 lat 1
+	 Node 91 lat 1
+	 Node 92 lat 1
+Router 31
+	 Node 93 lat 1
+	 Node 94 lat 1
+	 Node 95 lat 1
+Router 32
+	 Node 96 lat 1
+	 Node 97 lat 1
+	 Node 98 lat 1
+Router 33
+	 Node 99 lat 1
+	 Node 100 lat 1
+	 Node 101 lat 1
+Router 34
+	 Node 102 lat 1
+	 Node 103 lat 1
+	 Node 104 lat 1
+Router 35
+	 Node 105 lat 1
+	 Node 106 lat 1
+	 Node 107 lat 1
+Router 36
+	 Node 108 lat 1
+	 Node 109 lat 1
+	 Node 110 lat 1
+Router 37
+	 Node 111 lat 1
+	 Node 112 lat 1
+	 Node 113 lat 1
+Router 38
+	 Node 114 lat 1
+	 Node 115 lat 1
+	 Node 116 lat 1
+Router 39
+	 Node 117 lat 1
+	 Node 118 lat 1
+	 Node 119 lat 1
+Router 40
+	 Node 120 lat 1
+	 Node 121 lat 1
+	 Node 122 lat 1
+Router 41
+	 Node 123 lat 1
+	 Node 124 lat 1
+	 Node 125 lat 1
+Router 42
+	 Node 126 lat 1
+	 Node 127 lat 1
+	 Node 128 lat 1
+Router 43
+	 Node 129 lat 1
+	 Node 130 lat 1
+	 Node 131 lat 1
+Router 44
+	 Node 132 lat 1
+	 Node 133 lat 1
+	 Node 134 lat 1
+Router 45
+	 Node 135 lat 1
+	 Node 136 lat 1
+	 Node 137 lat 1
+Router 46
+	 Node 138 lat 1
+	 Node 139 lat 1
+	 Node 140 lat 1
+Router 47
+	 Node 141 lat 1
+	 Node 142 lat 1
+	 Node 143 lat 1
+Router 48
+	 Node 144 lat 1
+	 Node 145 lat 1
+	 Node 146 lat 1
+Router 49
+	 Node 147 lat 1
+	 Node 148 lat 1
+	 Node 149 lat 1
+Router 50
+	 Node 150 lat 1
+	 Node 151 lat 1
+	 Node 152 lat 1
+Router 51
+	 Node 153 lat 1
+	 Node 154 lat 1
+	 Node 155 lat 1
+Router 52
+	 Node 156 lat 1
+	 Node 157 lat 1
+	 Node 158 lat 1
+Router 53
+	 Node 159 lat 1
+	 Node 160 lat 1
+	 Node 161 lat 1
+Router 54
+	 Node 162 lat 1
+	 Node 163 lat 1
+	 Node 164 lat 1
+Router 55
+	 Node 165 lat 1
+	 Node 166 lat 1
+	 Node 167 lat 1
+Router 56
+	 Node 168 lat 1
+	 Node 169 lat 1
+	 Node 170 lat 1
+Router 57
+	 Node 171 lat 1
+	 Node 172 lat 1
+	 Node 173 lat 1
+Router 58
+	 Node 174 lat 1
+	 Node 175 lat 1
+	 Node 176 lat 1
+Router 59
+	 Node 177 lat 1
+	 Node 178 lat 1
+	 Node 179 lat 1
+Router 60
+	 Node 180 lat 1
+	 Node 181 lat 1
+	 Node 182 lat 1
+Router 61
+	 Node 183 lat 1
+	 Node 184 lat 1
+	 Node 185 lat 1
+Router 62
+	 Node 186 lat 1
+	 Node 187 lat 1
+	 Node 188 lat 1
+Router 63
+	 Node 189 lat 1
+	 Node 190 lat 1
+	 Node 191 lat 1
+Router 64
+	 Node 192 lat 1
+	 Node 193 lat 1
+	 Node 194 lat 1
+Router 65
+	 Node 195 lat 1
+	 Node 196 lat 1
+	 Node 197 lat 1
+Router 66
+	 Node 198 lat 1
+	 Node 199 lat 1
+	 Node 200 lat 1
+Router 67
+	 Node 201 lat 1
+	 Node 202 lat 1
+	 Node 203 lat 1
+Router 68
+	 Node 204 lat 1
+	 Node 205 lat 1
+	 Node 206 lat 1
+Router 69
+	 Node 207 lat 1
+	 Node 208 lat 1
+	 Node 209 lat 1
+Router 70
+	 Node 210 lat 1
+	 Node 211 lat 1
+	 Node 212 lat 1
+Router 71
+	 Node 213 lat 1
+	 Node 214 lat 1
+	 Node 215 lat 1
+Router 72
+	 Node 216 lat 1
+	 Node 217 lat 1
+	 Node 218 lat 1
+Router 73
+	 Node 219 lat 1
+	 Node 220 lat 1
+	 Node 221 lat 1
+Router 74
+	 Node 222 lat 1
+	 Node 223 lat 1
+	 Node 224 lat 1
+Router 75
+	 Node 225 lat 1
+	 Node 226 lat 1
+	 Node 227 lat 1
+Router 76
+	 Node 228 lat 1
+	 Node 229 lat 1
+	 Node 230 lat 1
+Router 77
+	 Node 231 lat 1
+	 Node 232 lat 1
+	 Node 233 lat 1
+Router 78
+	 Node 234 lat 1
+	 Node 235 lat 1
+	 Node 236 lat 1
+Router 79
+	 Node 237 lat 1
+	 Node 238 lat 1
+	 Node 239 lat 1
+Router 80
+	 Node 240 lat 1
+	 Node 241 lat 1
+	 Node 242 lat 1
+Router 81
+	 Node 243 lat 1
+	 Node 244 lat 1
+	 Node 245 lat 1
+Router 82
+	 Node 246 lat 1
+	 Node 247 lat 1
+	 Node 248 lat 1
+Router 83
+	 Node 249 lat 1
+	 Node 250 lat 1
+	 Node 251 lat 1
+Router 84
+	 Node 252 lat 1
+	 Node 253 lat 1
+	 Node 254 lat 1
+Router 85
+	 Node 255 lat 1
+	 Node 256 lat 1
+	 Node 257 lat 1
+Router 86
+	 Node 258 lat 1
+	 Node 259 lat 1
+	 Node 260 lat 1
+Router 87
+	 Node 261 lat 1
+	 Node 262 lat 1
+	 Node 263 lat 1
+Router 88
+	 Node 264 lat 1
+	 Node 265 lat 1
+	 Node 266 lat 1
+Router 89
+	 Node 267 lat 1
+	 Node 268 lat 1
+	 Node 269 lat 1
+Router 90
+	 Node 270 lat 1
+	 Node 271 lat 1
+	 Node 272 lat 1
+Router 91
+	 Node 273 lat 1
+	 Node 274 lat 1
+	 Node 275 lat 1
+Router 92
+	 Node 276 lat 1
+	 Node 277 lat 1
+	 Node 278 lat 1
+Router 93
+	 Node 279 lat 1
+	 Node 280 lat 1
+	 Node 281 lat 1
+Router 94
+	 Node 282 lat 1
+	 Node 283 lat 1
+	 Node 284 lat 1
+Router 95
+	 Node 285 lat 1
+	 Node 286 lat 1
+	 Node 287 lat 1
+Router 96
+	 Node 288 lat 1
+	 Node 289 lat 1
+	 Node 290 lat 1
+Router 97
+	 Node 291 lat 1
+	 Node 292 lat 1
+	 Node 293 lat 1
+Router 98
+	 Node 294 lat 1
+	 Node 295 lat 1
+	 Node 296 lat 1
+Router 99
+	 Node 297 lat 1
+	 Node 298 lat 1
+	 Node 299 lat 1
+Router 100
+	 Node 300 lat 1
+	 Node 301 lat 1
+	 Node 302 lat 1
+Router 101
+	 Node 303 lat 1
+	 Node 304 lat 1
+	 Node 305 lat 1
+Router 102
+	 Node 306 lat 1
+	 Node 307 lat 1
+	 Node 308 lat 1
+Router 103
+	 Node 309 lat 1
+	 Node 310 lat 1
+	 Node 311 lat 1
+Router 104
+	 Node 312 lat 1
+	 Node 313 lat 1
+	 Node 314 lat 1
+Router 105
+	 Node 315 lat 1
+	 Node 316 lat 1
+	 Node 317 lat 1
+Router 106
+	 Node 318 lat 1
+	 Node 319 lat 1
+	 Node 320 lat 1
+Router 107
+	 Node 321 lat 1
+	 Node 322 lat 1
+	 Node 323 lat 1
+Router 108
+	 Node 324 lat 1
+	 Node 325 lat 1
+	 Node 326 lat 1
+Router 109
+	 Node 327 lat 1
+	 Node 328 lat 1
+	 Node 329 lat 1
+Router 110
+	 Node 330 lat 1
+	 Node 331 lat 1
+	 Node 332 lat 1
+Router 111
+	 Node 333 lat 1
+	 Node 334 lat 1
+	 Node 335 lat 1
+Router 112
+	 Node 336 lat 1
+	 Node 337 lat 1
+	 Node 338 lat 1
+Router 113
+	 Node 339 lat 1
+	 Node 340 lat 1
+	 Node 341 lat 1
+
+*****************router to router listing************
+Router 0
+	 Router 1 lat 1
+	 Router 2 lat 1
+	 Router 3 lat 1
+	 Router 4 lat 1
+	 Router 5 lat 1
+	 Router 6 lat 1
+	 Router 12 lat 1
+	 Router 18 lat 1
+Router 1
+	 Router 0 lat 1
+	 Router 2 lat 1
+	 Router 3 lat 1
+	 Router 4 lat 1
+	 Router 5 lat 1
+	 Router 24 lat 1
+	 Router 30 lat 1
+	 Router 36 lat 1
+Router 2
+	 Router 0 lat 1
+	 Router 1 lat 1
+	 Router 3 lat 1
+	 Router 4 lat 1
+	 Router 5 lat 1
+	 Router 42 lat 1
+	 Router 48 lat 1
+	 Router 54 lat 1
+Router 3
+	 Router 0 lat 1
+	 Router 1 lat 1
+	 Router 2 lat 1
+	 Router 4 lat 1
+	 Router 5 lat 1
+	 Router 60 lat 1
+	 Router 66 lat 1
+	 Router 72 lat 1
+Router 4
+	 Router 0 lat 1
+	 Router 1 lat 1
+	 Router 2 lat 1
+	 Router 3 lat 1
+	 Router 5 lat 1
+	 Router 78 lat 1
+	 Router 84 lat 1
+	 Router 90 lat 1
+Router 5
+	 Router 0 lat 1
+	 Router 1 lat 1
+	 Router 2 lat 1
+	 Router 3 lat 1
+	 Router 4 lat 1
+	 Router 96 lat 1
+	 Router 102 lat 1
+	 Router 108 lat 1
+Router 6
+	 Router 0 lat 1
+	 Router 7 lat 1
+	 Router 8 lat 1
+	 Router 9 lat 1
+	 Router 10 lat 1
+	 Router 11 lat 1
+	 Router 12 lat 1
+	 Router 18 lat 1
+Router 7
+	 Router 6 lat 1
+	 Router 8 lat 1
+	 Router 9 lat 1
+	 Router 10 lat 1
+	 Router 11 lat 1
+	 Router 24 lat 1
+	 Router 30 lat 1
+	 Router 36 lat 1
+Router 8
+	 Router 6 lat 1
+	 Router 7 lat 1
+	 Router 9 lat 1
+	 Router 10 lat 1
+	 Router 11 lat 1
+	 Router 42 lat 1
+	 Router 48 lat 1
+	 Router 54 lat 1
+Router 9
+	 Router 6 lat 1
+	 Router 7 lat 1
+	 Router 8 lat 1
+	 Router 10 lat 1
+	 Router 11 lat 1
+	 Router 60 lat 1
+	 Router 66 lat 1
+	 Router 72 lat 1
+Router 10
+	 Router 6 lat 1
+	 Router 7 lat 1
+	 Router 8 lat 1
+	 Router 9 lat 1
+	 Router 11 lat 1
+	 Router 78 lat 1
+	 Router 84 lat 1
+	 Router 90 lat 1
+Router 11
+	 Router 6 lat 1
+	 Router 7 lat 1
+	 Router 8 lat 1
+	 Router 9 lat 1
+	 Router 10 lat 1
+	 Router 96 lat 1
+	 Router 102 lat 1
+	 Router 108 lat 1
+Router 12
+	 Router 0 lat 1
+	 Router 6 lat 1
+	 Router 13 lat 1
+	 Router 14 lat 1
+	 Router 15 lat 1
+	 Router 16 lat 1
+	 Router 17 lat 1
+	 Router 18 lat 1
+Router 13
+	 Router 12 lat 1
+	 Router 14 lat 1
+	 Router 15 lat 1
+	 Router 16 lat 1
+	 Router 17 lat 1
+	 Router 24 lat 1
+	 Router 30 lat 1
+	 Router 36 lat 1
+Router 14
+	 Router 12 lat 1
+	 Router 13 lat 1
+	 Router 15 lat 1
+	 Router 16 lat 1
+	 Router 17 lat 1
+	 Router 42 lat 1
+	 Router 48 lat 1
+	 Router 54 lat 1
+Router 15
+	 Router 12 lat 1
+	 Router 13 lat 1
+	 Router 14 lat 1
+	 Router 16 lat 1
+	 Router 17 lat 1
+	 Router 60 lat 1
+	 Router 66 lat 1
+	 Router 72 lat 1
+Router 16
+	 Router 12 lat 1
+	 Router 13 lat 1
+	 Router 14 lat 1
+	 Router 15 lat 1
+	 Router 17 lat 1
+	 Router 78 lat 1
+	 Router 84 lat 1
+	 Router 90 lat 1
+Router 17
+	 Router 12 lat 1
+	 Router 13 lat 1
+	 Router 14 lat 1
+	 Router 15 lat 1
+	 Router 16 lat 1
+	 Router 96 lat 1
+	 Router 102 lat 1
+	 Router 108 lat 1
+Router 18
+	 Router 0 lat 1
+	 Router 6 lat 1
+	 Router 12 lat 1
+	 Router 19 lat 1
+	 Router 20 lat 1
+	 Router 21 lat 1
+	 Router 22 lat 1
+	 Router 23 lat 1
+Router 19
+	 Router 18 lat 1
+	 Router 20 lat 1
+	 Router 21 lat 1
+	 Router 22 lat 1
+	 Router 23 lat 1
+	 Router 25 lat 1
+	 Router 31 lat 1
+	 Router 37 lat 1
+Router 20
+	 Router 18 lat 1
+	 Router 19 lat 1
+	 Router 21 lat 1
+	 Router 22 lat 1
+	 Router 23 lat 1
+	 Router 43 lat 1
+	 Router 49 lat 1
+	 Router 55 lat 1
+Router 21
+	 Router 18 lat 1
+	 Router 19 lat 1
+	 Router 20 lat 1
+	 Router 22 lat 1
+	 Router 23 lat 1
+	 Router 61 lat 1
+	 Router 67 lat 1
+	 Router 73 lat 1
+Router 22
+	 Router 18 lat 1
+	 Router 19 lat 1
+	 Router 20 lat 1
+	 Router 21 lat 1
+	 Router 23 lat 1
+	 Router 79 lat 1
+	 Router 85 lat 1
+	 Router 91 lat 1
+Router 23
+	 Router 18 lat 1
+	 Router 19 lat 1
+	 Router 20 lat 1
+	 Router 21 lat 1
+	 Router 22 lat 1
+	 Router 97 lat 1
+	 Router 103 lat 1
+	 Router 109 lat 1
+Router 24
+	 Router 1 lat 1
+	 Router 7 lat 1
+	 Router 13 lat 1
+	 Router 25 lat 1
+	 Router 26 lat 1
+	 Router 27 lat 1
+	 Router 28 lat 1
+	 Router 29 lat 1
+Router 25
+	 Router 19 lat 1
+	 Router 24 lat 1
+	 Router 26 lat 1
+	 Router 27 lat 1
+	 Router 28 lat 1
+	 Router 29 lat 1
+	 Router 31 lat 1
+	 Router 37 lat 1
+Router 26
+	 Router 24 lat 1
+	 Router 25 lat 1
+	 Router 27 lat 1
+	 Router 28 lat 1
+	 Router 29 lat 1
+	 Router 43 lat 1
+	 Router 49 lat 1
+	 Router 55 lat 1
+Router 27
+	 Router 24 lat 1
+	 Router 25 lat 1
+	 Router 26 lat 1
+	 Router 28 lat 1
+	 Router 29 lat 1
+	 Router 61 lat 1
+	 Router 67 lat 1
+	 Router 73 lat 1
+Router 28
+	 Router 24 lat 1
+	 Router 25 lat 1
+	 Router 26 lat 1
+	 Router 27 lat 1
+	 Router 29 lat 1
+	 Router 79 lat 1
+	 Router 85 lat 1
+	 Router 91 lat 1
+Router 29
+	 Router 24 lat 1
+	 Router 25 lat 1
+	 Router 26 lat 1
+	 Router 27 lat 1
+	 Router 28 lat 1
+	 Router 97 lat 1
+	 Router 103 lat 1
+	 Router 109 lat 1
+Router 30
+	 Router 1 lat 1
+	 Router 7 lat 1
+	 Router 13 lat 1
+	 Router 31 lat 1
+	 Router 32 lat 1
+	 Router 33 lat 1
+	 Router 34 lat 1
+	 Router 35 lat 1
+Router 31
+	 Router 19 lat 1
+	 Router 25 lat 1
+	 Router 30 lat 1
+	 Router 32 lat 1
+	 Router 33 lat 1
+	 Router 34 lat 1
+	 Router 35 lat 1
+	 Router 37 lat 1
+Router 32
+	 Router 30 lat 1
+	 Router 31 lat 1
+	 Router 33 lat 1
+	 Router 34 lat 1
+	 Router 35 lat 1
+	 Router 43 lat 1
+	 Router 49 lat 1
+	 Router 55 lat 1
+Router 33
+	 Router 30 lat 1
+	 Router 31 lat 1
+	 Router 32 lat 1
+	 Router 34 lat 1
+	 Router 35 lat 1
+	 Router 61 lat 1
+	 Router 67 lat 1
+	 Router 73 lat 1
+Router 34
+	 Router 30 lat 1
+	 Router 31 lat 1
+	 Router 32 lat 1
+	 Router 33 lat 1
+	 Router 35 lat 1
+	 Router 79 lat 1
+	 Router 85 lat 1
+	 Router 91 lat 1
+Router 35
+	 Router 30 lat 1
+	 Router 31 lat 1
+	 Router 32 lat 1
+	 Router 33 lat 1
+	 Router 34 lat 1
+	 Router 97 lat 1
+	 Router 103 lat 1
+	 Router 109 lat 1
+Router 36
+	 Router 1 lat 1
+	 Router 7 lat 1
+	 Router 13 lat 1
+	 Router 37 lat 1
+	 Router 38 lat 1
+	 Router 39 lat 1
+	 Router 40 lat 1
+	 Router 41 lat 1
+Router 37
+	 Router 19 lat 1
+	 Router 25 lat 1
+	 Router 31 lat 1
+	 Router 36 lat 1
+	 Router 38 lat 1
+	 Router 39 lat 1
+	 Router 40 lat 1
+	 Router 41 lat 1
+Router 38
+	 Router 36 lat 1
+	 Router 37 lat 1
+	 Router 39 lat 1
+	 Router 40 lat 1
+	 Router 41 lat 1
+	 Router 44 lat 1
+	 Router 50 lat 1
+	 Router 56 lat 1
+Router 39
+	 Router 36 lat 1
+	 Router 37 lat 1
+	 Router 38 lat 1
+	 Router 40 lat 1
+	 Router 41 lat 1
+	 Router 62 lat 1
+	 Router 68 lat 1
+	 Router 74 lat 1
+Router 40
+	 Router 36 lat 1
+	 Router 37 lat 1
+	 Router 38 lat 1
+	 Router 39 lat 1
+	 Router 41 lat 1
+	 Router 80 lat 1
+	 Router 86 lat 1
+	 Router 92 lat 1
+Router 41
+	 Router 36 lat 1
+	 Router 37 lat 1
+	 Router 38 lat 1
+	 Router 39 lat 1
+	 Router 40 lat 1
+	 Router 98 lat 1
+	 Router 104 lat 1
+	 Router 110 lat 1
+Router 42
+	 Router 2 lat 1
+	 Router 8 lat 1
+	 Router 14 lat 1
+	 Router 43 lat 1
+	 Router 44 lat 1
+	 Router 45 lat 1
+	 Router 46 lat 1
+	 Router 47 lat 1
+Router 43
+	 Router 20 lat 1
+	 Router 26 lat 1
+	 Router 32 lat 1
+	 Router 42 lat 1
+	 Router 44 lat 1
+	 Router 45 lat 1
+	 Router 46 lat 1
+	 Router 47 lat 1
+Router 44
+	 Router 38 lat 1
+	 Router 42 lat 1
+	 Router 43 lat 1
+	 Router 45 lat 1
+	 Router 46 lat 1
+	 Router 47 lat 1
+	 Router 50 lat 1
+	 Router 56 lat 1
+Router 45
+	 Router 42 lat 1
+	 Router 43 lat 1
+	 Router 44 lat 1
+	 Router 46 lat 1
+	 Router 47 lat 1
+	 Router 62 lat 1
+	 Router 68 lat 1
+	 Router 74 lat 1
+Router 46
+	 Router 42 lat 1
+	 Router 43 lat 1
+	 Router 44 lat 1
+	 Router 45 lat 1
+	 Router 47 lat 1
+	 Router 80 lat 1
+	 Router 86 lat 1
+	 Router 92 lat 1
+Router 47
+	 Router 42 lat 1
+	 Router 43 lat 1
+	 Router 44 lat 1
+	 Router 45 lat 1
+	 Router 46 lat 1
+	 Router 98 lat 1
+	 Router 104 lat 1
+	 Router 110 lat 1
+Router 48
+	 Router 2 lat 1
+	 Router 8 lat 1
+	 Router 14 lat 1
+	 Router 49 lat 1
+	 Router 50 lat 1
+	 Router 51 lat 1
+	 Router 52 lat 1
+	 Router 53 lat 1
+Router 49
+	 Router 20 lat 1
+	 Router 26 lat 1
+	 Router 32 lat 1
+	 Router 48 lat 1
+	 Router 50 lat 1
+	 Router 51 lat 1
+	 Router 52 lat 1
+	 Router 53 lat 1
+Router 50
+	 Router 38 lat 1
+	 Router 44 lat 1
+	 Router 48 lat 1
+	 Router 49 lat 1
+	 Router 51 lat 1
+	 Router 52 lat 1
+	 Router 53 lat 1
+	 Router 56 lat 1
+Router 51
+	 Router 48 lat 1
+	 Router 49 lat 1
+	 Router 50 lat 1
+	 Router 52 lat 1
+	 Router 53 lat 1
+	 Router 62 lat 1
+	 Router 68 lat 1
+	 Router 74 lat 1
+Router 52
+	 Router 48 lat 1
+	 Router 49 lat 1
+	 Router 50 lat 1
+	 Router 51 lat 1
+	 Router 53 lat 1
+	 Router 80 lat 1
+	 Router 86 lat 1
+	 Router 92 lat 1
+Router 53
+	 Router 48 lat 1
+	 Router 49 lat 1
+	 Router 50 lat 1
+	 Router 51 lat 1
+	 Router 52 lat 1
+	 Router 98 lat 1
+	 Router 104 lat 1
+	 Router 110 lat 1
+Router 54
+	 Router 2 lat 1
+	 Router 8 lat 1
+	 Router 14 lat 1
+	 Router 55 lat 1
+	 Router 56 lat 1
+	 Router 57 lat 1
+	 Router 58 lat 1
+	 Router 59 lat 1
+Router 55
+	 Router 20 lat 1
+	 Router 26 lat 1
+	 Router 32 lat 1
+	 Router 54 lat 1
+	 Router 56 lat 1
+	 Router 57 lat 1
+	 Router 58 lat 1
+	 Router 59 lat 1
+Router 56
+	 Router 38 lat 1
+	 Router 44 lat 1
+	 Router 50 lat 1
+	 Router 54 lat 1
+	 Router 55 lat 1
+	 Router 57 lat 1
+	 Router 58 lat 1
+	 Router 59 lat 1
+Router 57
+	 Router 54 lat 1
+	 Router 55 lat 1
+	 Router 56 lat 1
+	 Router 58 lat 1
+	 Router 59 lat 1
+	 Router 63 lat 1
+	 Router 69 lat 1
+	 Router 75 lat 1
+Router 58
+	 Router 54 lat 1
+	 Router 55 lat 1
+	 Router 56 lat 1
+	 Router 57 lat 1
+	 Router 59 lat 1
+	 Router 81 lat 1
+	 Router 87 lat 1
+	 Router 93 lat 1
+Router 59
+	 Router 54 lat 1
+	 Router 55 lat 1
+	 Router 56 lat 1
+	 Router 57 lat 1
+	 Router 58 lat 1
+	 Router 99 lat 1
+	 Router 105 lat 1
+	 Router 111 lat 1
+Router 60
+	 Router 3 lat 1
+	 Router 9 lat 1
+	 Router 15 lat 1
+	 Router 61 lat 1
+	 Router 62 lat 1
+	 Router 63 lat 1
+	 Router 64 lat 1
+	 Router 65 lat 1
+Router 61
+	 Router 21 lat 1
+	 Router 27 lat 1
+	 Router 33 lat 1
+	 Router 60 lat 1
+	 Router 62 lat 1
+	 Router 63 lat 1
+	 Router 64 lat 1
+	 Router 65 lat 1
+Router 62
+	 Router 39 lat 1
+	 Router 45 lat 1
+	 Router 51 lat 1
+	 Router 60 lat 1
+	 Router 61 lat 1
+	 Router 63 lat 1
+	 Router 64 lat 1
+	 Router 65 lat 1
+Router 63
+	 Router 57 lat 1
+	 Router 60 lat 1
+	 Router 61 lat 1
+	 Router 62 lat 1
+	 Router 64 lat 1
+	 Router 65 lat 1
+	 Router 69 lat 1
+	 Router 75 lat 1
+Router 64
+	 Router 60 lat 1
+	 Router 61 lat 1
+	 Router 62 lat 1
+	 Router 63 lat 1
+	 Router 65 lat 1
+	 Router 81 lat 1
+	 Router 87 lat 1
+	 Router 93 lat 1
+Router 65
+	 Router 60 lat 1
+	 Router 61 lat 1
+	 Router 62 lat 1
+	 Router 63 lat 1
+	 Router 64 lat 1
+	 Router 99 lat 1
+	 Router 105 lat 1
+	 Router 111 lat 1
+Router 66
+	 Router 3 lat 1
+	 Router 9 lat 1
+	 Router 15 lat 1
+	 Router 67 lat 1
+	 Router 68 lat 1
+	 Router 69 lat 1
+	 Router 70 lat 1
+	 Router 71 lat 1
+Router 67
+	 Router 21 lat 1
+	 Router 27 lat 1
+	 Router 33 lat 1
+	 Router 66 lat 1
+	 Router 68 lat 1
+	 Router 69 lat 1
+	 Router 70 lat 1
+	 Router 71 lat 1
+Router 68
+	 Router 39 lat 1
+	 Router 45 lat 1
+	 Router 51 lat 1
+	 Router 66 lat 1
+	 Router 67 lat 1
+	 Router 69 lat 1
+	 Router 70 lat 1
+	 Router 71 lat 1
+Router 69
+	 Router 57 lat 1
+	 Router 63 lat 1
+	 Router 66 lat 1
+	 Router 67 lat 1
+	 Router 68 lat 1
+	 Router 70 lat 1
+	 Router 71 lat 1
+	 Router 75 lat 1
+Router 70
+	 Router 66 lat 1
+	 Router 67 lat 1
+	 Router 68 lat 1
+	 Router 69 lat 1
+	 Router 71 lat 1
+	 Router 81 lat 1
+	 Router 87 lat 1
+	 Router 93 lat 1
+Router 71
+	 Router 66 lat 1
+	 Router 67 lat 1
+	 Router 68 lat 1
+	 Router 69 lat 1
+	 Router 70 lat 1
+	 Router 99 lat 1
+	 Router 105 lat 1
+	 Router 111 lat 1
+Router 72
+	 Router 3 lat 1
+	 Router 9 lat 1
+	 Router 15 lat 1
+	 Router 73 lat 1
+	 Router 74 lat 1
+	 Router 75 lat 1
+	 Router 76 lat 1
+	 Router 77 lat 1
+Router 73
+	 Router 21 lat 1
+	 Router 27 lat 1
+	 Router 33 lat 1
+	 Router 72 lat 1
+	 Router 74 lat 1
+	 Router 75 lat 1
+	 Router 76 lat 1
+	 Router 77 lat 1
+Router 74
+	 Router 39 lat 1
+	 Router 45 lat 1
+	 Router 51 lat 1
+	 Router 72 lat 1
+	 Router 73 lat 1
+	 Router 75 lat 1
+	 Router 76 lat 1
+	 Router 77 lat 1
+Router 75
+	 Router 57 lat 1
+	 Router 63 lat 1
+	 Router 69 lat 1
+	 Router 72 lat 1
+	 Router 73 lat 1
+	 Router 74 lat 1
+	 Router 76 lat 1
+	 Router 77 lat 1
+Router 76
+	 Router 72 lat 1
+	 Router 73 lat 1
+	 Router 74 lat 1
+	 Router 75 lat 1
+	 Router 77 lat 1
+	 Router 82 lat 1
+	 Router 88 lat 1
+	 Router 94 lat 1
+Router 77
+	 Router 72 lat 1
+	 Router 73 lat 1
+	 Router 74 lat 1
+	 Router 75 lat 1
+	 Router 76 lat 1
+	 Router 100 lat 1
+	 Router 106 lat 1
+	 Router 112 lat 1
+Router 78
+	 Router 4 lat 1
+	 Router 10 lat 1
+	 Router 16 lat 1
+	 Router 79 lat 1
+	 Router 80 lat 1
+	 Router 81 lat 1
+	 Router 82 lat 1
+	 Router 83 lat 1
+Router 79
+	 Router 22 lat 1
+	 Router 28 lat 1
+	 Router 34 lat 1
+	 Router 78 lat 1
+	 Router 80 lat 1
+	 Router 81 lat 1
+	 Router 82 lat 1
+	 Router 83 lat 1
+Router 80
+	 Router 40 lat 1
+	 Router 46 lat 1
+	 Router 52 lat 1
+	 Router 78 lat 1
+	 Router 79 lat 1
+	 Router 81 lat 1
+	 Router 82 lat 1
+	 Router 83 lat 1
+Router 81
+	 Router 58 lat 1
+	 Router 64 lat 1
+	 Router 70 lat 1
+	 Router 78 lat 1
+	 Router 79 lat 1
+	 Router 80 lat 1
+	 Router 82 lat 1
+	 Router 83 lat 1
+Router 82
+	 Router 76 lat 1
+	 Router 78 lat 1
+	 Router 79 lat 1
+	 Router 80 lat 1
+	 Router 81 lat 1
+	 Router 83 lat 1
+	 Router 88 lat 1
+	 Router 94 lat 1
+Router 83
+	 Router 78 lat 1
+	 Router 79 lat 1
+	 Router 80 lat 1
+	 Router 81 lat 1
+	 Router 82 lat 1
+	 Router 100 lat 1
+	 Router 106 lat 1
+	 Router 112 lat 1
+Router 84
+	 Router 4 lat 1
+	 Router 10 lat 1
+	 Router 16 lat 1
+	 Router 85 lat 1
+	 Router 86 lat 1
+	 Router 87 lat 1
+	 Router 88 lat 1
+	 Router 89 lat 1
+Router 85
+	 Router 22 lat 1
+	 Router 28 lat 1
+	 Router 34 lat 1
+	 Router 84 lat 1
+	 Router 86 lat 1
+	 Router 87 lat 1
+	 Router 88 lat 1
+	 Router 89 lat 1
+Router 86
+	 Router 40 lat 1
+	 Router 46 lat 1
+	 Router 52 lat 1
+	 Router 84 lat 1
+	 Router 85 lat 1
+	 Router 87 lat 1
+	 Router 88 lat 1
+	 Router 89 lat 1
+Router 87
+	 Router 58 lat 1
+	 Router 64 lat 1
+	 Router 70 lat 1
+	 Router 84 lat 1
+	 Router 85 lat 1
+	 Router 86 lat 1
+	 Router 88 lat 1
+	 Router 89 lat 1
+Router 88
+	 Router 76 lat 1
+	 Router 82 lat 1
+	 Router 84 lat 1
+	 Router 85 lat 1
+	 Router 86 lat 1
+	 Router 87 lat 1
+	 Router 89 lat 1
+	 Router 94 lat 1
+Router 89
+	 Router 84 lat 1
+	 Router 85 lat 1
+	 Router 86 lat 1
+	 Router 87 lat 1
+	 Router 88 lat 1
+	 Router 100 lat 1
+	 Router 106 lat 1
+	 Router 112 lat 1
+Router 90
+	 Router 4 lat 1
+	 Router 10 lat 1
+	 Router 16 lat 1
+	 Router 91 lat 1
+	 Router 92 lat 1
+	 Router 93 lat 1
+	 Router 94 lat 1
+	 Router 95 lat 1
+Router 91
+	 Router 22 lat 1
+	 Router 28 lat 1
+	 Router 34 lat 1
+	 Router 90 lat 1
+	 Router 92 lat 1
+	 Router 93 lat 1
+	 Router 94 lat 1
+	 Router 95 lat 1
+Router 92
+	 Router 40 lat 1
+	 Router 46 lat 1
+	 Router 52 lat 1
+	 Router 90 lat 1
+	 Router 91 lat 1
+	 Router 93 lat 1
+	 Router 94 lat 1
+	 Router 95 lat 1
+Router 93
+	 Router 58 lat 1
+	 Router 64 lat 1
+	 Router 70 lat 1
+	 Router 90 lat 1
+	 Router 91 lat 1
+	 Router 92 lat 1
+	 Router 94 lat 1
+	 Router 95 lat 1
+Router 94
+	 Router 76 lat 1
+	 Router 82 lat 1
+	 Router 88 lat 1
+	 Router 90 lat 1
+	 Router 91 lat 1
+	 Router 92 lat 1
+	 Router 93 lat 1
+	 Router 95 lat 1
+Router 95
+	 Router 90 lat 1
+	 Router 91 lat 1
+	 Router 92 lat 1
+	 Router 93 lat 1
+	 Router 94 lat 1
+	 Router 101 lat 1
+	 Router 107 lat 1
+	 Router 113 lat 1
+Router 96
+	 Router 5 lat 1
+	 Router 11 lat 1
+	 Router 17 lat 1
+	 Router 97 lat 1
+	 Router 98 lat 1
+	 Router 99 lat 1
+	 Router 100 lat 1
+	 Router 101 lat 1
+Router 97
+	 Router 23 lat 1
+	 Router 29 lat 1
+	 Router 35 lat 1
+	 Router 96 lat 1
+	 Router 98 lat 1
+	 Router 99 lat 1
+	 Router 100 lat 1
+	 Router 101 lat 1
+Router 98
+	 Router 41 lat 1
+	 Router 47 lat 1
+	 Router 53 lat 1
+	 Router 96 lat 1
+	 Router 97 lat 1
+	 Router 99 lat 1
+	 Router 100 lat 1
+	 Router 101 lat 1
+Router 99
+	 Router 59 lat 1
+	 Router 65 lat 1
+	 Router 71 lat 1
+	 Router 96 lat 1
+	 Router 97 lat 1
+	 Router 98 lat 1
+	 Router 100 lat 1
+	 Router 101 lat 1
+Router 100
+	 Router 77 lat 1
+	 Router 83 lat 1
+	 Router 89 lat 1
+	 Router 96 lat 1
+	 Router 97 lat 1
+	 Router 98 lat 1
+	 Router 99 lat 1
+	 Router 101 lat 1
+Router 101
+	 Router 95 lat 1
+	 Router 96 lat 1
+	 Router 97 lat 1
+	 Router 98 lat 1
+	 Router 99 lat 1
+	 Router 100 lat 1
+	 Router 107 lat 1
+	 Router 113 lat 1
+Router 102
+	 Router 5 lat 1
+	 Router 11 lat 1
+	 Router 17 lat 1
+	 Router 103 lat 1
+	 Router 104 lat 1
+	 Router 105 lat 1
+	 Router 106 lat 1
+	 Router 107 lat 1
+Router 103
+	 Router 23 lat 1
+	 Router 29 lat 1
+	 Router 35 lat 1
+	 Router 102 lat 1
+	 Router 104 lat 1
+	 Router 105 lat 1
+	 Router 106 lat 1
+	 Router 107 lat 1
+Router 104
+	 Router 41 lat 1
+	 Router 47 lat 1
+	 Router 53 lat 1
+	 Router 102 lat 1
+	 Router 103 lat 1
+	 Router 105 lat 1
+	 Router 106 lat 1
+	 Router 107 lat 1
+Router 105
+	 Router 59 lat 1
+	 Router 65 lat 1
+	 Router 71 lat 1
+	 Router 102 lat 1
+	 Router 103 lat 1
+	 Router 104 lat 1
+	 Router 106 lat 1
+	 Router 107 lat 1
+Router 106
+	 Router 77 lat 1
+	 Router 83 lat 1
+	 Router 89 lat 1
+	 Router 102 lat 1
+	 Router 103 lat 1
+	 Router 104 lat 1
+	 Router 105 lat 1
+	 Router 107 lat 1
+Router 107
+	 Router 95 lat 1
+	 Router 101 lat 1
+	 Router 102 lat 1
+	 Router 103 lat 1
+	 Router 104 lat 1
+	 Router 105 lat 1
+	 Router 106 lat 1
+	 Router 113 lat 1
+Router 108
+	 Router 5 lat 1
+	 Router 11 lat 1
+	 Router 17 lat 1
+	 Router 109 lat 1
+	 Router 110 lat 1
+	 Router 111 lat 1
+	 Router 112 lat 1
+	 Router 113 lat 1
+Router 109
+	 Router 23 lat 1
+	 Router 29 lat 1
+	 Router 35 lat 1
+	 Router 108 lat 1
+	 Router 110 lat 1
+	 Router 111 lat 1
+	 Router 112 lat 1
+	 Router 113 lat 1
+Router 110
+	 Router 41 lat 1
+	 Router 47 lat 1
+	 Router 53 lat 1
+	 Router 108 lat 1
+	 Router 109 lat 1
+	 Router 111 lat 1
+	 Router 112 lat 1
+	 Router 113 lat 1
+Router 111
+	 Router 59 lat 1
+	 Router 65 lat 1
+	 Router 71 lat 1
+	 Router 108 lat 1
+	 Router 109 lat 1
+	 Router 110 lat 1
+	 Router 112 lat 1
+	 Router 113 lat 1
+Router 112
+	 Router 77 lat 1
+	 Router 83 lat 1
+	 Router 89 lat 1
+	 Router 108 lat 1
+	 Router 109 lat 1
+	 Router 110 lat 1
+	 Router 111 lat 1
+	 Router 113 lat 1
+Router 113
+	 Router 95 lat 1
+	 Router 101 lat 1
+	 Router 107 lat 1
+	 Router 108 lat 1
+	 Router 109 lat 1
+	 Router 110 lat 1
+	 Router 111 lat 1
+	 Router 112 lat 1
+Number of nodes: 342
+Number of routers: 114
+==========================Node to Router =====================
+router 0 radix 11
+	 connected to node 0 at outport 0 lat 1
+	 connected to node 1 at outport 1 lat 1
+	 connected to node 2 at outport 2 lat 1
+router 1 radix 11
+	 connected to node 3 at outport 0 lat 1
+	 connected to node 4 at outport 1 lat 1
+	 connected to node 5 at outport 2 lat 1
+router 2 radix 11
+	 connected to node 6 at outport 0 lat 1
+	 connected to node 7 at outport 1 lat 1
+	 connected to node 8 at outport 2 lat 1
+router 3 radix 11
+	 connected to node 9 at outport 0 lat 1
+	 connected to node 10 at outport 1 lat 1
+	 connected to node 11 at outport 2 lat 1
+router 4 radix 11
+	 connected to node 12 at outport 0 lat 1
+	 connected to node 13 at outport 1 lat 1
+	 connected to node 14 at outport 2 lat 1
+router 5 radix 11
+	 connected to node 15 at outport 0 lat 1
+	 connected to node 16 at outport 1 lat 1
+	 connected to node 17 at outport 2 lat 1
+router 6 radix 11
+	 connected to node 18 at outport 0 lat 1
+	 connected to node 19 at outport 1 lat 1
+	 connected to node 20 at outport 2 lat 1
+router 7 radix 11
+	 connected to node 21 at outport 0 lat 1
+	 connected to node 22 at outport 1 lat 1
+	 connected to node 23 at outport 2 lat 1
+router 8 radix 11
+	 connected to node 24 at outport 0 lat 1
+	 connected to node 25 at outport 1 lat 1
+	 connected to node 26 at outport 2 lat 1
+router 9 radix 11
+	 connected to node 27 at outport 0 lat 1
+	 connected to node 28 at outport 1 lat 1
+	 connected to node 29 at outport 2 lat 1
+router 10 radix 11
+	 connected to node 30 at outport 0 lat 1
+	 connected to node 31 at outport 1 lat 1
+	 connected to node 32 at outport 2 lat 1
+router 11 radix 11
+	 connected to node 33 at outport 0 lat 1
+	 connected to node 34 at outport 1 lat 1
+	 connected to node 35 at outport 2 lat 1
+router 12 radix 11
+	 connected to node 36 at outport 0 lat 1
+	 connected to node 37 at outport 1 lat 1
+	 connected to node 38 at outport 2 lat 1
+router 13 radix 11
+	 connected to node 39 at outport 0 lat 1
+	 connected to node 40 at outport 1 lat 1
+	 connected to node 41 at outport 2 lat 1
+router 14 radix 11
+	 connected to node 42 at outport 0 lat 1
+	 connected to node 43 at outport 1 lat 1
+	 connected to node 44 at outport 2 lat 1
+router 15 radix 11
+	 connected to node 45 at outport 0 lat 1
+	 connected to node 46 at outport 1 lat 1
+	 connected to node 47 at outport 2 lat 1
+router 16 radix 11
+	 connected to node 48 at outport 0 lat 1
+	 connected to node 49 at outport 1 lat 1
+	 connected to node 50 at outport 2 lat 1
+router 17 radix 11
+	 connected to node 51 at outport 0 lat 1
+	 connected to node 52 at outport 1 lat 1
+	 connected to node 53 at outport 2 lat 1
+router 18 radix 11
+	 connected to node 54 at outport 0 lat 1
+	 connected to node 55 at outport 1 lat 1
+	 connected to node 56 at outport 2 lat 1
+router 19 radix 11
+	 connected to node 57 at outport 0 lat 1
+	 connected to node 58 at outport 1 lat 1
+	 connected to node 59 at outport 2 lat 1
+router 20 radix 11
+	 connected to node 60 at outport 0 lat 1
+	 connected to node 61 at outport 1 lat 1
+	 connected to node 62 at outport 2 lat 1
+router 21 radix 11
+	 connected to node 63 at outport 0 lat 1
+	 connected to node 64 at outport 1 lat 1
+	 connected to node 65 at outport 2 lat 1
+router 22 radix 11
+	 connected to node 66 at outport 0 lat 1
+	 connected to node 67 at outport 1 lat 1
+	 connected to node 68 at outport 2 lat 1
+router 23 radix 11
+	 connected to node 69 at outport 0 lat 1
+	 connected to node 70 at outport 1 lat 1
+	 connected to node 71 at outport 2 lat 1
+router 24 radix 11
+	 connected to node 72 at outport 0 lat 1
+	 connected to node 73 at outport 1 lat 1
+	 connected to node 74 at outport 2 lat 1
+router 25 radix 11
+	 connected to node 75 at outport 0 lat 1
+	 connected to node 76 at outport 1 lat 1
+	 connected to node 77 at outport 2 lat 1
+router 26 radix 11
+	 connected to node 78 at outport 0 lat 1
+	 connected to node 79 at outport 1 lat 1
+	 connected to node 80 at outport 2 lat 1
+router 27 radix 11
+	 connected to node 81 at outport 0 lat 1
+	 connected to node 82 at outport 1 lat 1
+	 connected to node 83 at outport 2 lat 1
+router 28 radix 11
+	 connected to node 84 at outport 0 lat 1
+	 connected to node 85 at outport 1 lat 1
+	 connected to node 86 at outport 2 lat 1
+router 29 radix 11
+	 connected to node 87 at outport 0 lat 1
+	 connected to node 88 at outport 1 lat 1
+	 connected to node 89 at outport 2 lat 1
+router 30 radix 11
+	 connected to node 90 at outport 0 lat 1
+	 connected to node 91 at outport 1 lat 1
+	 connected to node 92 at outport 2 lat 1
+router 31 radix 11
+	 connected to node 93 at outport 0 lat 1
+	 connected to node 94 at outport 1 lat 1
+	 connected to node 95 at outport 2 lat 1
+router 32 radix 11
+	 connected to node 96 at outport 0 lat 1
+	 connected to node 97 at outport 1 lat 1
+	 connected to node 98 at outport 2 lat 1
+router 33 radix 11
+	 connected to node 99 at outport 0 lat 1
+	 connected to node 100 at outport 1 lat 1
+	 connected to node 101 at outport 2 lat 1
+router 34 radix 11
+	 connected to node 102 at outport 0 lat 1
+	 connected to node 103 at outport 1 lat 1
+	 connected to node 104 at outport 2 lat 1
+router 35 radix 11
+	 connected to node 105 at outport 0 lat 1
+	 connected to node 106 at outport 1 lat 1
+	 connected to node 107 at outport 2 lat 1
+router 36 radix 11
+	 connected to node 108 at outport 0 lat 1
+	 connected to node 109 at outport 1 lat 1
+	 connected to node 110 at outport 2 lat 1
+router 37 radix 11
+	 connected to node 111 at outport 0 lat 1
+	 connected to node 112 at outport 1 lat 1
+	 connected to node 113 at outport 2 lat 1
+router 38 radix 11
+	 connected to node 114 at outport 0 lat 1
+	 connected to node 115 at outport 1 lat 1
+	 connected to node 116 at outport 2 lat 1
+router 39 radix 11
+	 connected to node 117 at outport 0 lat 1
+	 connected to node 118 at outport 1 lat 1
+	 connected to node 119 at outport 2 lat 1
+router 40 radix 11
+	 connected to node 120 at outport 0 lat 1
+	 connected to node 121 at outport 1 lat 1
+	 connected to node 122 at outport 2 lat 1
+router 41 radix 11
+	 connected to node 123 at outport 0 lat 1
+	 connected to node 124 at outport 1 lat 1
+	 connected to node 125 at outport 2 lat 1
+router 42 radix 11
+	 connected to node 126 at outport 0 lat 1
+	 connected to node 127 at outport 1 lat 1
+	 connected to node 128 at outport 2 lat 1
+router 43 radix 11
+	 connected to node 129 at outport 0 lat 1
+	 connected to node 130 at outport 1 lat 1
+	 connected to node 131 at outport 2 lat 1
+router 44 radix 11
+	 connected to node 132 at outport 0 lat 1
+	 connected to node 133 at outport 1 lat 1
+	 connected to node 134 at outport 2 lat 1
+router 45 radix 11
+	 connected to node 135 at outport 0 lat 1
+	 connected to node 136 at outport 1 lat 1
+	 connected to node 137 at outport 2 lat 1
+router 46 radix 11
+	 connected to node 138 at outport 0 lat 1
+	 connected to node 139 at outport 1 lat 1
+	 connected to node 140 at outport 2 lat 1
+router 47 radix 11
+	 connected to node 141 at outport 0 lat 1
+	 connected to node 142 at outport 1 lat 1
+	 connected to node 143 at outport 2 lat 1
+router 48 radix 11
+	 connected to node 144 at outport 0 lat 1
+	 connected to node 145 at outport 1 lat 1
+	 connected to node 146 at outport 2 lat 1
+router 49 radix 11
+	 connected to node 147 at outport 0 lat 1
+	 connected to node 148 at outport 1 lat 1
+	 connected to node 149 at outport 2 lat 1
+router 50 radix 11
+	 connected to node 150 at outport 0 lat 1
+	 connected to node 151 at outport 1 lat 1
+	 connected to node 152 at outport 2 lat 1
+router 51 radix 11
+	 connected to node 153 at outport 0 lat 1
+	 connected to node 154 at outport 1 lat 1
+	 connected to node 155 at outport 2 lat 1
+router 52 radix 11
+	 connected to node 156 at outport 0 lat 1
+	 connected to node 157 at outport 1 lat 1
+	 connected to node 158 at outport 2 lat 1
+router 53 radix 11
+	 connected to node 159 at outport 0 lat 1
+	 connected to node 160 at outport 1 lat 1
+	 connected to node 161 at outport 2 lat 1
+router 54 radix 11
+	 connected to node 162 at outport 0 lat 1
+	 connected to node 163 at outport 1 lat 1
+	 connected to node 164 at outport 2 lat 1
+router 55 radix 11
+	 connected to node 165 at outport 0 lat 1
+	 connected to node 166 at outport 1 lat 1
+	 connected to node 167 at outport 2 lat 1
+router 56 radix 11
+	 connected to node 168 at outport 0 lat 1
+	 connected to node 169 at outport 1 lat 1
+	 connected to node 170 at outport 2 lat 1
+router 57 radix 11
+	 connected to node 171 at outport 0 lat 1
+	 connected to node 172 at outport 1 lat 1
+	 connected to node 173 at outport 2 lat 1
+router 58 radix 11
+	 connected to node 174 at outport 0 lat 1
+	 connected to node 175 at outport 1 lat 1
+	 connected to node 176 at outport 2 lat 1
+router 59 radix 11
+	 connected to node 177 at outport 0 lat 1
+	 connected to node 178 at outport 1 lat 1
+	 connected to node 179 at outport 2 lat 1
+router 60 radix 11
+	 connected to node 180 at outport 0 lat 1
+	 connected to node 181 at outport 1 lat 1
+	 connected to node 182 at outport 2 lat 1
+router 61 radix 11
+	 connected to node 183 at outport 0 lat 1
+	 connected to node 184 at outport 1 lat 1
+	 connected to node 185 at outport 2 lat 1
+router 62 radix 11
+	 connected to node 186 at outport 0 lat 1
+	 connected to node 187 at outport 1 lat 1
+	 connected to node 188 at outport 2 lat 1
+router 63 radix 11
+	 connected to node 189 at outport 0 lat 1
+	 connected to node 190 at outport 1 lat 1
+	 connected to node 191 at outport 2 lat 1
+router 64 radix 11
+	 connected to node 192 at outport 0 lat 1
+	 connected to node 193 at outport 1 lat 1
+	 connected to node 194 at outport 2 lat 1
+router 65 radix 11
+	 connected to node 195 at outport 0 lat 1
+	 connected to node 196 at outport 1 lat 1
+	 connected to node 197 at outport 2 lat 1
+router 66 radix 11
+	 connected to node 198 at outport 0 lat 1
+	 connected to node 199 at outport 1 lat 1
+	 connected to node 200 at outport 2 lat 1
+router 67 radix 11
+	 connected to node 201 at outport 0 lat 1
+	 connected to node 202 at outport 1 lat 1
+	 connected to node 203 at outport 2 lat 1
+router 68 radix 11
+	 connected to node 204 at outport 0 lat 1
+	 connected to node 205 at outport 1 lat 1
+	 connected to node 206 at outport 2 lat 1
+router 69 radix 11
+	 connected to node 207 at outport 0 lat 1
+	 connected to node 208 at outport 1 lat 1
+	 connected to node 209 at outport 2 lat 1
+router 70 radix 11
+	 connected to node 210 at outport 0 lat 1
+	 connected to node 211 at outport 1 lat 1
+	 connected to node 212 at outport 2 lat 1
+router 71 radix 11
+	 connected to node 213 at outport 0 lat 1
+	 connected to node 214 at outport 1 lat 1
+	 connected to node 215 at outport 2 lat 1
+router 72 radix 11
+	 connected to node 216 at outport 0 lat 1
+	 connected to node 217 at outport 1 lat 1
+	 connected to node 218 at outport 2 lat 1
+router 73 radix 11
+	 connected to node 219 at outport 0 lat 1
+	 connected to node 220 at outport 1 lat 1
+	 connected to node 221 at outport 2 lat 1
+router 74 radix 11
+	 connected to node 222 at outport 0 lat 1
+	 connected to node 223 at outport 1 lat 1
+	 connected to node 224 at outport 2 lat 1
+router 75 radix 11
+	 connected to node 225 at outport 0 lat 1
+	 connected to node 226 at outport 1 lat 1
+	 connected to node 227 at outport 2 lat 1
+router 76 radix 11
+	 connected to node 228 at outport 0 lat 1
+	 connected to node 229 at outport 1 lat 1
+	 connected to node 230 at outport 2 lat 1
+router 77 radix 11
+	 connected to node 231 at outport 0 lat 1
+	 connected to node 232 at outport 1 lat 1
+	 connected to node 233 at outport 2 lat 1
+router 78 radix 11
+	 connected to node 234 at outport 0 lat 1
+	 connected to node 235 at outport 1 lat 1
+	 connected to node 236 at outport 2 lat 1
+router 79 radix 11
+	 connected to node 237 at outport 0 lat 1
+	 connected to node 238 at outport 1 lat 1
+	 connected to node 239 at outport 2 lat 1
+router 80 radix 11
+	 connected to node 240 at outport 0 lat 1
+	 connected to node 241 at outport 1 lat 1
+	 connected to node 242 at outport 2 lat 1
+router 81 radix 11
+	 connected to node 243 at outport 0 lat 1
+	 connected to node 244 at outport 1 lat 1
+	 connected to node 245 at outport 2 lat 1
+router 82 radix 11
+	 connected to node 246 at outport 0 lat 1
+	 connected to node 247 at outport 1 lat 1
+	 connected to node 248 at outport 2 lat 1
+router 83 radix 11
+	 connected to node 249 at outport 0 lat 1
+	 connected to node 250 at outport 1 lat 1
+	 connected to node 251 at outport 2 lat 1
+router 84 radix 11
+	 connected to node 252 at outport 0 lat 1
+	 connected to node 253 at outport 1 lat 1
+	 connected to node 254 at outport 2 lat 1
+router 85 radix 11
+	 connected to node 255 at outport 0 lat 1
+	 connected to node 256 at outport 1 lat 1
+	 connected to node 257 at outport 2 lat 1
+router 86 radix 11
+	 connected to node 258 at outport 0 lat 1
+	 connected to node 259 at outport 1 lat 1
+	 connected to node 260 at outport 2 lat 1
+router 87 radix 11
+	 connected to node 261 at outport 0 lat 1
+	 connected to node 262 at outport 1 lat 1
+	 connected to node 263 at outport 2 lat 1
+router 88 radix 11
+	 connected to node 264 at outport 0 lat 1
+	 connected to node 265 at outport 1 lat 1
+	 connected to node 266 at outport 2 lat 1
+router 89 radix 11
+	 connected to node 267 at outport 0 lat 1
+	 connected to node 268 at outport 1 lat 1
+	 connected to node 269 at outport 2 lat 1
+router 90 radix 11
+	 connected to node 270 at outport 0 lat 1
+	 connected to node 271 at outport 1 lat 1
+	 connected to node 272 at outport 2 lat 1
+router 91 radix 11
+	 connected to node 273 at outport 0 lat 1
+	 connected to node 274 at outport 1 lat 1
+	 connected to node 275 at outport 2 lat 1
+router 92 radix 11
+	 connected to node 276 at outport 0 lat 1
+	 connected to node 277 at outport 1 lat 1
+	 connected to node 278 at outport 2 lat 1
+router 93 radix 11
+	 connected to node 279 at outport 0 lat 1
+	 connected to node 280 at outport 1 lat 1
+	 connected to node 281 at outport 2 lat 1
+router 94 radix 11
+	 connected to node 282 at outport 0 lat 1
+	 connected to node 283 at outport 1 lat 1
+	 connected to node 284 at outport 2 lat 1
+router 95 radix 11
+	 connected to node 285 at outport 0 lat 1
+	 connected to node 286 at outport 1 lat 1
+	 connected to node 287 at outport 2 lat 1
+router 96 radix 11
+	 connected to node 288 at outport 0 lat 1
+	 connected to node 289 at outport 1 lat 1
+	 connected to node 290 at outport 2 lat 1
+router 97 radix 11
+	 connected to node 291 at outport 0 lat 1
+	 connected to node 292 at outport 1 lat 1
+	 connected to node 293 at outport 2 lat 1
+router 98 radix 11
+	 connected to node 294 at outport 0 lat 1
+	 connected to node 295 at outport 1 lat 1
+	 connected to node 296 at outport 2 lat 1
+router 99 radix 11
+	 connected to node 297 at outport 0 lat 1
+	 connected to node 298 at outport 1 lat 1
+	 connected to node 299 at outport 2 lat 1
+router 100 radix 11
+	 connected to node 300 at outport 0 lat 1
+	 connected to node 301 at outport 1 lat 1
+	 connected to node 302 at outport 2 lat 1
+router 101 radix 11
+	 connected to node 303 at outport 0 lat 1
+	 connected to node 304 at outport 1 lat 1
+	 connected to node 305 at outport 2 lat 1
+router 102 radix 11
+	 connected to node 306 at outport 0 lat 1
+	 connected to node 307 at outport 1 lat 1
+	 connected to node 308 at outport 2 lat 1
+router 103 radix 11
+	 connected to node 309 at outport 0 lat 1
+	 connected to node 310 at outport 1 lat 1
+	 connected to node 311 at outport 2 lat 1
+router 104 radix 11
+	 connected to node 312 at outport 0 lat 1
+	 connected to node 313 at outport 1 lat 1
+	 connected to node 314 at outport 2 lat 1
+router 105 radix 11
+	 connected to node 315 at outport 0 lat 1
+	 connected to node 316 at outport 1 lat 1
+	 connected to node 317 at outport 2 lat 1
+router 106 radix 11
+	 connected to node 318 at outport 0 lat 1
+	 connected to node 319 at outport 1 lat 1
+	 connected to node 320 at outport 2 lat 1
+router 107 radix 11
+	 connected to node 321 at outport 0 lat 1
+	 connected to node 322 at outport 1 lat 1
+	 connected to node 323 at outport 2 lat 1
+router 108 radix 11
+	 connected to node 324 at outport 0 lat 1
+	 connected to node 325 at outport 1 lat 1
+	 connected to node 326 at outport 2 lat 1
+router 109 radix 11
+	 connected to node 327 at outport 0 lat 1
+	 connected to node 328 at outport 1 lat 1
+	 connected to node 329 at outport 2 lat 1
+router 110 radix 11
+	 connected to node 330 at outport 0 lat 1
+	 connected to node 331 at outport 1 lat 1
+	 connected to node 332 at outport 2 lat 1
+router 111 radix 11
+	 connected to node 333 at outport 0 lat 1
+	 connected to node 334 at outport 1 lat 1
+	 connected to node 335 at outport 2 lat 1
+router 112 radix 11
+	 connected to node 336 at outport 0 lat 1
+	 connected to node 337 at outport 1 lat 1
+	 connected to node 338 at outport 2 lat 1
+router 113 radix 11
+	 connected to node 339 at outport 0 lat 1
+	 connected to node 340 at outport 1 lat 1
+	 connected to node 341 at outport 2 lat 1
+==========================Router to Router =====================
+router 0
+	 connected to router 1 using link 0 at outport 3 lat 1
+	 connected to router 2 using link 1 at outport 4 lat 1
+	 connected to router 3 using link 2 at outport 5 lat 1
+	 connected to router 4 using link 3 at outport 6 lat 1
+	 connected to router 5 using link 4 at outport 7 lat 1
+	 connected to router 6 using link 5 at outport 8 lat 1
+	 connected to router 12 using link 6 at outport 9 lat 1
+	 connected to router 18 using link 7 at outport 10 lat 1
+router 1
+	 connected to router 0 using link 8 at outport 3 lat 1
+	 connected to router 2 using link 9 at outport 4 lat 1
+	 connected to router 3 using link 10 at outport 5 lat 1
+	 connected to router 4 using link 11 at outport 6 lat 1
+	 connected to router 5 using link 12 at outport 7 lat 1
+	 connected to router 24 using link 13 at outport 8 lat 1
+	 connected to router 30 using link 14 at outport 9 lat 1
+	 connected to router 36 using link 15 at outport 10 lat 1
+router 2
+	 connected to router 0 using link 16 at outport 3 lat 1
+	 connected to router 1 using link 17 at outport 4 lat 1
+	 connected to router 3 using link 18 at outport 5 lat 1
+	 connected to router 4 using link 19 at outport 6 lat 1
+	 connected to router 5 using link 20 at outport 7 lat 1
+	 connected to router 42 using link 21 at outport 8 lat 1
+	 connected to router 48 using link 22 at outport 9 lat 1
+	 connected to router 54 using link 23 at outport 10 lat 1
+router 3
+	 connected to router 0 using link 24 at outport 3 lat 1
+	 connected to router 1 using link 25 at outport 4 lat 1
+	 connected to router 2 using link 26 at outport 5 lat 1
+	 connected to router 4 using link 27 at outport 6 lat 1
+	 connected to router 5 using link 28 at outport 7 lat 1
+	 connected to router 60 using link 29 at outport 8 lat 1
+	 connected to router 66 using link 30 at outport 9 lat 1
+	 connected to router 72 using link 31 at outport 10 lat 1
+router 4
+	 connected to router 0 using link 32 at outport 3 lat 1
+	 connected to router 1 using link 33 at outport 4 lat 1
+	 connected to router 2 using link 34 at outport 5 lat 1
+	 connected to router 3 using link 35 at outport 6 lat 1
+	 connected to router 5 using link 36 at outport 7 lat 1
+	 connected to router 78 using link 37 at outport 8 lat 1
+	 connected to router 84 using link 38 at outport 9 lat 1
+	 connected to router 90 using link 39 at outport 10 lat 1
+router 5
+	 connected to router 0 using link 40 at outport 3 lat 1
+	 connected to router 1 using link 41 at outport 4 lat 1
+	 connected to router 2 using link 42 at outport 5 lat 1
+	 connected to router 3 using link 43 at outport 6 lat 1
+	 connected to router 4 using link 44 at outport 7 lat 1
+	 connected to router 96 using link 45 at outport 8 lat 1
+	 connected to router 102 using link 46 at outport 9 lat 1
+	 connected to router 108 using link 47 at outport 10 lat 1
+router 6
+	 connected to router 0 using link 48 at outport 3 lat 1
+	 connected to router 7 using link 49 at outport 4 lat 1
+	 connected to router 8 using link 50 at outport 5 lat 1
+	 connected to router 9 using link 51 at outport 6 lat 1
+	 connected to router 10 using link 52 at outport 7 lat 1
+	 connected to router 11 using link 53 at outport 8 lat 1
+	 connected to router 12 using link 54 at outport 9 lat 1
+	 connected to router 18 using link 55 at outport 10 lat 1
+router 7
+	 connected to router 6 using link 56 at outport 3 lat 1
+	 connected to router 8 using link 57 at outport 4 lat 1
+	 connected to router 9 using link 58 at outport 5 lat 1
+	 connected to router 10 using link 59 at outport 6 lat 1
+	 connected to router 11 using link 60 at outport 7 lat 1
+	 connected to router 24 using link 61 at outport 8 lat 1
+	 connected to router 30 using link 62 at outport 9 lat 1
+	 connected to router 36 using link 63 at outport 10 lat 1
+router 8
+	 connected to router 6 using link 64 at outport 3 lat 1
+	 connected to router 7 using link 65 at outport 4 lat 1
+	 connected to router 9 using link 66 at outport 5 lat 1
+	 connected to router 10 using link 67 at outport 6 lat 1
+	 connected to router 11 using link 68 at outport 7 lat 1
+	 connected to router 42 using link 69 at outport 8 lat 1
+	 connected to router 48 using link 70 at outport 9 lat 1
+	 connected to router 54 using link 71 at outport 10 lat 1
+router 9
+	 connected to router 6 using link 72 at outport 3 lat 1
+	 connected to router 7 using link 73 at outport 4 lat 1
+	 connected to router 8 using link 74 at outport 5 lat 1
+	 connected to router 10 using link 75 at outport 6 lat 1
+	 connected to router 11 using link 76 at outport 7 lat 1
+	 connected to router 60 using link 77 at outport 8 lat 1
+	 connected to router 66 using link 78 at outport 9 lat 1
+	 connected to router 72 using link 79 at outport 10 lat 1
+router 10
+	 connected to router 6 using link 80 at outport 3 lat 1
+	 connected to router 7 using link 81 at outport 4 lat 1
+	 connected to router 8 using link 82 at outport 5 lat 1
+	 connected to router 9 using link 83 at outport 6 lat 1
+	 connected to router 11 using link 84 at outport 7 lat 1
+	 connected to router 78 using link 85 at outport 8 lat 1
+	 connected to router 84 using link 86 at outport 9 lat 1
+	 connected to router 90 using link 87 at outport 10 lat 1
+router 11
+	 connected to router 6 using link 88 at outport 3 lat 1
+	 connected to router 7 using link 89 at outport 4 lat 1
+	 connected to router 8 using link 90 at outport 5 lat 1
+	 connected to router 9 using link 91 at outport 6 lat 1
+	 connected to router 10 using link 92 at outport 7 lat 1
+	 connected to router 96 using link 93 at outport 8 lat 1
+	 connected to router 102 using link 94 at outport 9 lat 1
+	 connected to router 108 using link 95 at outport 10 lat 1
+router 12
+	 connected to router 0 using link 96 at outport 3 lat 1
+	 connected to router 6 using link 97 at outport 4 lat 1
+	 connected to router 13 using link 98 at outport 5 lat 1
+	 connected to router 14 using link 99 at outport 6 lat 1
+	 connected to router 15 using link 100 at outport 7 lat 1
+	 connected to router 16 using link 101 at outport 8 lat 1
+	 connected to router 17 using link 102 at outport 9 lat 1
+	 connected to router 18 using link 103 at outport 10 lat 1
+router 13
+	 connected to router 12 using link 104 at outport 3 lat 1
+	 connected to router 14 using link 105 at outport 4 lat 1
+	 connected to router 15 using link 106 at outport 5 lat 1
+	 connected to router 16 using link 107 at outport 6 lat 1
+	 connected to router 17 using link 108 at outport 7 lat 1
+	 connected to router 24 using link 109 at outport 8 lat 1
+	 connected to router 30 using link 110 at outport 9 lat 1
+	 connected to router 36 using link 111 at outport 10 lat 1
+router 14
+	 connected to router 12 using link 112 at outport 3 lat 1
+	 connected to router 13 using link 113 at outport 4 lat 1
+	 connected to router 15 using link 114 at outport 5 lat 1
+	 connected to router 16 using link 115 at outport 6 lat 1
+	 connected to router 17 using link 116 at outport 7 lat 1
+	 connected to router 42 using link 117 at outport 8 lat 1
+	 connected to router 48 using link 118 at outport 9 lat 1
+	 connected to router 54 using link 119 at outport 10 lat 1
+router 15
+	 connected to router 12 using link 120 at outport 3 lat 1
+	 connected to router 13 using link 121 at outport 4 lat 1
+	 connected to router 14 using link 122 at outport 5 lat 1
+	 connected to router 16 using link 123 at outport 6 lat 1
+	 connected to router 17 using link 124 at outport 7 lat 1
+	 connected to router 60 using link 125 at outport 8 lat 1
+	 connected to router 66 using link 126 at outport 9 lat 1
+	 connected to router 72 using link 127 at outport 10 lat 1
+router 16
+	 connected to router 12 using link 128 at outport 3 lat 1
+	 connected to router 13 using link 129 at outport 4 lat 1
+	 connected to router 14 using link 130 at outport 5 lat 1
+	 connected to router 15 using link 131 at outport 6 lat 1
+	 connected to router 17 using link 132 at outport 7 lat 1
+	 connected to router 78 using link 133 at outport 8 lat 1
+	 connected to router 84 using link 134 at outport 9 lat 1
+	 connected to router 90 using link 135 at outport 10 lat 1
+router 17
+	 connected to router 12 using link 136 at outport 3 lat 1
+	 connected to router 13 using link 137 at outport 4 lat 1
+	 connected to router 14 using link 138 at outport 5 lat 1
+	 connected to router 15 using link 139 at outport 6 lat 1
+	 connected to router 16 using link 140 at outport 7 lat 1
+	 connected to router 96 using link 141 at outport 8 lat 1
+	 connected to router 102 using link 142 at outport 9 lat 1
+	 connected to router 108 using link 143 at outport 10 lat 1
+router 18
+	 connected to router 0 using link 144 at outport 3 lat 1
+	 connected to router 6 using link 145 at outport 4 lat 1
+	 connected to router 12 using link 146 at outport 5 lat 1
+	 connected to router 19 using link 147 at outport 6 lat 1
+	 connected to router 20 using link 148 at outport 7 lat 1
+	 connected to router 21 using link 149 at outport 8 lat 1
+	 connected to router 22 using link 150 at outport 9 lat 1
+	 connected to router 23 using link 151 at outport 10 lat 1
+router 19
+	 connected to router 18 using link 152 at outport 3 lat 1
+	 connected to router 20 using link 153 at outport 4 lat 1
+	 connected to router 21 using link 154 at outport 5 lat 1
+	 connected to router 22 using link 155 at outport 6 lat 1
+	 connected to router 23 using link 156 at outport 7 lat 1
+	 connected to router 25 using link 157 at outport 8 lat 1
+	 connected to router 31 using link 158 at outport 9 lat 1
+	 connected to router 37 using link 159 at outport 10 lat 1
+router 20
+	 connected to router 18 using link 160 at outport 3 lat 1
+	 connected to router 19 using link 161 at outport 4 lat 1
+	 connected to router 21 using link 162 at outport 5 lat 1
+	 connected to router 22 using link 163 at outport 6 lat 1
+	 connected to router 23 using link 164 at outport 7 lat 1
+	 connected to router 43 using link 165 at outport 8 lat 1
+	 connected to router 49 using link 166 at outport 9 lat 1
+	 connected to router 55 using link 167 at outport 10 lat 1
+router 21
+	 connected to router 18 using link 168 at outport 3 lat 1
+	 connected to router 19 using link 169 at outport 4 lat 1
+	 connected to router 20 using link 170 at outport 5 lat 1
+	 connected to router 22 using link 171 at outport 6 lat 1
+	 connected to router 23 using link 172 at outport 7 lat 1
+	 connected to router 61 using link 173 at outport 8 lat 1
+	 connected to router 67 using link 174 at outport 9 lat 1
+	 connected to router 73 using link 175 at outport 10 lat 1
+router 22
+	 connected to router 18 using link 176 at outport 3 lat 1
+	 connected to router 19 using link 177 at outport 4 lat 1
+	 connected to router 20 using link 178 at outport 5 lat 1
+	 connected to router 21 using link 179 at outport 6 lat 1
+	 connected to router 23 using link 180 at outport 7 lat 1
+	 connected to router 79 using link 181 at outport 8 lat 1
+	 connected to router 85 using link 182 at outport 9 lat 1
+	 connected to router 91 using link 183 at outport 10 lat 1
+router 23
+	 connected to router 18 using link 184 at outport 3 lat 1
+	 connected to router 19 using link 185 at outport 4 lat 1
+	 connected to router 20 using link 186 at outport 5 lat 1
+	 connected to router 21 using link 187 at outport 6 lat 1
+	 connected to router 22 using link 188 at outport 7 lat 1
+	 connected to router 97 using link 189 at outport 8 lat 1
+	 connected to router 103 using link 190 at outport 9 lat 1
+	 connected to router 109 using link 191 at outport 10 lat 1
+router 24
+	 connected to router 1 using link 192 at outport 3 lat 1
+	 connected to router 7 using link 193 at outport 4 lat 1
+	 connected to router 13 using link 194 at outport 5 lat 1
+	 connected to router 25 using link 195 at outport 6 lat 1
+	 connected to router 26 using link 196 at outport 7 lat 1
+	 connected to router 27 using link 197 at outport 8 lat 1
+	 connected to router 28 using link 198 at outport 9 lat 1
+	 connected to router 29 using link 199 at outport 10 lat 1
+router 25
+	 connected to router 19 using link 200 at outport 3 lat 1
+	 connected to router 24 using link 201 at outport 4 lat 1
+	 connected to router 26 using link 202 at outport 5 lat 1
+	 connected to router 27 using link 203 at outport 6 lat 1
+	 connected to router 28 using link 204 at outport 7 lat 1
+	 connected to router 29 using link 205 at outport 8 lat 1
+	 connected to router 31 using link 206 at outport 9 lat 1
+	 connected to router 37 using link 207 at outport 10 lat 1
+router 26
+	 connected to router 24 using link 208 at outport 3 lat 1
+	 connected to router 25 using link 209 at outport 4 lat 1
+	 connected to router 27 using link 210 at outport 5 lat 1
+	 connected to router 28 using link 211 at outport 6 lat 1
+	 connected to router 29 using link 212 at outport 7 lat 1
+	 connected to router 43 using link 213 at outport 8 lat 1
+	 connected to router 49 using link 214 at outport 9 lat 1
+	 connected to router 55 using link 215 at outport 10 lat 1
+router 27
+	 connected to router 24 using link 216 at outport 3 lat 1
+	 connected to router 25 using link 217 at outport 4 lat 1
+	 connected to router 26 using link 218 at outport 5 lat 1
+	 connected to router 28 using link 219 at outport 6 lat 1
+	 connected to router 29 using link 220 at outport 7 lat 1
+	 connected to router 61 using link 221 at outport 8 lat 1
+	 connected to router 67 using link 222 at outport 9 lat 1
+	 connected to router 73 using link 223 at outport 10 lat 1
+router 28
+	 connected to router 24 using link 224 at outport 3 lat 1
+	 connected to router 25 using link 225 at outport 4 lat 1
+	 connected to router 26 using link 226 at outport 5 lat 1
+	 connected to router 27 using link 227 at outport 6 lat 1
+	 connected to router 29 using link 228 at outport 7 lat 1
+	 connected to router 79 using link 229 at outport 8 lat 1
+	 connected to router 85 using link 230 at outport 9 lat 1
+	 connected to router 91 using link 231 at outport 10 lat 1
+router 29
+	 connected to router 24 using link 232 at outport 3 lat 1
+	 connected to router 25 using link 233 at outport 4 lat 1
+	 connected to router 26 using link 234 at outport 5 lat 1
+	 connected to router 27 using link 235 at outport 6 lat 1
+	 connected to router 28 using link 236 at outport 7 lat 1
+	 connected to router 97 using link 237 at outport 8 lat 1
+	 connected to router 103 using link 238 at outport 9 lat 1
+	 connected to router 109 using link 239 at outport 10 lat 1
+router 30
+	 connected to router 1 using link 240 at outport 3 lat 1
+	 connected to router 7 using link 241 at outport 4 lat 1
+	 connected to router 13 using link 242 at outport 5 lat 1
+	 connected to router 31 using link 243 at outport 6 lat 1
+	 connected to router 32 using link 244 at outport 7 lat 1
+	 connected to router 33 using link 245 at outport 8 lat 1
+	 connected to router 34 using link 246 at outport 9 lat 1
+	 connected to router 35 using link 247 at outport 10 lat 1
+router 31
+	 connected to router 19 using link 248 at outport 3 lat 1
+	 connected to router 25 using link 249 at outport 4 lat 1
+	 connected to router 30 using link 250 at outport 5 lat 1
+	 connected to router 32 using link 251 at outport 6 lat 1
+	 connected to router 33 using link 252 at outport 7 lat 1
+	 connected to router 34 using link 253 at outport 8 lat 1
+	 connected to router 35 using link 254 at outport 9 lat 1
+	 connected to router 37 using link 255 at outport 10 lat 1
+router 32
+	 connected to router 30 using link 256 at outport 3 lat 1
+	 connected to router 31 using link 257 at outport 4 lat 1
+	 connected to router 33 using link 258 at outport 5 lat 1
+	 connected to router 34 using link 259 at outport 6 lat 1
+	 connected to router 35 using link 260 at outport 7 lat 1
+	 connected to router 43 using link 261 at outport 8 lat 1
+	 connected to router 49 using link 262 at outport 9 lat 1
+	 connected to router 55 using link 263 at outport 10 lat 1
+router 33
+	 connected to router 30 using link 264 at outport 3 lat 1
+	 connected to router 31 using link 265 at outport 4 lat 1
+	 connected to router 32 using link 266 at outport 5 lat 1
+	 connected to router 34 using link 267 at outport 6 lat 1
+	 connected to router 35 using link 268 at outport 7 lat 1
+	 connected to router 61 using link 269 at outport 8 lat 1
+	 connected to router 67 using link 270 at outport 9 lat 1
+	 connected to router 73 using link 271 at outport 10 lat 1
+router 34
+	 connected to router 30 using link 272 at outport 3 lat 1
+	 connected to router 31 using link 273 at outport 4 lat 1
+	 connected to router 32 using link 274 at outport 5 lat 1
+	 connected to router 33 using link 275 at outport 6 lat 1
+	 connected to router 35 using link 276 at outport 7 lat 1
+	 connected to router 79 using link 277 at outport 8 lat 1
+	 connected to router 85 using link 278 at outport 9 lat 1
+	 connected to router 91 using link 279 at outport 10 lat 1
+router 35
+	 connected to router 30 using link 280 at outport 3 lat 1
+	 connected to router 31 using link 281 at outport 4 lat 1
+	 connected to router 32 using link 282 at outport 5 lat 1
+	 connected to router 33 using link 283 at outport 6 lat 1
+	 connected to router 34 using link 284 at outport 7 lat 1
+	 connected to router 97 using link 285 at outport 8 lat 1
+	 connected to router 103 using link 286 at outport 9 lat 1
+	 connected to router 109 using link 287 at outport 10 lat 1
+router 36
+	 connected to router 1 using link 288 at outport 3 lat 1
+	 connected to router 7 using link 289 at outport 4 lat 1
+	 connected to router 13 using link 290 at outport 5 lat 1
+	 connected to router 37 using link 291 at outport 6 lat 1
+	 connected to router 38 using link 292 at outport 7 lat 1
+	 connected to router 39 using link 293 at outport 8 lat 1
+	 connected to router 40 using link 294 at outport 9 lat 1
+	 connected to router 41 using link 295 at outport 10 lat 1
+router 37
+	 connected to router 19 using link 296 at outport 3 lat 1
+	 connected to router 25 using link 297 at outport 4 lat 1
+	 connected to router 31 using link 298 at outport 5 lat 1
+	 connected to router 36 using link 299 at outport 6 lat 1
+	 connected to router 38 using link 300 at outport 7 lat 1
+	 connected to router 39 using link 301 at outport 8 lat 1
+	 connected to router 40 using link 302 at outport 9 lat 1
+	 connected to router 41 using link 303 at outport 10 lat 1
+router 38
+	 connected to router 36 using link 304 at outport 3 lat 1
+	 connected to router 37 using link 305 at outport 4 lat 1
+	 connected to router 39 using link 306 at outport 5 lat 1
+	 connected to router 40 using link 307 at outport 6 lat 1
+	 connected to router 41 using link 308 at outport 7 lat 1
+	 connected to router 44 using link 309 at outport 8 lat 1
+	 connected to router 50 using link 310 at outport 9 lat 1
+	 connected to router 56 using link 311 at outport 10 lat 1
+router 39
+	 connected to router 36 using link 312 at outport 3 lat 1
+	 connected to router 37 using link 313 at outport 4 lat 1
+	 connected to router 38 using link 314 at outport 5 lat 1
+	 connected to router 40 using link 315 at outport 6 lat 1
+	 connected to router 41 using link 316 at outport 7 lat 1
+	 connected to router 62 using link 317 at outport 8 lat 1
+	 connected to router 68 using link 318 at outport 9 lat 1
+	 connected to router 74 using link 319 at outport 10 lat 1
+router 40
+	 connected to router 36 using link 320 at outport 3 lat 1
+	 connected to router 37 using link 321 at outport 4 lat 1
+	 connected to router 38 using link 322 at outport 5 lat 1
+	 connected to router 39 using link 323 at outport 6 lat 1
+	 connected to router 41 using link 324 at outport 7 lat 1
+	 connected to router 80 using link 325 at outport 8 lat 1
+	 connected to router 86 using link 326 at outport 9 lat 1
+	 connected to router 92 using link 327 at outport 10 lat 1
+router 41
+	 connected to router 36 using link 328 at outport 3 lat 1
+	 connected to router 37 using link 329 at outport 4 lat 1
+	 connected to router 38 using link 330 at outport 5 lat 1
+	 connected to router 39 using link 331 at outport 6 lat 1
+	 connected to router 40 using link 332 at outport 7 lat 1
+	 connected to router 98 using link 333 at outport 8 lat 1
+	 connected to router 104 using link 334 at outport 9 lat 1
+	 connected to router 110 using link 335 at outport 10 lat 1
+router 42
+	 connected to router 2 using link 336 at outport 3 lat 1
+	 connected to router 8 using link 337 at outport 4 lat 1
+	 connected to router 14 using link 338 at outport 5 lat 1
+	 connected to router 43 using link 339 at outport 6 lat 1
+	 connected to router 44 using link 340 at outport 7 lat 1
+	 connected to router 45 using link 341 at outport 8 lat 1
+	 connected to router 46 using link 342 at outport 9 lat 1
+	 connected to router 47 using link 343 at outport 10 lat 1
+router 43
+	 connected to router 20 using link 344 at outport 3 lat 1
+	 connected to router 26 using link 345 at outport 4 lat 1
+	 connected to router 32 using link 346 at outport 5 lat 1
+	 connected to router 42 using link 347 at outport 6 lat 1
+	 connected to router 44 using link 348 at outport 7 lat 1
+	 connected to router 45 using link 349 at outport 8 lat 1
+	 connected to router 46 using link 350 at outport 9 lat 1
+	 connected to router 47 using link 351 at outport 10 lat 1
+router 44
+	 connected to router 38 using link 352 at outport 3 lat 1
+	 connected to router 42 using link 353 at outport 4 lat 1
+	 connected to router 43 using link 354 at outport 5 lat 1
+	 connected to router 45 using link 355 at outport 6 lat 1
+	 connected to router 46 using link 356 at outport 7 lat 1
+	 connected to router 47 using link 357 at outport 8 lat 1
+	 connected to router 50 using link 358 at outport 9 lat 1
+	 connected to router 56 using link 359 at outport 10 lat 1
+router 45
+	 connected to router 42 using link 360 at outport 3 lat 1
+	 connected to router 43 using link 361 at outport 4 lat 1
+	 connected to router 44 using link 362 at outport 5 lat 1
+	 connected to router 46 using link 363 at outport 6 lat 1
+	 connected to router 47 using link 364 at outport 7 lat 1
+	 connected to router 62 using link 365 at outport 8 lat 1
+	 connected to router 68 using link 366 at outport 9 lat 1
+	 connected to router 74 using link 367 at outport 10 lat 1
+router 46
+	 connected to router 42 using link 368 at outport 3 lat 1
+	 connected to router 43 using link 369 at outport 4 lat 1
+	 connected to router 44 using link 370 at outport 5 lat 1
+	 connected to router 45 using link 371 at outport 6 lat 1
+	 connected to router 47 using link 372 at outport 7 lat 1
+	 connected to router 80 using link 373 at outport 8 lat 1
+	 connected to router 86 using link 374 at outport 9 lat 1
+	 connected to router 92 using link 375 at outport 10 lat 1
+router 47
+	 connected to router 42 using link 376 at outport 3 lat 1
+	 connected to router 43 using link 377 at outport 4 lat 1
+	 connected to router 44 using link 378 at outport 5 lat 1
+	 connected to router 45 using link 379 at outport 6 lat 1
+	 connected to router 46 using link 380 at outport 7 lat 1
+	 connected to router 98 using link 381 at outport 8 lat 1
+	 connected to router 104 using link 382 at outport 9 lat 1
+	 connected to router 110 using link 383 at outport 10 lat 1
+router 48
+	 connected to router 2 using link 384 at outport 3 lat 1
+	 connected to router 8 using link 385 at outport 4 lat 1
+	 connected to router 14 using link 386 at outport 5 lat 1
+	 connected to router 49 using link 387 at outport 6 lat 1
+	 connected to router 50 using link 388 at outport 7 lat 1
+	 connected to router 51 using link 389 at outport 8 lat 1
+	 connected to router 52 using link 390 at outport 9 lat 1
+	 connected to router 53 using link 391 at outport 10 lat 1
+router 49
+	 connected to router 20 using link 392 at outport 3 lat 1
+	 connected to router 26 using link 393 at outport 4 lat 1
+	 connected to router 32 using link 394 at outport 5 lat 1
+	 connected to router 48 using link 395 at outport 6 lat 1
+	 connected to router 50 using link 396 at outport 7 lat 1
+	 connected to router 51 using link 397 at outport 8 lat 1
+	 connected to router 52 using link 398 at outport 9 lat 1
+	 connected to router 53 using link 399 at outport 10 lat 1
+router 50
+	 connected to router 38 using link 400 at outport 3 lat 1
+	 connected to router 44 using link 401 at outport 4 lat 1
+	 connected to router 48 using link 402 at outport 5 lat 1
+	 connected to router 49 using link 403 at outport 6 lat 1
+	 connected to router 51 using link 404 at outport 7 lat 1
+	 connected to router 52 using link 405 at outport 8 lat 1
+	 connected to router 53 using link 406 at outport 9 lat 1
+	 connected to router 56 using link 407 at outport 10 lat 1
+router 51
+	 connected to router 48 using link 408 at outport 3 lat 1
+	 connected to router 49 using link 409 at outport 4 lat 1
+	 connected to router 50 using link 410 at outport 5 lat 1
+	 connected to router 52 using link 411 at outport 6 lat 1
+	 connected to router 53 using link 412 at outport 7 lat 1
+	 connected to router 62 using link 413 at outport 8 lat 1
+	 connected to router 68 using link 414 at outport 9 lat 1
+	 connected to router 74 using link 415 at outport 10 lat 1
+router 52
+	 connected to router 48 using link 416 at outport 3 lat 1
+	 connected to router 49 using link 417 at outport 4 lat 1
+	 connected to router 50 using link 418 at outport 5 lat 1
+	 connected to router 51 using link 419 at outport 6 lat 1
+	 connected to router 53 using link 420 at outport 7 lat 1
+	 connected to router 80 using link 421 at outport 8 lat 1
+	 connected to router 86 using link 422 at outport 9 lat 1
+	 connected to router 92 using link 423 at outport 10 lat 1
+router 53
+	 connected to router 48 using link 424 at outport 3 lat 1
+	 connected to router 49 using link 425 at outport 4 lat 1
+	 connected to router 50 using link 426 at outport 5 lat 1
+	 connected to router 51 using link 427 at outport 6 lat 1
+	 connected to router 52 using link 428 at outport 7 lat 1
+	 connected to router 98 using link 429 at outport 8 lat 1
+	 connected to router 104 using link 430 at outport 9 lat 1
+	 connected to router 110 using link 431 at outport 10 lat 1
+router 54
+	 connected to router 2 using link 432 at outport 3 lat 1
+	 connected to router 8 using link 433 at outport 4 lat 1
+	 connected to router 14 using link 434 at outport 5 lat 1
+	 connected to router 55 using link 435 at outport 6 lat 1
+	 connected to router 56 using link 436 at outport 7 lat 1
+	 connected to router 57 using link 437 at outport 8 lat 1
+	 connected to router 58 using link 438 at outport 9 lat 1
+	 connected to router 59 using link 439 at outport 10 lat 1
+router 55
+	 connected to router 20 using link 440 at outport 3 lat 1
+	 connected to router 26 using link 441 at outport 4 lat 1
+	 connected to router 32 using link 442 at outport 5 lat 1
+	 connected to router 54 using link 443 at outport 6 lat 1
+	 connected to router 56 using link 444 at outport 7 lat 1
+	 connected to router 57 using link 445 at outport 8 lat 1
+	 connected to router 58 using link 446 at outport 9 lat 1
+	 connected to router 59 using link 447 at outport 10 lat 1
+router 56
+	 connected to router 38 using link 448 at outport 3 lat 1
+	 connected to router 44 using link 449 at outport 4 lat 1
+	 connected to router 50 using link 450 at outport 5 lat 1
+	 connected to router 54 using link 451 at outport 6 lat 1
+	 connected to router 55 using link 452 at outport 7 lat 1
+	 connected to router 57 using link 453 at outport 8 lat 1
+	 connected to router 58 using link 454 at outport 9 lat 1
+	 connected to router 59 using link 455 at outport 10 lat 1
+router 57
+	 connected to router 54 using link 456 at outport 3 lat 1
+	 connected to router 55 using link 457 at outport 4 lat 1
+	 connected to router 56 using link 458 at outport 5 lat 1
+	 connected to router 58 using link 459 at outport 6 lat 1
+	 connected to router 59 using link 460 at outport 7 lat 1
+	 connected to router 63 using link 461 at outport 8 lat 1
+	 connected to router 69 using link 462 at outport 9 lat 1
+	 connected to router 75 using link 463 at outport 10 lat 1
+router 58
+	 connected to router 54 using link 464 at outport 3 lat 1
+	 connected to router 55 using link 465 at outport 4 lat 1
+	 connected to router 56 using link 466 at outport 5 lat 1
+	 connected to router 57 using link 467 at outport 6 lat 1
+	 connected to router 59 using link 468 at outport 7 lat 1
+	 connected to router 81 using link 469 at outport 8 lat 1
+	 connected to router 87 using link 470 at outport 9 lat 1
+	 connected to router 93 using link 471 at outport 10 lat 1
+router 59
+	 connected to router 54 using link 472 at outport 3 lat 1
+	 connected to router 55 using link 473 at outport 4 lat 1
+	 connected to router 56 using link 474 at outport 5 lat 1
+	 connected to router 57 using link 475 at outport 6 lat 1
+	 connected to router 58 using link 476 at outport 7 lat 1
+	 connected to router 99 using link 477 at outport 8 lat 1
+	 connected to router 105 using link 478 at outport 9 lat 1
+	 connected to router 111 using link 479 at outport 10 lat 1
+router 60
+	 connected to router 3 using link 480 at outport 3 lat 1
+	 connected to router 9 using link 481 at outport 4 lat 1
+	 connected to router 15 using link 482 at outport 5 lat 1
+	 connected to router 61 using link 483 at outport 6 lat 1
+	 connected to router 62 using link 484 at outport 7 lat 1
+	 connected to router 63 using link 485 at outport 8 lat 1
+	 connected to router 64 using link 486 at outport 9 lat 1
+	 connected to router 65 using link 487 at outport 10 lat 1
+router 61
+	 connected to router 21 using link 488 at outport 3 lat 1
+	 connected to router 27 using link 489 at outport 4 lat 1
+	 connected to router 33 using link 490 at outport 5 lat 1
+	 connected to router 60 using link 491 at outport 6 lat 1
+	 connected to router 62 using link 492 at outport 7 lat 1
+	 connected to router 63 using link 493 at outport 8 lat 1
+	 connected to router 64 using link 494 at outport 9 lat 1
+	 connected to router 65 using link 495 at outport 10 lat 1
+router 62
+	 connected to router 39 using link 496 at outport 3 lat 1
+	 connected to router 45 using link 497 at outport 4 lat 1
+	 connected to router 51 using link 498 at outport 5 lat 1
+	 connected to router 60 using link 499 at outport 6 lat 1
+	 connected to router 61 using link 500 at outport 7 lat 1
+	 connected to router 63 using link 501 at outport 8 lat 1
+	 connected to router 64 using link 502 at outport 9 lat 1
+	 connected to router 65 using link 503 at outport 10 lat 1
+router 63
+	 connected to router 57 using link 504 at outport 3 lat 1
+	 connected to router 60 using link 505 at outport 4 lat 1
+	 connected to router 61 using link 506 at outport 5 lat 1
+	 connected to router 62 using link 507 at outport 6 lat 1
+	 connected to router 64 using link 508 at outport 7 lat 1
+	 connected to router 65 using link 509 at outport 8 lat 1
+	 connected to router 69 using link 510 at outport 9 lat 1
+	 connected to router 75 using link 511 at outport 10 lat 1
+router 64
+	 connected to router 60 using link 512 at outport 3 lat 1
+	 connected to router 61 using link 513 at outport 4 lat 1
+	 connected to router 62 using link 514 at outport 5 lat 1
+	 connected to router 63 using link 515 at outport 6 lat 1
+	 connected to router 65 using link 516 at outport 7 lat 1
+	 connected to router 81 using link 517 at outport 8 lat 1
+	 connected to router 87 using link 518 at outport 9 lat 1
+	 connected to router 93 using link 519 at outport 10 lat 1
+router 65
+	 connected to router 60 using link 520 at outport 3 lat 1
+	 connected to router 61 using link 521 at outport 4 lat 1
+	 connected to router 62 using link 522 at outport 5 lat 1
+	 connected to router 63 using link 523 at outport 6 lat 1
+	 connected to router 64 using link 524 at outport 7 lat 1
+	 connected to router 99 using link 525 at outport 8 lat 1
+	 connected to router 105 using link 526 at outport 9 lat 1
+	 connected to router 111 using link 527 at outport 10 lat 1
+router 66
+	 connected to router 3 using link 528 at outport 3 lat 1
+	 connected to router 9 using link 529 at outport 4 lat 1
+	 connected to router 15 using link 530 at outport 5 lat 1
+	 connected to router 67 using link 531 at outport 6 lat 1
+	 connected to router 68 using link 532 at outport 7 lat 1
+	 connected to router 69 using link 533 at outport 8 lat 1
+	 connected to router 70 using link 534 at outport 9 lat 1
+	 connected to router 71 using link 535 at outport 10 lat 1
+router 67
+	 connected to router 21 using link 536 at outport 3 lat 1
+	 connected to router 27 using link 537 at outport 4 lat 1
+	 connected to router 33 using link 538 at outport 5 lat 1
+	 connected to router 66 using link 539 at outport 6 lat 1
+	 connected to router 68 using link 540 at outport 7 lat 1
+	 connected to router 69 using link 541 at outport 8 lat 1
+	 connected to router 70 using link 542 at outport 9 lat 1
+	 connected to router 71 using link 543 at outport 10 lat 1
+router 68
+	 connected to router 39 using link 544 at outport 3 lat 1
+	 connected to router 45 using link 545 at outport 4 lat 1
+	 connected to router 51 using link 546 at outport 5 lat 1
+	 connected to router 66 using link 547 at outport 6 lat 1
+	 connected to router 67 using link 548 at outport 7 lat 1
+	 connected to router 69 using link 549 at outport 8 lat 1
+	 connected to router 70 using link 550 at outport 9 lat 1
+	 connected to router 71 using link 551 at outport 10 lat 1
+router 69
+	 connected to router 57 using link 552 at outport 3 lat 1
+	 connected to router 63 using link 553 at outport 4 lat 1
+	 connected to router 66 using link 554 at outport 5 lat 1
+	 connected to router 67 using link 555 at outport 6 lat 1
+	 connected to router 68 using link 556 at outport 7 lat 1
+	 connected to router 70 using link 557 at outport 8 lat 1
+	 connected to router 71 using link 558 at outport 9 lat 1
+	 connected to router 75 using link 559 at outport 10 lat 1
+router 70
+	 connected to router 66 using link 560 at outport 3 lat 1
+	 connected to router 67 using link 561 at outport 4 lat 1
+	 connected to router 68 using link 562 at outport 5 lat 1
+	 connected to router 69 using link 563 at outport 6 lat 1
+	 connected to router 71 using link 564 at outport 7 lat 1
+	 connected to router 81 using link 565 at outport 8 lat 1
+	 connected to router 87 using link 566 at outport 9 lat 1
+	 connected to router 93 using link 567 at outport 10 lat 1
+router 71
+	 connected to router 66 using link 568 at outport 3 lat 1
+	 connected to router 67 using link 569 at outport 4 lat 1
+	 connected to router 68 using link 570 at outport 5 lat 1
+	 connected to router 69 using link 571 at outport 6 lat 1
+	 connected to router 70 using link 572 at outport 7 lat 1
+	 connected to router 99 using link 573 at outport 8 lat 1
+	 connected to router 105 using link 574 at outport 9 lat 1
+	 connected to router 111 using link 575 at outport 10 lat 1
+router 72
+	 connected to router 3 using link 576 at outport 3 lat 1
+	 connected to router 9 using link 577 at outport 4 lat 1
+	 connected to router 15 using link 578 at outport 5 lat 1
+	 connected to router 73 using link 579 at outport 6 lat 1
+	 connected to router 74 using link 580 at outport 7 lat 1
+	 connected to router 75 using link 581 at outport 8 lat 1
+	 connected to router 76 using link 582 at outport 9 lat 1
+	 connected to router 77 using link 583 at outport 10 lat 1
+router 73
+	 connected to router 21 using link 584 at outport 3 lat 1
+	 connected to router 27 using link 585 at outport 4 lat 1
+	 connected to router 33 using link 586 at outport 5 lat 1
+	 connected to router 72 using link 587 at outport 6 lat 1
+	 connected to router 74 using link 588 at outport 7 lat 1
+	 connected to router 75 using link 589 at outport 8 lat 1
+	 connected to router 76 using link 590 at outport 9 lat 1
+	 connected to router 77 using link 591 at outport 10 lat 1
+router 74
+	 connected to router 39 using link 592 at outport 3 lat 1
+	 connected to router 45 using link 593 at outport 4 lat 1
+	 connected to router 51 using link 594 at outport 5 lat 1
+	 connected to router 72 using link 595 at outport 6 lat 1
+	 connected to router 73 using link 596 at outport 7 lat 1
+	 connected to router 75 using link 597 at outport 8 lat 1
+	 connected to router 76 using link 598 at outport 9 lat 1
+	 connected to router 77 using link 599 at outport 10 lat 1
+router 75
+	 connected to router 57 using link 600 at outport 3 lat 1
+	 connected to router 63 using link 601 at outport 4 lat 1
+	 connected to router 69 using link 602 at outport 5 lat 1
+	 connected to router 72 using link 603 at outport 6 lat 1
+	 connected to router 73 using link 604 at outport 7 lat 1
+	 connected to router 74 using link 605 at outport 8 lat 1
+	 connected to router 76 using link 606 at outport 9 lat 1
+	 connected to router 77 using link 607 at outport 10 lat 1
+router 76
+	 connected to router 72 using link 608 at outport 3 lat 1
+	 connected to router 73 using link 609 at outport 4 lat 1
+	 connected to router 74 using link 610 at outport 5 lat 1
+	 connected to router 75 using link 611 at outport 6 lat 1
+	 connected to router 77 using link 612 at outport 7 lat 1
+	 connected to router 82 using link 613 at outport 8 lat 1
+	 connected to router 88 using link 614 at outport 9 lat 1
+	 connected to router 94 using link 615 at outport 10 lat 1
+router 77
+	 connected to router 72 using link 616 at outport 3 lat 1
+	 connected to router 73 using link 617 at outport 4 lat 1
+	 connected to router 74 using link 618 at outport 5 lat 1
+	 connected to router 75 using link 619 at outport 6 lat 1
+	 connected to router 76 using link 620 at outport 7 lat 1
+	 connected to router 100 using link 621 at outport 8 lat 1
+	 connected to router 106 using link 622 at outport 9 lat 1
+	 connected to router 112 using link 623 at outport 10 lat 1
+router 78
+	 connected to router 4 using link 624 at outport 3 lat 1
+	 connected to router 10 using link 625 at outport 4 lat 1
+	 connected to router 16 using link 626 at outport 5 lat 1
+	 connected to router 79 using link 627 at outport 6 lat 1
+	 connected to router 80 using link 628 at outport 7 lat 1
+	 connected to router 81 using link 629 at outport 8 lat 1
+	 connected to router 82 using link 630 at outport 9 lat 1
+	 connected to router 83 using link 631 at outport 10 lat 1
+router 79
+	 connected to router 22 using link 632 at outport 3 lat 1
+	 connected to router 28 using link 633 at outport 4 lat 1
+	 connected to router 34 using link 634 at outport 5 lat 1
+	 connected to router 78 using link 635 at outport 6 lat 1
+	 connected to router 80 using link 636 at outport 7 lat 1
+	 connected to router 81 using link 637 at outport 8 lat 1
+	 connected to router 82 using link 638 at outport 9 lat 1
+	 connected to router 83 using link 639 at outport 10 lat 1
+router 80
+	 connected to router 40 using link 640 at outport 3 lat 1
+	 connected to router 46 using link 641 at outport 4 lat 1
+	 connected to router 52 using link 642 at outport 5 lat 1
+	 connected to router 78 using link 643 at outport 6 lat 1
+	 connected to router 79 using link 644 at outport 7 lat 1
+	 connected to router 81 using link 645 at outport 8 lat 1
+	 connected to router 82 using link 646 at outport 9 lat 1
+	 connected to router 83 using link 647 at outport 10 lat 1
+router 81
+	 connected to router 58 using link 648 at outport 3 lat 1
+	 connected to router 64 using link 649 at outport 4 lat 1
+	 connected to router 70 using link 650 at outport 5 lat 1
+	 connected to router 78 using link 651 at outport 6 lat 1
+	 connected to router 79 using link 652 at outport 7 lat 1
+	 connected to router 80 using link 653 at outport 8 lat 1
+	 connected to router 82 using link 654 at outport 9 lat 1
+	 connected to router 83 using link 655 at outport 10 lat 1
+router 82
+	 connected to router 76 using link 656 at outport 3 lat 1
+	 connected to router 78 using link 657 at outport 4 lat 1
+	 connected to router 79 using link 658 at outport 5 lat 1
+	 connected to router 80 using link 659 at outport 6 lat 1
+	 connected to router 81 using link 660 at outport 7 lat 1
+	 connected to router 83 using link 661 at outport 8 lat 1
+	 connected to router 88 using link 662 at outport 9 lat 1
+	 connected to router 94 using link 663 at outport 10 lat 1
+router 83
+	 connected to router 78 using link 664 at outport 3 lat 1
+	 connected to router 79 using link 665 at outport 4 lat 1
+	 connected to router 80 using link 666 at outport 5 lat 1
+	 connected to router 81 using link 667 at outport 6 lat 1
+	 connected to router 82 using link 668 at outport 7 lat 1
+	 connected to router 100 using link 669 at outport 8 lat 1
+	 connected to router 106 using link 670 at outport 9 lat 1
+	 connected to router 112 using link 671 at outport 10 lat 1
+router 84
+	 connected to router 4 using link 672 at outport 3 lat 1
+	 connected to router 10 using link 673 at outport 4 lat 1
+	 connected to router 16 using link 674 at outport 5 lat 1
+	 connected to router 85 using link 675 at outport 6 lat 1
+	 connected to router 86 using link 676 at outport 7 lat 1
+	 connected to router 87 using link 677 at outport 8 lat 1
+	 connected to router 88 using link 678 at outport 9 lat 1
+	 connected to router 89 using link 679 at outport 10 lat 1
+router 85
+	 connected to router 22 using link 680 at outport 3 lat 1
+	 connected to router 28 using link 681 at outport 4 lat 1
+	 connected to router 34 using link 682 at outport 5 lat 1
+	 connected to router 84 using link 683 at outport 6 lat 1
+	 connected to router 86 using link 684 at outport 7 lat 1
+	 connected to router 87 using link 685 at outport 8 lat 1
+	 connected to router 88 using link 686 at outport 9 lat 1
+	 connected to router 89 using link 687 at outport 10 lat 1
+router 86
+	 connected to router 40 using link 688 at outport 3 lat 1
+	 connected to router 46 using link 689 at outport 4 lat 1
+	 connected to router 52 using link 690 at outport 5 lat 1
+	 connected to router 84 using link 691 at outport 6 lat 1
+	 connected to router 85 using link 692 at outport 7 lat 1
+	 connected to router 87 using link 693 at outport 8 lat 1
+	 connected to router 88 using link 694 at outport 9 lat 1
+	 connected to router 89 using link 695 at outport 10 lat 1
+router 87
+	 connected to router 58 using link 696 at outport 3 lat 1
+	 connected to router 64 using link 697 at outport 4 lat 1
+	 connected to router 70 using link 698 at outport 5 lat 1
+	 connected to router 84 using link 699 at outport 6 lat 1
+	 connected to router 85 using link 700 at outport 7 lat 1
+	 connected to router 86 using link 701 at outport 8 lat 1
+	 connected to router 88 using link 702 at outport 9 lat 1
+	 connected to router 89 using link 703 at outport 10 lat 1
+router 88
+	 connected to router 76 using link 704 at outport 3 lat 1
+	 connected to router 82 using link 705 at outport 4 lat 1
+	 connected to router 84 using link 706 at outport 5 lat 1
+	 connected to router 85 using link 707 at outport 6 lat 1
+	 connected to router 86 using link 708 at outport 7 lat 1
+	 connected to router 87 using link 709 at outport 8 lat 1
+	 connected to router 89 using link 710 at outport 9 lat 1
+	 connected to router 94 using link 711 at outport 10 lat 1
+router 89
+	 connected to router 84 using link 712 at outport 3 lat 1
+	 connected to router 85 using link 713 at outport 4 lat 1
+	 connected to router 86 using link 714 at outport 5 lat 1
+	 connected to router 87 using link 715 at outport 6 lat 1
+	 connected to router 88 using link 716 at outport 7 lat 1
+	 connected to router 100 using link 717 at outport 8 lat 1
+	 connected to router 106 using link 718 at outport 9 lat 1
+	 connected to router 112 using link 719 at outport 10 lat 1
+router 90
+	 connected to router 4 using link 720 at outport 3 lat 1
+	 connected to router 10 using link 721 at outport 4 lat 1
+	 connected to router 16 using link 722 at outport 5 lat 1
+	 connected to router 91 using link 723 at outport 6 lat 1
+	 connected to router 92 using link 724 at outport 7 lat 1
+	 connected to router 93 using link 725 at outport 8 lat 1
+	 connected to router 94 using link 726 at outport 9 lat 1
+	 connected to router 95 using link 727 at outport 10 lat 1
+router 91
+	 connected to router 22 using link 728 at outport 3 lat 1
+	 connected to router 28 using link 729 at outport 4 lat 1
+	 connected to router 34 using link 730 at outport 5 lat 1
+	 connected to router 90 using link 731 at outport 6 lat 1
+	 connected to router 92 using link 732 at outport 7 lat 1
+	 connected to router 93 using link 733 at outport 8 lat 1
+	 connected to router 94 using link 734 at outport 9 lat 1
+	 connected to router 95 using link 735 at outport 10 lat 1
+router 92
+	 connected to router 40 using link 736 at outport 3 lat 1
+	 connected to router 46 using link 737 at outport 4 lat 1
+	 connected to router 52 using link 738 at outport 5 lat 1
+	 connected to router 90 using link 739 at outport 6 lat 1
+	 connected to router 91 using link 740 at outport 7 lat 1
+	 connected to router 93 using link 741 at outport 8 lat 1
+	 connected to router 94 using link 742 at outport 9 lat 1
+	 connected to router 95 using link 743 at outport 10 lat 1
+router 93
+	 connected to router 58 using link 744 at outport 3 lat 1
+	 connected to router 64 using link 745 at outport 4 lat 1
+	 connected to router 70 using link 746 at outport 5 lat 1
+	 connected to router 90 using link 747 at outport 6 lat 1
+	 connected to router 91 using link 748 at outport 7 lat 1
+	 connected to router 92 using link 749 at outport 8 lat 1
+	 connected to router 94 using link 750 at outport 9 lat 1
+	 connected to router 95 using link 751 at outport 10 lat 1
+router 94
+	 connected to router 76 using link 752 at outport 3 lat 1
+	 connected to router 82 using link 753 at outport 4 lat 1
+	 connected to router 88 using link 754 at outport 5 lat 1
+	 connected to router 90 using link 755 at outport 6 lat 1
+	 connected to router 91 using link 756 at outport 7 lat 1
+	 connected to router 92 using link 757 at outport 8 lat 1
+	 connected to router 93 using link 758 at outport 9 lat 1
+	 connected to router 95 using link 759 at outport 10 lat 1
+router 95
+	 connected to router 90 using link 760 at outport 3 lat 1
+	 connected to router 91 using link 761 at outport 4 lat 1
+	 connected to router 92 using link 762 at outport 5 lat 1
+	 connected to router 93 using link 763 at outport 6 lat 1
+	 connected to router 94 using link 764 at outport 7 lat 1
+	 connected to router 101 using link 765 at outport 8 lat 1
+	 connected to router 107 using link 766 at outport 9 lat 1
+	 connected to router 113 using link 767 at outport 10 lat 1
+router 96
+	 connected to router 5 using link 768 at outport 3 lat 1
+	 connected to router 11 using link 769 at outport 4 lat 1
+	 connected to router 17 using link 770 at outport 5 lat 1
+	 connected to router 97 using link 771 at outport 6 lat 1
+	 connected to router 98 using link 772 at outport 7 lat 1
+	 connected to router 99 using link 773 at outport 8 lat 1
+	 connected to router 100 using link 774 at outport 9 lat 1
+	 connected to router 101 using link 775 at outport 10 lat 1
+router 97
+	 connected to router 23 using link 776 at outport 3 lat 1
+	 connected to router 29 using link 777 at outport 4 lat 1
+	 connected to router 35 using link 778 at outport 5 lat 1
+	 connected to router 96 using link 779 at outport 6 lat 1
+	 connected to router 98 using link 780 at outport 7 lat 1
+	 connected to router 99 using link 781 at outport 8 lat 1
+	 connected to router 100 using link 782 at outport 9 lat 1
+	 connected to router 101 using link 783 at outport 10 lat 1
+router 98
+	 connected to router 41 using link 784 at outport 3 lat 1
+	 connected to router 47 using link 785 at outport 4 lat 1
+	 connected to router 53 using link 786 at outport 5 lat 1
+	 connected to router 96 using link 787 at outport 6 lat 1
+	 connected to router 97 using link 788 at outport 7 lat 1
+	 connected to router 99 using link 789 at outport 8 lat 1
+	 connected to router 100 using link 790 at outport 9 lat 1
+	 connected to router 101 using link 791 at outport 10 lat 1
+router 99
+	 connected to router 59 using link 792 at outport 3 lat 1
+	 connected to router 65 using link 793 at outport 4 lat 1
+	 connected to router 71 using link 794 at outport 5 lat 1
+	 connected to router 96 using link 795 at outport 6 lat 1
+	 connected to router 97 using link 796 at outport 7 lat 1
+	 connected to router 98 using link 797 at outport 8 lat 1
+	 connected to router 100 using link 798 at outport 9 lat 1
+	 connected to router 101 using link 799 at outport 10 lat 1
+router 100
+	 connected to router 77 using link 800 at outport 3 lat 1
+	 connected to router 83 using link 801 at outport 4 lat 1
+	 connected to router 89 using link 802 at outport 5 lat 1
+	 connected to router 96 using link 803 at outport 6 lat 1
+	 connected to router 97 using link 804 at outport 7 lat 1
+	 connected to router 98 using link 805 at outport 8 lat 1
+	 connected to router 99 using link 806 at outport 9 lat 1
+	 connected to router 101 using link 807 at outport 10 lat 1
+router 101
+	 connected to router 95 using link 808 at outport 3 lat 1
+	 connected to router 96 using link 809 at outport 4 lat 1
+	 connected to router 97 using link 810 at outport 5 lat 1
+	 connected to router 98 using link 811 at outport 6 lat 1
+	 connected to router 99 using link 812 at outport 7 lat 1
+	 connected to router 100 using link 813 at outport 8 lat 1
+	 connected to router 107 using link 814 at outport 9 lat 1
+	 connected to router 113 using link 815 at outport 10 lat 1
+router 102
+	 connected to router 5 using link 816 at outport 3 lat 1
+	 connected to router 11 using link 817 at outport 4 lat 1
+	 connected to router 17 using link 818 at outport 5 lat 1
+	 connected to router 103 using link 819 at outport 6 lat 1
+	 connected to router 104 using link 820 at outport 7 lat 1
+	 connected to router 105 using link 821 at outport 8 lat 1
+	 connected to router 106 using link 822 at outport 9 lat 1
+	 connected to router 107 using link 823 at outport 10 lat 1
+router 103
+	 connected to router 23 using link 824 at outport 3 lat 1
+	 connected to router 29 using link 825 at outport 4 lat 1
+	 connected to router 35 using link 826 at outport 5 lat 1
+	 connected to router 102 using link 827 at outport 6 lat 1
+	 connected to router 104 using link 828 at outport 7 lat 1
+	 connected to router 105 using link 829 at outport 8 lat 1
+	 connected to router 106 using link 830 at outport 9 lat 1
+	 connected to router 107 using link 831 at outport 10 lat 1
+router 104
+	 connected to router 41 using link 832 at outport 3 lat 1
+	 connected to router 47 using link 833 at outport 4 lat 1
+	 connected to router 53 using link 834 at outport 5 lat 1
+	 connected to router 102 using link 835 at outport 6 lat 1
+	 connected to router 103 using link 836 at outport 7 lat 1
+	 connected to router 105 using link 837 at outport 8 lat 1
+	 connected to router 106 using link 838 at outport 9 lat 1
+	 connected to router 107 using link 839 at outport 10 lat 1
+router 105
+	 connected to router 59 using link 840 at outport 3 lat 1
+	 connected to router 65 using link 841 at outport 4 lat 1
+	 connected to router 71 using link 842 at outport 5 lat 1
+	 connected to router 102 using link 843 at outport 6 lat 1
+	 connected to router 103 using link 844 at outport 7 lat 1
+	 connected to router 104 using link 845 at outport 8 lat 1
+	 connected to router 106 using link 846 at outport 9 lat 1
+	 connected to router 107 using link 847 at outport 10 lat 1
+router 106
+	 connected to router 77 using link 848 at outport 3 lat 1
+	 connected to router 83 using link 849 at outport 4 lat 1
+	 connected to router 89 using link 850 at outport 5 lat 1
+	 connected to router 102 using link 851 at outport 6 lat 1
+	 connected to router 103 using link 852 at outport 7 lat 1
+	 connected to router 104 using link 853 at outport 8 lat 1
+	 connected to router 105 using link 854 at outport 9 lat 1
+	 connected to router 107 using link 855 at outport 10 lat 1
+router 107
+	 connected to router 95 using link 856 at outport 3 lat 1
+	 connected to router 101 using link 857 at outport 4 lat 1
+	 connected to router 102 using link 858 at outport 5 lat 1
+	 connected to router 103 using link 859 at outport 6 lat 1
+	 connected to router 104 using link 860 at outport 7 lat 1
+	 connected to router 105 using link 861 at outport 8 lat 1
+	 connected to router 106 using link 862 at outport 9 lat 1
+	 connected to router 113 using link 863 at outport 10 lat 1
+router 108
+	 connected to router 5 using link 864 at outport 3 lat 1
+	 connected to router 11 using link 865 at outport 4 lat 1
+	 connected to router 17 using link 866 at outport 5 lat 1
+	 connected to router 109 using link 867 at outport 6 lat 1
+	 connected to router 110 using link 868 at outport 7 lat 1
+	 connected to router 111 using link 869 at outport 8 lat 1
+	 connected to router 112 using link 870 at outport 9 lat 1
+	 connected to router 113 using link 871 at outport 10 lat 1
+router 109
+	 connected to router 23 using link 872 at outport 3 lat 1
+	 connected to router 29 using link 873 at outport 4 lat 1
+	 connected to router 35 using link 874 at outport 5 lat 1
+	 connected to router 108 using link 875 at outport 6 lat 1
+	 connected to router 110 using link 876 at outport 7 lat 1
+	 connected to router 111 using link 877 at outport 8 lat 1
+	 connected to router 112 using link 878 at outport 9 lat 1
+	 connected to router 113 using link 879 at outport 10 lat 1
+router 110
+	 connected to router 41 using link 880 at outport 3 lat 1
+	 connected to router 47 using link 881 at outport 4 lat 1
+	 connected to router 53 using link 882 at outport 5 lat 1
+	 connected to router 108 using link 883 at outport 6 lat 1
+	 connected to router 109 using link 884 at outport 7 lat 1
+	 connected to router 111 using link 885 at outport 8 lat 1
+	 connected to router 112 using link 886 at outport 9 lat 1
+	 connected to router 113 using link 887 at outport 10 lat 1
+router 111
+	 connected to router 59 using link 888 at outport 3 lat 1
+	 connected to router 65 using link 889 at outport 4 lat 1
+	 connected to router 71 using link 890 at outport 5 lat 1
+	 connected to router 108 using link 891 at outport 6 lat 1
+	 connected to router 109 using link 892 at outport 7 lat 1
+	 connected to router 110 using link 893 at outport 8 lat 1
+	 connected to router 112 using link 894 at outport 9 lat 1
+	 connected to router 113 using link 895 at outport 10 lat 1
+router 112
+	 connected to router 77 using link 896 at outport 3 lat 1
+	 connected to router 83 using link 897 at outport 4 lat 1
+	 connected to router 89 using link 898 at outport 5 lat 1
+	 connected to router 108 using link 899 at outport 6 lat 1
+	 connected to router 109 using link 900 at outport 7 lat 1
+	 connected to router 110 using link 901 at outport 8 lat 1
+	 connected to router 111 using link 902 at outport 9 lat 1
+	 connected to router 113 using link 903 at outport 10 lat 1
+router 113
+	 connected to router 95 using link 904 at outport 3 lat 1
+	 connected to router 101 using link 905 at outport 4 lat 1
+	 connected to router 107 using link 906 at outport 5 lat 1
+	 connected to router 108 using link 907 at outport 6 lat 1
+	 connected to router 109 using link 908 at outport 7 lat 1
+	 connected to router 110 using link 909 at outport 8 lat 1
+	 connected to router 111 using link 910 at outport 9 lat 1
+	 connected to router 112 using link 911 at outport 10 lat 1
+========================== Build Routing table  =====================
+Start searching...Routing table for router 0 done  |
+Start searching...Routing table for router 1 done  |
+Start searching...Routing table for router 2 done  |
+Start searching...Routing table for router 3 done  |
+Start searching...Routing table for router 4 done  |
+Start searching...Routing table for router 5 done  |
+Start searching...Routing table for router 6 done  |
+Start searching...Routing table for router 7 done  |
+Start searching...Routing table for router 8 done  |
+Start searching...Routing table for router 9 done  |
+Start searching...Routing table for router 10 done  |
+Start searching...Routing table for router 11 done  |
+Start searching...Routing table for router 12 done  |
+Start searching...Routing table for router 13 done  |
+Start searching...Routing table for router 14 done  |
+Start searching...Routing table for router 15 done  |
+Start searching...Routing table for router 16 done  |
+Start searching...Routing table for router 17 done  |
+Start searching...Routing table for router 18 done  |
+Start searching...Routing table for router 19 done  |
+Start searching...Routing table for router 20 done  |
+Start searching...Routing table for router 21 done  |
+Start searching...Routing table for router 22 done  |
+Start searching...Routing table for router 23 done  |
+Start searching...Routing table for router 24 done  |
+Start searching...Routing table for router 25 done  |
+Start searching...Routing table for router 26 done  |
+Start searching...Routing table for router 27 done  |
+Start searching...Routing table for router 28 done  |
+Start searching...Routing table for router 29 done  |
+Start searching...Routing table for router 30 done  |
+Start searching...Routing table for router 31 done  |
+Start searching...Routing table for router 32 done  |
+Start searching...Routing table for router 33 done  |
+Start searching...Routing table for router 34 done  |
+Start searching...Routing table for router 35 done  |
+Start searching...Routing table for router 36 done  |
+Start searching...Routing table for router 37 done  |
+Start searching...Routing table for router 38 done  |
+Start searching...Routing table for router 39 done  |
+Start searching...Routing table for router 40 done  |
+Start searching...Routing table for router 41 done  |
+Start searching...Routing table for router 42 done  |
+Start searching...Routing table for router 43 done  |
+Start searching...Routing table for router 44 done  |
+Start searching...Routing table for router 45 done  |
+Start searching...Routing table for router 46 done  |
+Start searching...Routing table for router 47 done  |
+Start searching...Routing table for router 48 done  |
+Start searching...Routing table for router 49 done  |
+Start searching...Routing table for router 50 done  |
+Start searching...Routing table for router 51 done  |
+Start searching...Routing table for router 52 done  |
+Start searching...Routing table for router 53 done  |
+Start searching...Routing table for router 54 done  |
+Start searching...Routing table for router 55 done  |
+Start searching...Routing table for router 56 done  |
+Start searching...Routing table for router 57 done  |
+Start searching...Routing table for router 58 done  |
+Start searching...Routing table for router 59 done  |
+Start searching...Routing table for router 60 done  |
+Start searching...Routing table for router 61 done  |
+Start searching...Routing table for router 62 done  |
+Start searching...Routing table for router 63 done  |
+Start searching...Routing table for router 64 done  |
+Start searching...Routing table for router 65 done  |
+Start searching...Routing table for router 66 done  |
+Start searching...Routing table for router 67 done  |
+Start searching...Routing table for router 68 done  |
+Start searching...Routing table for router 69 done  |
+Start searching...Routing table for router 70 done  |
+Start searching...Routing table for router 71 done  |
+Start searching...Routing table for router 72 done  |
+Start searching...Routing table for router 73 done  |
+Start searching...Routing table for router 74 done  |
+Start searching...Routing table for router 75 done  |
+Start searching...Routing table for router 76 done  |
+Start searching...Routing table for router 77 done  |
+Start searching...Routing table for router 78 done  |
+Start searching...Routing table for router 79 done  |
+Start searching...Routing table for router 80 done  |
+Start searching...Routing table for router 81 done  |
+Start searching...Routing table for router 82 done  |
+Start searching...Routing table for router 83 done  |
+Start searching...Routing table for router 84 done  |
+Start searching...Routing table for router 85 done  |
+Start searching...Routing table for router 86 done  |
+Start searching...Routing table for router 87 done  |
+Start searching...Routing table for router 88 done  |
+Start searching...Routing table for router 89 done  |
+Start searching...Routing table for router 90 done  |
+Start searching...Routing table for router 91 done  |
+Start searching...Routing table for router 92 done  |
+Start searching...Routing table for router 93 done  |
+Start searching...Routing table for router 94 done  |
+Start searching...Routing table for router 95 done  |
+Start searching...Routing table for router 96 done  |
+Start searching...Routing table for router 97 done  |
+Start searching...Routing table for router 98 done  |
+Start searching...Routing table for router 99 done  |
+Start searching...Routing table for router 100 done  |
+Start searching...Routing table for router 101 done  |
+Start searching...Routing table for router 102 done  |
+Start searching...Routing table for router 103 done  |
+Start searching...Routing table for router 104 done  |
+Start searching...Routing table for router 105 done  |
+Start searching...Routing table for router 106 done  |
+Start searching...Routing table for router 107 done  |
+Start searching...Routing table for router 108 done  |
+Start searching...Routing table for router 109 done  |
+Start searching...Routing table for router 110 done  |
+Start searching...Routing table for router 111 done  |
+Start searching...Routing table for router 112 done  |
+Start searching...Routing table for router 113 done  |
+
+========================== Build Routing table done  =====================
+
+Saving routing table...
+========================== Building Bad traffic pattern, type HE+E... ============================
+=================== Finished building worst-case traffic pattern... ====================
+Sum of nodes sending: 300
+Sum of nodes: 342
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 12.5792
+Maximum packet latency = 15
+Minimum network latency = 5
+Average network latency = 12.5792
+Maximum network latency = 15
+Slowest packet = 135
+Minimum flit latency = 5
+Average flit latency = 12.5792
+Maximum flit latency = 15
+Slowest flit = 135
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0 (at node 101)
+Average injected packet rate = 0.00990058
+Maximum injected packet rate = 0.022 (at node 338)
+Minimum accepted packet rate = 0 (at node 210)
+Average accepted packet rate = 0.00967251
+Maximum accepted packet rate = 0.024 (at node 92)
+Minimum injected flit rate = 0 (at node 101)
+Average injected flit rate = 0.00990058
+Maximum injected flit rate = 0.022 (at node 338)
+Minimum accepted flit rate = 0 (at node 210)
+Average accepted flit rate = 0.00967251
+Maximum accepted flit rate = 0.024 (at node 92)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 39 (0 measured)
+latency change    = 1
+throughput change = 1
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 12.6202
+Maximum packet latency = 16
+Minimum network latency = 5
+Average network latency = 12.6202
+Maximum network latency = 16
+Slowest packet = 1997
+Minimum flit latency = 5
+Average flit latency = 12.6202
+Maximum flit latency = 16
+Slowest flit = 1997
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.001 (at node 272)
+Average injected packet rate = 0.00988012
+Maximum injected packet rate = 0.019 (at node 38)
+Minimum accepted packet rate = 0.001 (at node 210)
+Average accepted packet rate = 0.00974561
+Maximum accepted packet rate = 0.019 (at node 105)
+Minimum injected flit rate = 0.001 (at node 272)
+Average injected flit rate = 0.00988012
+Maximum injected flit rate = 0.019 (at node 38)
+Minimum accepted flit rate = 0.001 (at node 210)
+Average accepted flit rate = 0.00974561
+Maximum accepted flit rate = 0.019 (at node 105)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 46 (0 measured)
+latency change    = 0.00324561
+throughput change = 0.00750075
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 12.6806
+Maximum packet latency = 15
+Minimum network latency = 5
+Average network latency = 12.6806
+Maximum network latency = 15
+Slowest packet = 3383
+Minimum flit latency = 5
+Average flit latency = 12.6806
+Maximum flit latency = 15
+Slowest flit = 3383
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0 (at node 128)
+Average injected packet rate = 0.00997076
+Maximum injected packet rate = 0.024 (at node 13)
+Minimum accepted packet rate = 0 (at node 203)
+Average accepted packet rate = 0.00995906
+Maximum accepted packet rate = 0.022 (at node 34)
+Minimum injected flit rate = 0 (at node 128)
+Average injected flit rate = 0.00997076
+Maximum injected flit rate = 0.024 (at node 13)
+Minimum accepted flit rate = 0 (at node 203)
+Average accepted flit rate = 0.00995906
+Maximum accepted flit rate = 0.022 (at node 34)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 48 (0 measured)
+latency change    = 0.00476333
+throughput change = 0.0214328
+Warmed up ...Time used is 1500 cycles
+1
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 12.7002
+Maximum packet latency = 15
+Minimum network latency = 5
+Average network latency = 12.7002
+Maximum network latency = 15
+Slowest packet = 5165
+Minimum flit latency = 5
+Average flit latency = 12.7111
+Maximum flit latency = 15
+Slowest flit = 5059
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0 (at node 0)
+Average injected packet rate = 0.0098655
+Maximum injected packet rate = 0.022 (at node 191)
+Minimum accepted packet rate = 0 (at node 56)
+Average accepted packet rate = 0.00987719
+Maximum accepted packet rate = 0.028 (at node 296)
+Minimum injected flit rate = 0 (at node 0)
+Average injected flit rate = 0.0098655
+Maximum injected flit rate = 0.022 (at node 191)
+Minimum accepted flit rate = 0 (at node 56)
+Average accepted flit rate = 0.00987719
+Maximum accepted flit rate = 0.028 (at node 296)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 46 (46 measured)
+latency change    = 0.00154479
+throughput change = 0.00828893
+1
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 12.6688
+Maximum packet latency = 15
+Minimum network latency = 5
+Average network latency = 12.6688
+Maximum network latency = 15
+Slowest packet = 5165
+Minimum flit latency = 5
+Average flit latency = 12.6746
+Maximum flit latency = 15
+Slowest flit = 5059
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.002 (at node 102)
+Average injected packet rate = 0.0100351
+Maximum injected packet rate = 0.022 (at node 191)
+Minimum accepted packet rate = 0.003 (at node 130)
+Average accepted packet rate = 0.0100731
+Maximum accepted packet rate = 0.021 (at node 75)
+Minimum injected flit rate = 0.002 (at node 102)
+Average injected flit rate = 0.0100351
+Maximum injected flit rate = 0.022 (at node 191)
+Minimum accepted flit rate = 0.003 (at node 130)
+Average accepted flit rate = 0.0100731
+Maximum accepted flit rate = 0.021 (at node 75)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 35 (35 measured)
+latency change    = 0.00247516
+throughput change = 0.0194485
+1
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 12.6766
+Maximum packet latency = 15
+Minimum network latency = 5
+Average network latency = 12.6766
+Maximum network latency = 15
+Slowest packet = 5165
+Minimum flit latency = 5
+Average flit latency = 12.6804
+Maximum flit latency = 15
+Slowest flit = 5059
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.00266667 (at node 272)
+Average injected packet rate = 0.00993372
+Maximum injected packet rate = 0.02 (at node 191)
+Minimum accepted packet rate = 0.004 (at node 10)
+Average accepted packet rate = 0.00991813
+Maximum accepted packet rate = 0.0226667 (at node 75)
+Minimum injected flit rate = 0.00266667 (at node 272)
+Average injected flit rate = 0.00993372
+Maximum injected flit rate = 0.02 (at node 191)
+Minimum accepted flit rate = 0.004 (at node 10)
+Average accepted flit rate = 0.00991813
+Maximum accepted flit rate = 0.0226667 (at node 75)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 56 (56 measured)
+latency change    = 0.000612299
+throughput change = 0.015625
+Draining all recorded packets ...
+Draining remaining packets ...
+Time taken is 3032 cycles
+====== Traffic class 0 ======
+Overall minimum packet latency = 5 (1 samples)
+Overall average packet latency = 12.685 (1 samples)
+Overall maximum packet latency = 15 (1 samples)
+Overall minimum network latency = 5 (1 samples)
+Overall average network latency = 12.685 (1 samples)
+Overall maximum network latency = 15 (1 samples)
+Overall minimum flit latency = 5 (1 samples)
+Overall average flit latency = 12.6898 (1 samples)
+Overall maximum flit latency = 15 (1 samples)
+Overall minimum fragmentation = 0 (1 samples)
+Overall average fragmentation = 0 (1 samples)
+Overall maximum fragmentation = 0 (1 samples)
+Overall minimum injected packet rate = 0.00266667 (1 samples)
+Overall average injected packet rate = 0.00993372 (1 samples)
+Overall maximum injected packet rate = 0.02 (1 samples)
+Overall minimum accepted packet rate = 0.004 (1 samples)
+Overall average accepted packet rate = 0.00991813 (1 samples)
+Overall maximum accepted packet rate = 0.0226667 (1 samples)
+Overall minimum injected flit rate = 0.00266667 (1 samples)
+Overall average injected flit rate = 0.00993372 (1 samples)
+Overall maximum injected flit rate = 0.02 (1 samples)
+Overall minimum accepted flit rate = 0.004 (1 samples)
+Overall average accepted flit rate = 0.00991813 (1 samples)
+Overall maximum accepted flit rate = 0.0226667 (1 samples)
+Overall average injected packet size = 1 (1 samples)
+Overall average accepted packet size = 1 (1 samples)
+Overall average hops = 3.55691 (1 samples)
+Total run time 1.85642

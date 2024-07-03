@@ -1,0 +1,2854 @@
+BEGIN Configuration File: ./RAND.conf
+injection_rate = 0.01;
+traffic = uniform;
+use_size_power_of_two = no;
+routing_function = min;
+vc_buf_size = 16;
+network_file = RAND_N.338.19.8.bsconf;
+load_routing_file = no;
+routing_table_file = RAND_N.338.19.8.bsconf.route;
+topology = anynet;
+//use_noc_latency = 0;
+//hold_switch_for_packet=0;
+
+k = 1;
+
+packet_size  = 1;
+num_vcs      = 4;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+
+END Configuration File: ./RAND.conf
+========================Network File Parsed=================
+******************node listing**********************
+
+****************router to node listing*************
+
+*****************router to router listing************
+Number of nodes: 2704
+Number of routers: 338
+==========================Node to Router =====================
+==========================Router to Router =====================
+========================== Build Routing table  =====================
+Start searching...Routing table for router 0 done  |
+Start searching...Routing table for router 1 done  |
+Start searching...Routing table for router 2 done  |
+Start searching...Routing table for router 3 done  |
+Start searching...Routing table for router 4 done  |
+Start searching...Routing table for router 5 done  |
+Start searching...Routing table for router 6 done  |
+Start searching...Routing table for router 7 done  |
+Start searching...Routing table for router 8 done  |
+Start searching...Routing table for router 9 done  |
+Start searching...Routing table for router 10 done  |
+Start searching...Routing table for router 11 done  |
+Start searching...Routing table for router 12 done  |
+Start searching...Routing table for router 13 done  |
+Start searching...Routing table for router 14 done  |
+Start searching...Routing table for router 15 done  |
+Start searching...Routing table for router 16 done  |
+Start searching...Routing table for router 17 done  |
+Start searching...Routing table for router 18 done  |
+Start searching...Routing table for router 19 done  |
+Start searching...Routing table for router 20 done  |
+Start searching...Routing table for router 21 done  |
+Start searching...Routing table for router 22 done  |
+Start searching...Routing table for router 23 done  |
+Start searching...Routing table for router 24 done  |
+Start searching...Routing table for router 25 done  |
+Start searching...Routing table for router 26 done  |
+Start searching...Routing table for router 27 done  |
+Start searching...Routing table for router 28 done  |
+Start searching...Routing table for router 29 done  |
+Start searching...Routing table for router 30 done  |
+Start searching...Routing table for router 31 done  |
+Start searching...Routing table for router 32 done  |
+Start searching...Routing table for router 33 done  |
+Start searching...Routing table for router 34 done  |
+Start searching...Routing table for router 35 done  |
+Start searching...Routing table for router 36 done  |
+Start searching...Routing table for router 37 done  |
+Start searching...Routing table for router 38 done  |
+Start searching...Routing table for router 39 done  |
+Start searching...Routing table for router 40 done  |
+Start searching...Routing table for router 41 done  |
+Start searching...Routing table for router 42 done  |
+Start searching...Routing table for router 43 done  |
+Start searching...Routing table for router 44 done  |
+Start searching...Routing table for router 45 done  |
+Start searching...Routing table for router 46 done  |
+Start searching...Routing table for router 47 done  |
+Start searching...Routing table for router 48 done  |
+Start searching...Routing table for router 49 done  |
+Start searching...Routing table for router 50 done  |
+Start searching...Routing table for router 51 done  |
+Start searching...Routing table for router 52 done  |
+Start searching...Routing table for router 53 done  |
+Start searching...Routing table for router 54 done  |
+Start searching...Routing table for router 55 done  |
+Start searching...Routing table for router 56 done  |
+Start searching...Routing table for router 57 done  |
+Start searching...Routing table for router 58 done  |
+Start searching...Routing table for router 59 done  |
+Start searching...Routing table for router 60 done  |
+Start searching...Routing table for router 61 done  |
+Start searching...Routing table for router 62 done  |
+Start searching...Routing table for router 63 done  |
+Start searching...Routing table for router 64 done  |
+Start searching...Routing table for router 65 done  |
+Start searching...Routing table for router 66 done  |
+Start searching...Routing table for router 67 done  |
+Start searching...Routing table for router 68 done  |
+Start searching...Routing table for router 69 done  |
+Start searching...Routing table for router 70 done  |
+Start searching...Routing table for router 71 done  |
+Start searching...Routing table for router 72 done  |
+Start searching...Routing table for router 73 done  |
+Start searching...Routing table for router 74 done  |
+Start searching...Routing table for router 75 done  |
+Start searching...Routing table for router 76 done  |
+Start searching...Routing table for router 77 done  |
+Start searching...Routing table for router 78 done  |
+Start searching...Routing table for router 79 done  |
+Start searching...Routing table for router 80 done  |
+Start searching...Routing table for router 81 done  |
+Start searching...Routing table for router 82 done  |
+Start searching...Routing table for router 83 done  |
+Start searching...Routing table for router 84 done  |
+Start searching...Routing table for router 85 done  |
+Start searching...Routing table for router 86 done  |
+Start searching...Routing table for router 87 done  |
+Start searching...Routing table for router 88 done  |
+Start searching...Routing table for router 89 done  |
+Start searching...Routing table for router 90 done  |
+Start searching...Routing table for router 91 done  |
+Start searching...Routing table for router 92 done  |
+Start searching...Routing table for router 93 done  |
+Start searching...Routing table for router 94 done  |
+Start searching...Routing table for router 95 done  |
+Start searching...Routing table for router 96 done  |
+Start searching...Routing table for router 97 done  |
+Start searching...Routing table for router 98 done  |
+Start searching...Routing table for router 99 done  |
+Start searching...Routing table for router 100 done  |
+Start searching...Routing table for router 101 done  |
+Start searching...Routing table for router 102 done  |
+Start searching...Routing table for router 103 done  |
+Start searching...Routing table for router 104 done  |
+Start searching...Routing table for router 105 done  |
+Start searching...Routing table for router 106 done  |
+Start searching...Routing table for router 107 done  |
+Start searching...Routing table for router 108 done  |
+Start searching...Routing table for router 109 done  |
+Start searching...Routing table for router 110 done  |
+Start searching...Routing table for router 111 done  |
+Start searching...Routing table for router 112 done  |
+Start searching...Routing table for router 113 done  |
+Start searching...Routing table for router 114 done  |
+Start searching...Routing table for router 115 done  |
+Start searching...Routing table for router 116 done  |
+Start searching...Routing table for router 117 done  |
+Start searching...Routing table for router 118 done  |
+Start searching...Routing table for router 119 done  |
+Start searching...Routing table for router 120 done  |
+Start searching...Routing table for router 121 done  |
+Start searching...Routing table for router 122 done  |
+Start searching...Routing table for router 123 done  |
+Start searching...Routing table for router 124 done  |
+Start searching...Routing table for router 125 done  |
+Start searching...Routing table for router 126 done  |
+Start searching...Routing table for router 127 done  |
+Start searching...Routing table for router 128 done  |
+Start searching...Routing table for router 129 done  |
+Start searching...Routing table for router 130 done  |
+Start searching...Routing table for router 131 done  |
+Start searching...Routing table for router 132 done  |
+Start searching...Routing table for router 133 done  |
+Start searching...Routing table for router 134 done  |
+Start searching...Routing table for router 135 done  |
+Start searching...Routing table for router 136 done  |
+Start searching...Routing table for router 137 done  |
+Start searching...Routing table for router 138 done  |
+Start searching...Routing table for router 139 done  |
+Start searching...Routing table for router 140 done  |
+Start searching...Routing table for router 141 done  |
+Start searching...Routing table for router 142 done  |
+Start searching...Routing table for router 143 done  |
+Start searching...Routing table for router 144 done  |
+Start searching...Routing table for router 145 done  |
+Start searching...Routing table for router 146 done  |
+Start searching...Routing table for router 147 done  |
+Start searching...Routing table for router 148 done  |
+Start searching...Routing table for router 149 done  |
+Start searching...Routing table for router 150 done  |
+Start searching...Routing table for router 151 done  |
+Start searching...Routing table for router 152 done  |
+Start searching...Routing table for router 153 done  |
+Start searching...Routing table for router 154 done  |
+Start searching...Routing table for router 155 done  |
+Start searching...Routing table for router 156 done  |
+Start searching...Routing table for router 157 done  |
+Start searching...Routing table for router 158 done  |
+Start searching...Routing table for router 159 done  |
+Start searching...Routing table for router 160 done  |
+Start searching...Routing table for router 161 done  |
+Start searching...Routing table for router 162 done  |
+Start searching...Routing table for router 163 done  |
+Start searching...Routing table for router 164 done  |
+Start searching...Routing table for router 165 done  |
+Start searching...Routing table for router 166 done  |
+Start searching...Routing table for router 167 done  |
+Start searching...Routing table for router 168 done  |
+Start searching...Routing table for router 169 done  |
+Start searching...Routing table for router 170 done  |
+Start searching...Routing table for router 171 done  |
+Start searching...Routing table for router 172 done  |
+Start searching...Routing table for router 173 done  |
+Start searching...Routing table for router 174 done  |
+Start searching...Routing table for router 175 done  |
+Start searching...Routing table for router 176 done  |
+Start searching...Routing table for router 177 done  |
+Start searching...Routing table for router 178 done  |
+Start searching...Routing table for router 179 done  |
+Start searching...Routing table for router 180 done  |
+Start searching...Routing table for router 181 done  |
+Start searching...Routing table for router 182 done  |
+Start searching...Routing table for router 183 done  |
+Start searching...Routing table for router 184 done  |
+Start searching...Routing table for router 185 done  |
+Start searching...Routing table for router 186 done  |
+Start searching...Routing table for router 187 done  |
+Start searching...Routing table for router 188 done  |
+Start searching...Routing table for router 189 done  |
+Start searching...Routing table for router 190 done  |
+Start searching...Routing table for router 191 done  |
+Start searching...Routing table for router 192 done  |
+Start searching...Routing table for router 193 done  |
+Start searching...Routing table for router 194 done  |
+Start searching...Routing table for router 195 done  |
+Start searching...Routing table for router 196 done  |
+Start searching...Routing table for router 197 done  |
+Start searching...Routing table for router 198 done  |
+Start searching...Routing table for router 199 done  |
+Start searching...Routing table for router 200 done  |
+Start searching...Routing table for router 201 done  |
+Start searching...Routing table for router 202 done  |
+Start searching...Routing table for router 203 done  |
+Start searching...Routing table for router 204 done  |
+Start searching...Routing table for router 205 done  |
+Start searching...Routing table for router 206 done  |
+Start searching...Routing table for router 207 done  |
+Start searching...Routing table for router 208 done  |
+Start searching...Routing table for router 209 done  |
+Start searching...Routing table for router 210 done  |
+Start searching...Routing table for router 211 done  |
+Start searching...Routing table for router 212 done  |
+Start searching...Routing table for router 213 done  |
+Start searching...Routing table for router 214 done  |
+Start searching...Routing table for router 215 done  |
+Start searching...Routing table for router 216 done  |
+Start searching...Routing table for router 217 done  |
+Start searching...Routing table for router 218 done  |
+Start searching...Routing table for router 219 done  |
+Start searching...Routing table for router 220 done  |
+Start searching...Routing table for router 221 done  |
+Start searching...Routing table for router 222 done  |
+Start searching...Routing table for router 223 done  |
+Start searching...Routing table for router 224 done  |
+Start searching...Routing table for router 225 done  |
+Start searching...Routing table for router 226 done  |
+Start searching...Routing table for router 227 done  |
+Start searching...Routing table for router 228 done  |
+Start searching...Routing table for router 229 done  |
+Start searching...Routing table for router 230 done  |
+Start searching...Routing table for router 231 done  |
+Start searching...Routing table for router 232 done  |
+Start searching...Routing table for router 233 done  |
+Start searching...Routing table for router 234 done  |
+Start searching...Routing table for router 235 done  |
+Start searching...Routing table for router 236 done  |
+Start searching...Routing table for router 237 done  |
+Start searching...Routing table for router 238 done  |
+Start searching...Routing table for router 239 done  |
+Start searching...Routing table for router 240 done  |
+Start searching...Routing table for router 241 done  |
+Start searching...Routing table for router 242 done  |
+Start searching...Routing table for router 243 done  |
+Start searching...Routing table for router 244 done  |
+Start searching...Routing table for router 245 done  |
+Start searching...Routing table for router 246 done  |
+Start searching...Routing table for router 247 done  |
+Start searching...Routing table for router 248 done  |
+Start searching...Routing table for router 249 done  |
+Start searching...Routing table for router 250 done  |
+Start searching...Routing table for router 251 done  |
+Start searching...Routing table for router 252 done  |
+Start searching...Routing table for router 253 done  |
+Start searching...Routing table for router 254 done  |
+Start searching...Routing table for router 255 done  |
+Start searching...Routing table for router 256 done  |
+Start searching...Routing table for router 257 done  |
+Start searching...Routing table for router 258 done  |
+Start searching...Routing table for router 259 done  |
+Start searching...Routing table for router 260 done  |
+Start searching...Routing table for router 261 done  |
+Start searching...Routing table for router 262 done  |
+Start searching...Routing table for router 263 done  |
+Start searching...Routing table for router 264 done  |
+Start searching...Routing table for router 265 done  |
+Start searching...Routing table for router 266 done  |
+Start searching...Routing table for router 267 done  |
+Start searching...Routing table for router 268 done  |
+Start searching...Routing table for router 269 done  |
+Start searching...Routing table for router 270 done  |
+Start searching...Routing table for router 271 done  |
+Start searching...Routing table for router 272 done  |
+Start searching...Routing table for router 273 done  |
+Start searching...Routing table for router 274 done  |
+Start searching...Routing table for router 275 done  |
+Start searching...Routing table for router 276 done  |
+Start searching...Routing table for router 277 done  |
+Start searching...Routing table for router 278 done  |
+Start searching...Routing table for router 279 done  |
+Start searching...Routing table for router 280 done  |
+Start searching...Routing table for router 281 done  |
+Start searching...Routing table for router 282 done  |
+Start searching...Routing table for router 283 done  |
+Start searching...Routing table for router 284 done  |
+Start searching...Routing table for router 285 done  |
+Start searching...Routing table for router 286 done  |
+Start searching...Routing table for router 287 done  |
+Start searching...Routing table for router 288 done  |
+Start searching...Routing table for router 289 done  |
+Start searching...Routing table for router 290 done  |
+Start searching...Routing table for router 291 done  |
+Start searching...Routing table for router 292 done  |
+Start searching...Routing table for router 293 done  |
+Start searching...Routing table for router 294 done  |
+Start searching...Routing table for router 295 done  |
+Start searching...Routing table for router 296 done  |
+Start searching...Routing table for router 297 done  |
+Start searching...Routing table for router 298 done  |
+Start searching...Routing table for router 299 done  |
+Start searching...Routing table for router 300 done  |
+Start searching...Routing table for router 301 done  |
+Start searching...Routing table for router 302 done  |
+Start searching...Routing table for router 303 done  |
+Start searching...Routing table for router 304 done  |
+Start searching...Routing table for router 305 done  |
+Start searching...Routing table for router 306 done  |
+Start searching...Routing table for router 307 done  |
+Start searching...Routing table for router 308 done  |
+Start searching...Routing table for router 309 done  |
+Start searching...Routing table for router 310 done  |
+Start searching...Routing table for router 311 done  |
+Start searching...Routing table for router 312 done  |
+Start searching...Routing table for router 313 done  |
+Start searching...Routing table for router 314 done  |
+Start searching...Routing table for router 315 done  |
+Start searching...Routing table for router 316 done  |
+Start searching...Routing table for router 317 done  |
+Start searching...Routing table for router 318 done  |
+Start searching...Routing table for router 319 done  |
+Start searching...Routing table for router 320 done  |
+Start searching...Routing table for router 321 done  |
+Start searching...Routing table for router 322 done  |
+Start searching...Routing table for router 323 done  |
+Start searching...Routing table for router 324 done  |
+Start searching...Routing table for router 325 done  |
+Start searching...Routing table for router 326 done  |
+Start searching...Routing table for router 327 done  |
+Start searching...Routing table for router 328 done  |
+Start searching...Routing table for router 329 done  |
+Start searching...Routing table for router 330 done  |
+Start searching...Routing table for router 331 done  |
+Start searching...Routing table for router 332 done  |
+Start searching...Routing table for router 333 done  |
+Start searching...Routing table for router 334 done  |
+Start searching...Routing table for router 335 done  |
+Start searching...Routing table for router 336 done  |
+Start searching...Routing table for router 337 done  |
+
+========================== Build Routing table done  =====================
+
+Saving routing table...
+========================== Building Bad traffic pattern, type 3... ============================
+>>>>>>>>> Routers selected for traffic: 293, 170
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 166, 289
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 39, 271
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 200, 99
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 236, 4
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 322, 264
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 32, 261
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 249, 76
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 148, 88
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 80, 181
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 101, 283
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 144, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 239, 172
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 221, 124
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 6, 255
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 41, 327
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 115, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 169, 168
+********************* SUCCESS: selected 169 and 168
+>>>>>>>>> Routers selected for traffic: 120, 218
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 236, 327
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 225, 180
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 334, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 191, 148
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 176
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 281, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 68, 150
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 209, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 283, 114
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 290, 130
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 125, 130
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 272, 64
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 254, 19
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 79, 138
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 121, 200
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 41, 39
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 208, 267
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 218, 204
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 268, 148
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 128
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 268, 150
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 8, 133
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 17, 87
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 229, 253
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 35, 289
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 272, 28
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 47, 226
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 285, 205
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 196, 273
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 243
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 247, 8
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 2, 87
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 40, 328
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 162, 258
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 90, 188
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 34, 147
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 69, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 41, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 181, 288
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 58, 250
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 316, 11
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 159, 32
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 184
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 267, 325
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 211, 302
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 267, 259
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 180, 118
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 243, 263
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 152, 209
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 25, 225
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 133, 284
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 313, 15
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 243, 324
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 277, 324
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 292, 251
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 305
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 69
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 106, 198
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 123, 32
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 171, 10
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 39, 162
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 172, 280
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 47
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 213, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 265, 302
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 327, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 248, 302
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 56, 209
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 289, 56
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 193, 245
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 302, 48
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 276, 139
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 186, 106
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 327, 302
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 202, 233
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 300, 115
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 65, 67
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 148, 143
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 176, 307
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 266, 164
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 336, 241
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 92, 276
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 303, 101
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 292
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 19, 78
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 283, 337
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 30, 80
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 297, 108
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 172, 130
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 290, 336
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 214, 153
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 152, 265
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 328
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 226, 69
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 259, 196
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 231, 187
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 226, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 132, 296
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 121, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 197, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 27
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 67
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 96, 101
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 152, 263
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 221, 107
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 252, 65
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 326, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 47, 198
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 276, 332
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 116, 30
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 197, 112
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 128, 35
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 313, 297
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 175, 147
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 328, 121
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 123, 225
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 315
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 9, 214
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 172, 289
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 282, 103
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 163, 310
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 30, 231
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 275, 49
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 173, 213
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 86, 248
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 264, 334
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 205, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 208, 222
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 252, 135
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 225, 68
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 275, 242
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 165, 41
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 141, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 142, 100
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 316, 31
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 17
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 183, 116
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 116, 247
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 135, 290
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 175, 63
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 55, 94
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 60, 257
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 293, 96
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 293, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 173
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 263, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 63, 78
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 15, 24
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 328, 148
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 120, 306
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 6, 40
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 155, 18
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 314, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 259, 110
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 87
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 324, 94
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 332, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 172, 130
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 132, 126
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 309, 166
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 125, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 304, 0
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 138, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 24, 130
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 288, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 265, 132
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 334, 71
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 142, 149
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 155, 228
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 253, 166
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 96
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 5, 316
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 174, 110
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 258
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 285, 65
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 72, 225
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 62, 122
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 273, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 166, 252
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 332, 69
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 177, 137
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 305, 122
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 50, 264
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 88, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 285, 176
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 325, 54
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 258, 327
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 25, 269
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 279, 51
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 176, 222
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 116, 241
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 279, 158
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 166, 314
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 257, 27
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 15, 273
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 256, 73
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 29, 215
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 258, 256
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 122, 214
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 34
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 213, 214
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 157, 55
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 69, 23
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 274, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 54
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 334, 112
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 17, 144
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 265, 326
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 315, 101
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 48, 321
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 24, 116
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 327, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 139
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 176, 80
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 94, 212
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 60
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 273, 320
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 133, 5
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 51
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 320, 132
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 126, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 251, 159
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 123, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 146, 120
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 246, 184
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 100, 282
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 281, 114
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 117, 62
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 258, 274
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 321
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 159, 295
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 68, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 182
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 296
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 87
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 110, 15
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 87, 325
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 171, 220
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 208, 302
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 129, 112
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 258, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 249, 286
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 303, 159
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 132, 17
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 222, 164
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 209, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 314, 143
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 304, 184
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 33, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 196
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 101, 9
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 165, 192
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 152, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 327, 258
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 249
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 133, 229
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 237, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 71, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 103, 269
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 193, 282
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 60, 164
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 5
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 316, 254
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 145, 28
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 178, 285
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 146, 176
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 18, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 237, 132
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 332
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 229, 293
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 138, 162
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 313
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 192, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 241, 265
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 277, 263
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 0, 212
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 148, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 315, 6
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 125, 121
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 32, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 181, 296
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 11, 193
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 140, 245
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 106, 107
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 17, 157
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 24, 242
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 50
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 297, 307
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 309, 315
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 334, 31
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 9, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 230, 332
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 237, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 65, 299
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 6, 297
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 237, 55
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 281, 96
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 280, 87
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 253
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 131, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 222, 242
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 17, 269
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 140, 117
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 275, 282
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 293, 288
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 325
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 299, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 320, 184
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 32
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 175, 149
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 323, 28
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 230, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 152
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 62, 139
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 27, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 333, 272
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 81, 53
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 226, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 189, 164
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 313, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 0, 157
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 32, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 280, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 247, 299
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 209, 252
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 73, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 240, 284
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 304, 96
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 130, 321
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 0, 183
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 243, 166
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 166, 65
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 209, 121
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 203, 292
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 196, 205
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 236, 332
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 73, 278
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 326, 290
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 243, 196
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 305, 78
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 142
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 10, 75
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 65, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 153, 290
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 92, 277
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 131, 297
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 88, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 148, 63
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 11, 318
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 332, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 295, 330
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 309, 9
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 273, 299
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 94, 153
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 274, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 222, 320
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 288, 328
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 50, 140
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 108, 305
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 73, 176
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 304, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 103, 293
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 28
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 62, 230
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 229, 162
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 26, 314
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 293, 278
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 130, 288
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 205, 321
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 111, 146
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 295, 263
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 132, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 175, 281
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 285, 146
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 332, 222
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 247, 123
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 230
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 272
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 157, 181
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 149, 165
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 251, 81
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 328, 240
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 245, 324
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 148, 314
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 60, 152
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 121, 332
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 303, 147
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 121, 139
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 69, 32
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 257, 62
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 246, 53
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 88, 78
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 273
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 259, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 0, 296
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 252
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 18, 26
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 27, 256
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 282, 174
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 231, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 246
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 256, 263
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 282, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 286, 325
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 121
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 182
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 293
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 165, 251
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 231, 53
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 142, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 332, 173
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 23, 281
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 122, 53
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 28
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 221, 295
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 78
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 121, 112
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 247, 27
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 332, 112
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 284, 225
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 125, 251
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 23, 182
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 123, 114
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 315, 306
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 65, 117
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 309
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 259, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 258, 273
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 96, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 292, 211
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 222, 153
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 192, 295
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 78
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 266
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 272, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 225
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 269, 178
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 290, 247
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 53, 272
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 258, 71
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 247, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 116, 144
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 112
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 28, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 284, 245
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 263, 132
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 186, 53
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 116, 162
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 27, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 231
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 184, 303
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 0
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 48, 277
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 172, 108
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 131, 55
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 327
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 125, 94
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 101
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 177, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 18
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 230, 112
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 143, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 148, 149
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 222, 5
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 257, 330
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 178, 94
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 18, 266
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 181, 62
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 63, 222
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 27, 277
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 269, 5
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 225
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 299, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 174, 230
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 230, 122
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 286, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 286, 249
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 25, 19
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 138, 272
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 9, 242
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 11, 183
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 306, 285
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 65, 172
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 313, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 277, 196
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 28, 131
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 83, 25
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 15, 184
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 247
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 307, 273
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 241, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 324
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 221, 211
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 55, 175
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 257, 120
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 55, 263
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 274, 273
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 161, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 243, 295
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 173, 277
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 132, 187
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 123, 172
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 297, 60
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 285, 267
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 68, 193
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 139, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 313, 236
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 159, 326
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 81, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 269, 133
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 318, 62
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 295, 211
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 328, 122
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 133, 123
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 275, 231
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 284, 96
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 335, 249
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 222
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 162, 23
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 196, 305
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 222, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 295
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 186, 306
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 326, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 289, 174
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 212
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 280, 286
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 229
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 116, 299
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 69, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 305, 285
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 25, 140
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 315, 138
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 309, 140
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 304
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 247, 297
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 266, 324
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 48
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 211
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 276
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 222, 278
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 6, 23
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 266
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 193
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 211, 108
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 272, 236
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 336, 292
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 159, 326
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 292, 175
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 50
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 25, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 330, 226
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 285, 187
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 21, 147
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 138, 197
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 116
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 240, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 313, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 293, 28
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 245, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 144, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 172, 305
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 266, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 144, 251
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 280, 166
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 229, 304
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 5, 152
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 186, 23
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 304, 289
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 258, 324
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 83, 133
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 26, 92
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 197, 307
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 153, 81
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 240, 267
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 320, 24
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 267, 282
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 299, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 178, 143
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 108
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 101, 313
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 285, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 28, 281
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 243, 276
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 266, 290
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 88, 314
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 6, 264
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 157
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 5, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 117, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 225, 53
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 266, 209
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 184, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 305
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 144, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 174
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 328, 178
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 303
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 140, 336
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 186
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 125, 292
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 69, 225
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 225, 63
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 143, 295
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 6, 247
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 264, 318
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 326, 304
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 133, 9
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 306, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 6, 116
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 88, 184
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 114, 313
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 174
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 117, 229
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 55, 165
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 252, 172
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 19, 285
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 9, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 318, 146
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 18, 32
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 290, 332
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 320, 60
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 325, 278
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 290, 328
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 9, 327
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 60, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 25
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 307, 172
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 60, 269
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 211, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 108, 165
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 187, 28
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 178, 211
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 144, 336
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 336, 263
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 114, 153
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 245, 121
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 265, 290
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 264, 101
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 0, 295
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 326, 269
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 330, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 83, 48
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 281, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 263, 0
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 141, 138
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 28, 247
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 225, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 103, 318
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 256, 101
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 267, 21
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 153
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 131, 193
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 262, 92
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 18
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 144
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 295, 286
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 246
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 94, 314
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 268, 313
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 25, 83
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 306, 62
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 174, 121
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 140, 263
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 60
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 307
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 24
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 48, 60
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 123, 303
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 286, 332
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 88, 81
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 187, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 280, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 25
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 267, 277
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 177, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 197, 186
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 92, 212
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 197
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 117, 304
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 55, 123
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 103, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 139, 138
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 172, 88
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 60
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 241, 19
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 19, 83
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 304, 147
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 323, 242
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 246, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 286
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 324, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 142, 141
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 336, 50
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 286, 242
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 195, 295
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 68, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 69, 259
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 69
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 147, 186
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 68, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 240, 313
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 230, 51
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 192, 253
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 146, 282
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 251, 177
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 23, 21
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 299, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 225
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 83, 124
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 258
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 55, 281
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 21, 313
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 313, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 124
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 299, 181
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 324, 247
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 280, 140
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 197, 211
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 320, 88
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 196, 140
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 306, 326
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 157, 289
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 25
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 222, 330
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 159
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 92, 123
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 222, 25
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 330, 178
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 297
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 0
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 225
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 140, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 326, 132
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 225, 133
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 26, 184
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 196, 166
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 258
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 305, 181
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 240, 0
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 62, 221
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 32, 175
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 0, 330
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 0, 68
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 285, 63
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 289, 304
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 307, 133
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 18, 252
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 88
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 23, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 306, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 69, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 26, 103
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 247
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 101, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 83, 122
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 270, 83
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 143, 19
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 48
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 306, 265
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 159, 306
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 324
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 178
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 269, 48
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 252, 240
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 18, 290
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 315, 26
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 5, 63
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 258, 103
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 177, 303
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 197, 81
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 18, 267
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 144
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 269, 267
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 197, 285
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 157, 184
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 299, 320
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 295, 51
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 222, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 253
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 153, 147
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 196
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 318, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 240, 87
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 295, 296
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 154, 299
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 162, 162
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 313, 108
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 265, 19
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 112
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 222, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 172, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 259, 32
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 246, 325
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 101, 211
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 277, 87
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 203
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 247, 103
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 277, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 62, 196
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 245
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 175
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 336, 314
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 212, 240
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 114, 62
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 103, 175
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 94, 243
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 314, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 247
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 332, 21
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 144, 303
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 276
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 53, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 277, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 332, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 71, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 323, 258
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 256, 133
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 23
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 263, 114
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 280, 264
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 226
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 162, 153
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 259
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 318
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 226, 230
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 18, 153
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 172, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 280, 175
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 203, 81
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 276, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 114, 143
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 270, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 48, 124
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 18, 196
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 245
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 122, 222
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 293, 147
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 25, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 25, 26
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 297, 303
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 251, 330
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 157, 140
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 306, 293
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 101, 324
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 282, 309
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 259, 187
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 303, 277
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 165, 81
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 175, 196
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 62, 184
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 211, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 252, 263
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 241, 196
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 159
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 265, 175
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 165
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 186, 253
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 280, 175
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 157, 159
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 290, 19
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 48
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 62, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 241, 153
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 94, 147
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 122, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 314, 221
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 320, 177
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 314, 203
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 299, 243
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 143, 253
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 63, 0
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 307
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 140
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 264, 146
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 68, 94
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 304, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 146, 256
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 277, 53
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 314, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 315
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 299, 293
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 71, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 62, 32
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 256, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 247, 241
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 114, 162
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 116, 252
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 307, 278
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 328, 240
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 60, 259
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 175, 324
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 161
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 117, 277
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 51, 280
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 101
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 144, 81
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 24, 182
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 325, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 62, 245
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 306, 211
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 65
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 116
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 197, 282
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 187, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 63, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 81, 62
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 172
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 229
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 289, 83
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 280, 65
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 324, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 212, 309
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 122
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 187
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 245, 246
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 37, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 222, 304
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 187, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 192, 153
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 203, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 289, 222
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 114
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 116, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 140
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 297
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 143
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 306, 249
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 69
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 325, 314
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 116
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 229, 259
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 24, 94
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 212, 212
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 293, 24
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 314, 166
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 290, 276
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 325, 53
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 332, 94
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 287, 147
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 116
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 166, 143
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 221, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 263, 51
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 69, 212
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 81, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 162, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 178, 78
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 196, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 53, 212
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 69, 290
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 63, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 328, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 259
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 328, 221
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 318, 153
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 192
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 249, 197
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 264
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 249
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 178
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 297, 203
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 146
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 237, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 303, 258
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 197, 147
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 203, 290
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 24, 178
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 324
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 263, 78
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 153
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 285
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 48, 229
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 124
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 258, 165
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 203, 114
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 276, 165
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 211
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 178, 289
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 211, 307
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 240, 222
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 143, 328
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 0
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 277
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 143, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 211, 143
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 81, 315
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 187, 24
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 65, 60
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 175, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 62
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 19, 62
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 144, 336
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 65, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 306, 264
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 152, 65
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 241, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 240
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 178, 152
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 84, 117
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 303, 24
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 240, 225
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 252, 116
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 282, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 153, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 306, 87
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 140, 247
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 225, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 122, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 68, 293
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 265, 282
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 53, 297
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 299, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 24, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 24, 307
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 330, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 162, 225
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 289, 78
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 60, 78
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 323, 325
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 122, 114
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 270, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 262
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 32, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 87, 280
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 166, 117
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 258
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 187
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 330
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 184, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 277, 314
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 277, 143
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 297, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 314, 240
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 211, 172
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 225, 146
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 88, 285
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 140, 166
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 162, 282
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 240, 297
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 146
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 297, 23
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 324, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 297, 173
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 309, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 315, 60
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 184, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 315, 165
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 333, 78
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 259, 23
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 265
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 268, 87
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 197, 153
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 146, 243
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 78
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 323, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 309, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 211, 253
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 222
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 264
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 253
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 265, 116
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 333, 229
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 225
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 304
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 289, 112
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 212, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 280
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 48, 243
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 144, 290
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 290, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 165, 336
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 306
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 263, 196
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 211, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 251, 182
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 282
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 240, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 144, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 51
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 306
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 68, 187
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 186
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 65
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 221
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 63, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 293
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 270, 276
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 68, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 71, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 32, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 211, 117
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 263, 304
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 314, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 249, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 222, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 297
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 336, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 325
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 270, 116
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 48, 24
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 253
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 251, 182
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 258
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 24, 182
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 289, 290
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 124, 324
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 162, 240
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 280, 172
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 147, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 240, 282
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 265, 186
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 184
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 88
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 24, 243
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 221
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 251, 253
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 293
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 81, 280
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 259, 240
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 221, 325
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 265, 187
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 196, 88
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 103
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 68, 32
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 256, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 241, 53
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 0, 247
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 229, 71
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 293, 62
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 309, 249
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 88, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 241
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 175
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 309
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 309, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 225, 172
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 297, 124
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 297, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 144, 78
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 285
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 175, 147
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 103, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 196, 62
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 212, 241
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 222, 146
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 287, 253
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 325, 259
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 186, 280
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 48, 63
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 297, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 184
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 144, 53
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 276, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 71, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 116, 314
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 147, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 293, 147
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 68
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 256
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 147, 101
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 303, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 249, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 60, 101
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 336
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 211, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 144, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 116
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 48, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 71, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 323, 330
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 133, 293
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 309, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 101
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 264, 309
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 323, 63
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 249, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 237, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 116
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 333, 32
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 23, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 133
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 249, 249
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 315, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 241, 241
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 133, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 87
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 175, 101
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 88, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 62, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 24, 278
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 117, 173
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 116, 249
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 103
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 264
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 211, 187
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 307, 133
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 229, 117
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 328, 187
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 307, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 306, 328
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 71, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 116, 69
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 287, 303
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 60, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 237, 278
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 165
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 256, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 101, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 240
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 212, 88
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 165, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 60, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 252
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 51, 307
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 318, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 103, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 81, 23
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 264
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 53
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 24, 256
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 71, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 251
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 264, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 211, 293
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 297, 103
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 244, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 309, 144
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 308, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 203
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 330, 306
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 117, 330
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 323, 187
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 306
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 314, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 147, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 315
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 249, 112
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 192
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 315
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 249
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 192, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 23
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 314, 264
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 147, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 88, 124
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 293, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 212, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 162, 293
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 324, 23
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 299
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 336, 212
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 265, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 71
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 65
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 251, 182
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 23, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 285
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 88, 299
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 303, 253
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 196, 65
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 237, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 87, 318
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 199, 314
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 264, 133
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 328, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 147, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 303
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 307
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 19
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 165, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 328, 212
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 253
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 221, 162
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 184, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 173
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 23
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 293, 117
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 330, 276
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 192
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 23, 285
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 65, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 240, 241
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 308, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 78
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 285, 276
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 175, 101
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 51
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 303
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 112, 203
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 308, 71
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 303
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 314
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 173
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 323, 182
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 211, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 251
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 71, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 265, 264
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 199, 187
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 243
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 23, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 133, 68
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 81
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 323, 328
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 71
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 60, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 249, 314
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 81, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 252, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 187, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 243, 71
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 243, 306
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 237, 65
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 315, 252
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 328
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 51, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 101, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 285, 101
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 212, 212
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 324, 184
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 258
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 187, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 237, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 314, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 184, 165
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 154, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 133, 328
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 212
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 323, 81
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 252, 328
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 262, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 81
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 315, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 81, 65
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 212, 211
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 133, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 71, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 32
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 268, 336
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 278
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 192
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 229, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 23, 124
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 71, 314
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 182, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 270, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 68, 282
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 207, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 173
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 251, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 253
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 336, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 336, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 32, 229
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 315, 192
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 147, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 276, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 23
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 253
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 330, 303
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 147, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 19, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 258
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 251
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 32, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 51, 330
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 173, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 251
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 229
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 336
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 276, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 237, 196
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 78
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 187
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 307, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 196, 124
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 276, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 133
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 147
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 303, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 147, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 23
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 173
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 237, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 276, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 173, 147
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 23, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 175, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 133
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 23, 60
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 196
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 147
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 196
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 19
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 229
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 175
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 276, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 46, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 258, 175
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 229, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 19
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 307, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 147, 19
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 175, 307
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 175
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 303
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 187, 78
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 268, 249
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 196
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 336, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 187, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 124
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 276, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 249, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 258
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 32, 187
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 303, 133
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 324, 60
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 175, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 323, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 173, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 133
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 182
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 253, 133
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 119, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 307, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 251
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 196, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 229, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 229, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 333, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 249
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 258, 173
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 276, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 323, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 229, 196
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 287, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 307, 258
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 124
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 278
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 237, 276
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 237, 258
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 268, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 333, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 182
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 185, 173
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 249
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 78, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 249, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 307, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 323
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 333, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 258, 303
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 303, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 251, 276
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 303
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 270, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 303, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 333, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 249, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 307
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 303, 303
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 319, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 175, 175
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 119, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 175, 173
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 278, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 46
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 258, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 249, 78
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 336, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 278
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 333, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 251, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 268
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 251, 124
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 98
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 278, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 151
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 154, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 336, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 258, 303
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 323, 46
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 270, 270
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 268, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 251
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 303
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 333
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 307, 303
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 185, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 258
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 145
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 124, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 258, 251
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 145, 237
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 336, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 336, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 237, 333
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 98, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 336
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 278, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 276
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 276
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 336
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 182, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 270, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 276, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 145
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 276
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 276, 278
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 287, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 182
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 124, 182
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 287, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 268, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 268, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 145, 268
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 179, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 336
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 336, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 179
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 201, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 270, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 201, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 201
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 270, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 270, 74
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 270, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 74, 201
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 270, 270
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 287, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 232
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 179, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 336
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 336, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 336
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 37
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 319
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 119, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 336
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 287
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 336
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 287, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 179
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 287, 336
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 154, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 161, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 37, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 38
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 301, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 38, 37
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 129, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 270, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 301
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 270, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 308
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 335, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 270
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 291
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 151, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 270, 301
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 335, 335
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 235, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 161
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 151
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 111
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 119, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 151, 161
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 84, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 262
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 185, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 98
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 235, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 235
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 308, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 84
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 84, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 98
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 317, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 129
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 98, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 185
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 185, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 185
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 154
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 179, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 335
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 185, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 335, 185
+Repeating (used)...>>>>>>>>> Routers selected for traffic: 179, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 154
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 291, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 119, 119
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 195, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 244, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 232
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 235, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 262, 262
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 291, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 319
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 319, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 179
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 308, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 84, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 291
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 119
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 129
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 119, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 317, 111
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 129
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 319
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 244
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 199, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 291, 207
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 195, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 235
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 235
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 291, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 98
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 235, 235
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 119, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 84
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 129, 179
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 232, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 154
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 262
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 111, 232
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 154, 195
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 98, 317
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 319, 308
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 207, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 179, 199
+Repeating (no neighbors)...>>>>>>>>> Routers selected for traffic: 308, 308
+Repeating (the same)...>>>>>>>>> Routers selected for traffic: 195, 179
+Too many failed attempts, finishing...
+Repeating (used)...=================== Finished building worst-case traffic pattern... ====================
+Sum of nodes sending: 256
+Sum of nodes: 2704
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.8027
+Maximum packet latency = 16
+Minimum network latency = 5
+Average network latency = 11.8027
+Maximum network latency = 16
+Slowest packet = 6045
+Minimum flit latency = 5
+Average flit latency = 11.8027
+Maximum flit latency = 16
+Slowest flit = 6045
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0 (at node 405)
+Average injected packet rate = 0.00993935
+Maximum injected packet rate = 0.03 (at node 274)
+Minimum accepted packet rate = 0 (at node 21)
+Average accepted packet rate = 0.00969231
+Maximum accepted packet rate = 0.028 (at node 1189)
+Minimum injected flit rate = 0 (at node 405)
+Average injected flit rate = 0.00993935
+Maximum injected flit rate = 0.03 (at node 274)
+Minimum accepted flit rate = 0 (at node 21)
+Average accepted flit rate = 0.00969231
+Maximum accepted flit rate = 0.028 (at node 1189)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 334 (0 measured)
+latency change    = 1
+throughput change = 1
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.8079
+Maximum packet latency = 16
+Minimum network latency = 5
+Average network latency = 11.8079
+Maximum network latency = 16
+Slowest packet = 6045
+Minimum flit latency = 5
+Average flit latency = 11.8079
+Maximum flit latency = 16
+Slowest flit = 6045
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.001 (at node 594)
+Average injected packet rate = 0.00998854
+Maximum injected packet rate = 0.024 (at node 493)
+Minimum accepted packet rate = 0.001 (at node 1509)
+Average accepted packet rate = 0.00986575
+Maximum accepted packet rate = 0.023 (at node 2259)
+Minimum injected flit rate = 0.001 (at node 594)
+Average injected flit rate = 0.00998854
+Maximum injected flit rate = 0.024 (at node 493)
+Minimum accepted flit rate = 0.001 (at node 1509)
+Average accepted flit rate = 0.00986575
+Maximum accepted flit rate = 0.023 (at node 2259)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 332 (0 measured)
+latency change    = 0.000446205
+throughput change = 0.0175807
+0
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.8222
+Maximum packet latency = 16
+Minimum network latency = 5
+Average network latency = 11.8222
+Maximum network latency = 16
+Slowest packet = 28794
+Minimum flit latency = 5
+Average flit latency = 11.8222
+Maximum flit latency = 16
+Slowest flit = 28794
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0 (at node 107)
+Average injected packet rate = 0.0100828
+Maximum injected packet rate = 0.028 (at node 2169)
+Minimum accepted packet rate = 0 (at node 136)
+Average accepted packet rate = 0.0100607
+Maximum accepted packet rate = 0.03 (at node 530)
+Minimum injected flit rate = 0 (at node 107)
+Average injected flit rate = 0.0100828
+Maximum injected flit rate = 0.028 (at node 2169)
+Minimum accepted flit rate = 0 (at node 136)
+Average accepted flit rate = 0.0100607
+Maximum accepted flit rate = 0.03 (at node 530)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 362 (0 measured)
+latency change    = 0.00120402
+throughput change = 0.0193722
+Warmed up ...Time used is 1500 cycles
+1
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.7861
+Maximum packet latency = 16
+Minimum network latency = 5
+Average network latency = 11.7861
+Maximum network latency = 16
+Slowest packet = 41410
+Minimum flit latency = 5
+Average flit latency = 11.7911
+Maximum flit latency = 16
+Slowest flit = 41410
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0 (at node 113)
+Average injected packet rate = 0.00991272
+Maximum injected packet rate = 0.026 (at node 843)
+Minimum accepted packet rate = 0 (at node 48)
+Average accepted packet rate = 0.00995858
+Maximum accepted packet rate = 0.03 (at node 1511)
+Minimum injected flit rate = 0 (at node 113)
+Average injected flit rate = 0.00991272
+Maximum injected flit rate = 0.026 (at node 843)
+Minimum accepted flit rate = 0 (at node 48)
+Average accepted flit rate = 0.00995858
+Maximum accepted flit rate = 0.03 (at node 1511)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 300 (300 measured)
+latency change    = 0.00306254
+throughput change = 0.0102496
+1
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.7872
+Maximum packet latency = 16
+Minimum network latency = 5
+Average network latency = 11.7872
+Maximum network latency = 16
+Slowest packet = 41410
+Minimum flit latency = 5
+Average flit latency = 11.7897
+Maximum flit latency = 16
+Slowest flit = 41410
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.002 (at node 806)
+Average injected packet rate = 0.00998003
+Maximum injected packet rate = 0.022 (at node 1643)
+Minimum accepted packet rate = 0 (at node 91)
+Average accepted packet rate = 0.0100004
+Maximum accepted packet rate = 0.023 (at node 297)
+Minimum injected flit rate = 0.002 (at node 806)
+Average injected flit rate = 0.00998003
+Maximum injected flit rate = 0.022 (at node 1643)
+Minimum accepted flit rate = 0 (at node 91)
+Average accepted flit rate = 0.0100004
+Maximum accepted flit rate = 0.023 (at node 297)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 307 (307 measured)
+latency change    = 0.000100549
+throughput change = 0.00417884
+1
+Class 0:
+Minimum packet latency = 5
+Average packet latency = 11.79
+Maximum packet latency = 16
+Minimum network latency = 5
+Average network latency = 11.79
+Maximum network latency = 16
+Slowest packet = 41410
+Minimum flit latency = 5
+Average flit latency = 11.7916
+Maximum flit latency = 16
+Slowest flit = 41410
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.00266667 (at node 936)
+Average injected packet rate = 0.00999581
+Maximum injected packet rate = 0.02 (at node 1793)
+Minimum accepted packet rate = 0.00266667 (at node 22)
+Average accepted packet rate = 0.0100069
+Maximum accepted packet rate = 0.0206667 (at node 1347)
+Minimum injected flit rate = 0.00266667 (at node 936)
+Average injected flit rate = 0.00999581
+Maximum injected flit rate = 0.02 (at node 1793)
+Minimum accepted flit rate = 0.00266667 (at node 22)
+Average accepted flit rate = 0.0100069
+Maximum accepted flit rate = 0.0206667 (at node 1347)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 317 (317 measured)
+latency change    = 0.000232246
+throughput change = 0.000652902
+Draining all recorded packets ...
+Draining remaining packets ...
+Time taken is 3032 cycles
+====== Traffic class 0 ======
+Overall minimum packet latency = 5 (1 samples)
+Overall average packet latency = 11.7922 (1 samples)
+Overall maximum packet latency = 16 (1 samples)
+Overall minimum network latency = 5 (1 samples)
+Overall average network latency = 11.7922 (1 samples)
+Overall maximum network latency = 16 (1 samples)
+Overall minimum flit latency = 5 (1 samples)
+Overall average flit latency = 11.794 (1 samples)
+Overall maximum flit latency = 16 (1 samples)
+Overall minimum fragmentation = 0 (1 samples)
+Overall average fragmentation = 0 (1 samples)
+Overall maximum fragmentation = 0 (1 samples)
+Overall minimum injected packet rate = 0.00266667 (1 samples)
+Overall average injected packet rate = 0.00999581 (1 samples)
+Overall maximum injected packet rate = 0.02 (1 samples)
+Overall minimum accepted packet rate = 0.00266667 (1 samples)
+Overall average accepted packet rate = 0.0100069 (1 samples)
+Overall maximum accepted packet rate = 0.0206667 (1 samples)
+Overall minimum injected flit rate = 0.00266667 (1 samples)
+Overall average injected flit rate = 0.00999581 (1 samples)
+Overall maximum injected flit rate = 0.02 (1 samples)
+Overall minimum accepted flit rate = 0.00266667 (1 samples)
+Overall average accepted flit rate = 0.0100069 (1 samples)
+Overall maximum accepted flit rate = 0.0206667 (1 samples)
+Overall average injected packet size = 1 (1 samples)
+Overall average accepted packet size = 1 (1 samples)
+Overall average hops = 3.25763 (1 samples)
+Total run time 26.8735

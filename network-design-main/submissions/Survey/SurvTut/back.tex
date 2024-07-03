@@ -1,0 +1,94 @@
+\section{Fundamental Concepts \& Background}
+
+
+
+We first introduce the notation and basic concepts. The most important used
+symbols are summarized in Table~\ref{tab:symbols}. 
+%
+% An extended and more formal description of considered topologies, used parameters,
+% and tested traffic patterns can be
+% found in a technical report.
+
+\begin{table}[h]
+%
+%\vspace{0.25em}
+\sffamily
+\centering
+%\scriptsize
+%\ssmall
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+%\renewcommand{\arraystretch}{0.6}
+\begin{tabular}{@{}lll@{}}
+\toprule
+%
+%\multirow{6}{*}{\begin{turn}{90}\shortstack{\textbf{Network structure }\\\textbf{(\cref{sec:background_topos}--\cref{sec:eval})}}\end{turn}} 
+%
+\iftr
+\multirow{6}{*}{\begin{turn}{90}\shortstack{\textbf{Network }\\\textbf{structure}}\end{turn}} 
+\fi
+\ifconf
+\multirow{6}{*}{\begin{turn}{90}\shortstack{\textbf{Network }\\\textbf{structure}}\end{turn}} 
+\fi
+                   & $V, E$ & Sets of vertices/edges (routers/links, $V=\{0,\dots,N_r-1\}$).\\
+%                   & $E$ & Set of edges (links, $E \subseteq {V\choose 2}$)\\
+%                   & $\mathcal{S}, \mathcal{E}$ & The set of all the routers and endpoints, $|\mathcal{S}|=N_r, |\mathcal{E}| = N$\\
+%                   & $\mathcal{E}$ & The set of all the endpoints, $\{0,\dots,N-1\}$, $|\mathcal{E}|=N$.\\
+                   & $N, N_r$& \#endpoints and \#routers in the network ($N_r = |V|$).\\
+                   & $p$& \#endpoints attached to a router (\emph{concentration}).\\
+                   & $k'$& \#channels to other routers (\emph{network radix}).\\
+                   \iftr
+                   & $k$&\emph{Router radix} ($k = k' + p$).\\
+                   \fi
+%                   & $D$&Network diameter\\
+                   & $D, d$&Network diameter and the average path length.\\
+%                   \iftr
+%                  & & $q, a, h, \ell, L, S, K$: input parameters of various topologies \\ 
+%\fi
+%\cmidrule{3-3}
+%                   & \multicolumn{2}{l}{Input parameters: $q$ (SF), $a,h$ (DF), $\ell$ (XP), $L,S,K$ (HX).} \\
+%
+\midrule
+%
+\iftr
+\multirow{6}{*}{\begin{turn}{90}\shortstack{\textbf{Diversity of}\\\textbf{paths (\cref{sec:paths})}}\end{turn}} 
+\fi
+\ifconf
+\multirow{6}{*}{\begin{turn}{90}\shortstack{\textbf{Diversity}\\\textbf{paths (\cref{sec:paths})}}\end{turn}} 
+\fi
+                   & $x \in V$ & Different routers used in~\cref{sec:paths} ($x \in \{s,t,a,b,c,d\}$).\\
+%                   & $A,B,C,D$ & Distinct routers chosen uniformly at random from $V$.\\
+\iftr
+                   & $X \subset V$ & Different router sets used in~\cref{sec:paths} ($X \in \{A,B\}$).\\
+\fi
+%                   & $h^i(\cdot)$ & $i$-step transitive hull (used to define router neighborhoods).\\
+                   & $c_l(A,B)$ & \emph{Count of (at most $l$-hop) disjoint paths} between router sets $A$, $B$.\\
+                   & $c_\text{min}(s,t)$ & \emph{Diversity of minimal paths} between routers $s$ and $t$.\\
+                   & $l_\text{min}(s,t)$ & \emph{Lengths of minimal paths} between routers $s$ and $t$.\\
+                   & $I_{ac,bd}$ & \emph{Path interference} between pairs of routers $a,b$ and $c,d$.\\
+\midrule
+%
+\multirow{3}{*}{\begin{turn}{90}\shortstack{\textbf{Layers}\\\textbf{(\cref{sec:routing})}}\end{turn}} 
+%                   & $n$ & Total number of layers, fraction of edges in use \\
+                   & $n$ & The total number of layers in FatPaths routing.\\
+                   & $\sigma_i$ & A layer, defined by its forwarding function, $i\in \{1,\dots,n\}$.\\
+                   & $\rho$ & Fraction of edges used in routing.\\
+
+%\midrule
+%
+%\multirow{4}{*}{\begin{turn}{90}\shortstack{\textbf{Perf.}\\\textbf{(\cref{sec:eval})}}\end{turn}} 
+%                   & $\mathcal{L}$ & The set of all the layers (a layer is a subset of $\mathcal{E}$)\\
+%                   & $\phi$ & A hashing function\\
+%                   & $\sigma$ & A forwarding function \\
+%                   & $\lambda, v$ & Flow arrival rate [flows/s], flow volume [bytes].\\
+%                   & $v$ & Flow volume [Bytes] \\
+   %                   & $\mu$, $\delta$ & Net throughput [bytes/s], latency [s].\\
+%                   & $\pi_N$ & A permutation of $N$ entries \\
+   %                   & $\eta$ & Flow Completion Time (FCT) distribution model.\\
+%
+                   \bottomrule
+\end{tabular}
+%\vspace{-1em}
+\caption{\textmd{The \textbf{most important symbols} used in this work.}}
+\label{tab:symbols}
+\end{table}

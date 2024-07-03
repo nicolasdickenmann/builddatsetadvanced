@@ -1,0 +1,85 @@
+BEGIN Configuration File: ./DF.conf
+injection_rate = 0.25;
+traffic = bad_dragon;
+use_size_power_of_two = no;
+routing_function = ugal;
+vc_buf_size = 16;
+topology = dragonflynew;
+//use_noc_latency = 0;
+//hold_switch_for_packet=0;
+
+k = 4;
+n = 1;
+
+packet_size  = 1;
+num_vcs      = 3;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+
+END Configuration File: ./DF.conf
+Number of nodes: 1056
+Number of routers: 264
+ Dragonfly 
+ p = 4 n = 1
+ each switch - total radix =  15
+ # of switches = 264
+ # of channels = 2904
+ # of nodes ( size of network ) = 1056
+ # of groups (_g) = 33
+ # of routers per group (_a) = 8
+Done links
+0
+Class 0:
+Minimum packet latency = 8
+Average packet latency = 34.3859
+Maximum packet latency = 302
+Minimum network latency = 8
+Average network latency = 34.3856
+Maximum network latency = 302
+Slowest packet = 46040
+Minimum flit latency = 8
+Average flit latency = 34.3856
+Maximum flit latency = 302
+Slowest flit = 46040
+Minimum fragmentation = 0
+Average fragmentation = 0
+Maximum fragmentation = 0
+Minimum injected packet rate = 0.18 (at node 296)
+Average injected packet rate = 0.24946
+Maximum injected packet rate = 0.316 (at node 669)
+Minimum accepted packet rate = 0.144 (at node 501)
+Average accepted packet rate = 0.2145
+Maximum accepted packet rate = 0.286 (at node 993)
+Minimum injected flit rate = 0.18 (at node 296)
+Average injected flit rate = 0.24946
+Maximum injected flit rate = 0.316 (at node 669)
+Minimum accepted flit rate = 0.144 (at node 501)
+Average accepted flit rate = 0.2145
+Maximum accepted flit rate = 0.286 (at node 993)
+Average injected packet length = 1
+Average accepted packet length = 1
+Total in-flight flits = 18464 (0 measured)
+latency change    = 1
+throughput change = 1

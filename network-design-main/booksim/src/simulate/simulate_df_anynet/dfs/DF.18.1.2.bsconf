@@ -1,0 +1,6 @@
+router 0 router 1 router 2 node 0 node 1 node 2
+router 1 router 0 router 4 node 3 node 4 node 5
+router 2 router 3 router 0 node 6 node 7 node 8
+router 3 router 2 router 5 node 9 node 10 node 11
+router 4 router 5 router 1 node 12 node 13 node 14
+router 5 router 4 router 3 node 15 node 16 node 17

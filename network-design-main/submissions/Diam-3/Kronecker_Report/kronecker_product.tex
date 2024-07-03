@@ -1,0 +1,234 @@
+
+\section{Kronecker Product of Bipartite Graphs}
+Let $G(U,E)$ be an undirected graph with vertex set $X$ and edge set $E$. The diameter of the graph is
+denoted by $\Delta(G)$ and the maximum degree is
+denoted $d_{m}(G)$. Cartesian products of two set $U$ and $V$ is denoted as $U\times V$.
+
+\subsection{Polarity in Bipartite Graphs}
+\begin{definition}[Polarity]\label{defn:polarity}
+Given a bipartite graph $G(W=(U,V),E)$, a bijection $f:U\leftrightarrow V$ is a polarity if $f(U)=V$, $f(V)=U$, $f^2$ is an identity map (i.e. $f^2(w)=w$ for all $w\in W$), and $(u,v)\in E$ if and only if $(f(u),f(v))\in E$.
+\end{definition}
+
+\paragraph{Graph Contraction}
+Given a bipartite graph $G(W=(U,V),E)$ and a polarity map $f:U\leftrightarrow V$, let $G_C(U_C, E_C)$ denote the graph
+obtained by contracting the vertex pairs $(u, f(u))$ in $G$ for all $u\in U$.
+Clearly, $|U_C| = |U| = |V|$.
+
+Degree-diameter of $G_C$ are given as follows:
+% Diameter of contracted graph is one less than the bipartite graph i.e. 
+\begin{enumerate}
+    \item $\Delta(G_C)=\Delta(G)-1$, \text{and} 
+% Maximum degree of contracted graph is the same as 
+% that of bipartite graph i.e. 
+    \item $d_{m}(G_C)=d_{m}(G)$.
+\end{enumerate}
+
+
+\subsection{Kronecker Product of Two Bipartite Graphs}
+Given two bipartite graphs $G_1(W_1=(U_1,V_1),E_1)$ and 
+$G_2(W_2=(U_2,V_2),E_2)$, their Kronecker product is a  
+graph $G(W=(U,V),E)$ such that $U=U_1\times U_2$ and 
+$V=V_1\times V_2$ (where $\times$ denotes cartesian 
+product), and an edge $((u_i, u_j), (v_x,v_y))\in E$
+if and only if $(u_i,v_x)\in E_1$ and $(u_j, v_y)\in E_2$~\cite{delorme1985large}. 
+Note that the product $G(W=(U,V),E)$ is bipartite.
+Each vertex of $G$ can be denoted by a pair $(w_i, w_j)$, where $w_i\in W_1$ and $w_j\in W_2$.
+
+\begin{claim}\label{claim:product}
+Degree-diameter of product $G$ are given as follows:
+\begin{enumerate}
+\item$\Delta(G)=\max{\Delta(G_1), \Delta(G_2)}$, and
+\item$d_{m}(G)=d_{m}(G_1)*d_{m}(G_2)$.
+\end{enumerate}
+\end{claim}
+\begin{proof}
+Section 6 of \cite{delorme1985large}.
+\end{proof}
+
+
+\begin{claim}\label{claim:product_polarity}
+If $G_1$ and $G_2$ admit polarity, then the product $G$ also admits polarity.
+\end{claim}
+\begin{proof}
+Let $f_1$ and $f_2$ be the polarity maps of $G_1$ 
+and $G_2$, respectively. Consider a bijection $f$
+of $G$ such that $f((w_i, w_j))=(f_1(w_i), f_2(w_j))$ for all $(w_i, w_j)\in W$. We will
+show that $f$ is a polarity mapping in $G$.
+\begin{enumerate}
+    \item Clearly, $f(U)=V$ and $f(V)=U$.
+    \item By definition of $f$, 
+    \begin{align*}
+        f^2((w_i, w_j)) & = f((f_1(w_i)f_2(w_j))) && \\
+        & = (f_1^2(w_i),f_2^2(w_j)) && \\
+        & = (w_i,w_j) && \textnormal{(defn.\ref{defn:polarity})}
+    \end{align*} 
+    Hence $f^2$ is an identity
+    map in $G$.
+    \item Consider two adjacent vertices $(u_i, u_j)$ and $(v_x, v_y)$ in $G$. By definition of
+    Kronecker product,
+    \begin{align*}
+        ((u_i, u_j),(v_x, v_y))\in E &\implies (u_i, v_x)\in E_1 \text{ and } (u_j, v_y)\in E_2 \\
+        &\implies (f_1(u_i), f_1(v_x))\in E_1 \text{ and } (f_2(u_j), f_2(v_y))\in E_2 && \text{(defn.\ref{defn:polarity})}\\
+        &\implies ((f_1(u_i), f_2(u_j)), (f_1(v_x), f_2(v_y))) \in E\\
+        &\implies (f(u_i, u_j), f(v_x, v_y))\in E
+    \end{align*}
+    Similarly, we can show that 
+        \begin{align*}
+            (f(u_i, u_j), f(v_x, v_y))\in E &\implies ((u_i, u_j),(v_x, v_y))\in E
+        \end{align*}
+    Therefore, for any vertices ${w_i, w_j}\in W$, $w_i$
+and $w_j$ are adjacent if and only if $f(w_i)$ and $f(w_j)$ are adjacent. 
+\end{enumerate}
+Combining these properties of $f$, we can say that
+$G$ admits polarity and $f$ is a polarity mapping in $G$.
+\end{proof}
+
+\subsection{Examples of Kronecker Products}
+\subsubsection{Bipartite Graphs and their Opposite}
+The Kronecker product of any graph $G(W=(U,V),E)$ and its
+opposite $G(W=(V,U),E)$ has vertex sets $\{U\times V\}$
+and $\{V\times U\}$ and admits a polarity given by 
+$f((u, v))=(v,u)$ for all $(u,v)\in \{U\times V\}$
+($f((v,u))=(u,v)$ for all $(v,u)\in \{V\times U\}$)~\cite{delorme1985large}.
+
+To construct large graphs, incidence 
+graphs of any generalized quadrangle $GQ(s,t)$ can be 
+used as the base bipartite graphs for such construction. The resulting diameter-3 graph has
+scales to $(1+s)(1+t)(1+st)^2$ vertices and has
+degree $(1+s)(1+t)$.
+
+\subsubsection{Symplectic Generalized Quadrangles}
+Incidence graphs of symplectic generealized quadrangles
+$GQ(q,q)$ admit polarity if $q=2^{2m-1}$ for some
+$m\in \mathcal{N}$, or if $q=1$. 
+Let $I(q)$ denote the incidence graph of symplectic
+generalized quadrangle of order $q$.
+Clearly, Kronecker product of 
+$I(q_1)$ and $I(q_2)$ is a diameter-4 bipartite graph
+with $2(q_1^3+q_1^2+q_1+1)(q_2^3+q_2^2+q_2+1)$ vertices, degree $d_{m}=(1+q_1)(1+q_2)$.
+By claim~\ref{claim:product_polarity}, the
+product graph admits polarity.
+
+Let $G(U,E)$ be the polarity quotient graph of Kronecker product of $I(q_1)$ and $I(q_2)$. Clearly, 
+\begin{enumerate}
+    \item $\Delta(G)=3$,
+    \item $d_{m}(G)=(1+q_1)(1+q_2)$, and
+    \item vertices $|U|=(q_1^3+q_1^2+q_1+1)(q_2^3+q_2^2+q_2+1)$
+\end{enumerate}
+
+\paragraph{Example 1:} Let $q_1=1$ and $q_2=q$ for some $q=2^{2m-1}$.
+In this scenario, $G(U,E)$ scales to  $4(q^3 + q^2 + q + 1)$ vertices with $d_{m}(G)=2(q+1)$.
+Thus, we get a family of diameter-3 graphs $G(U,E)$
+of degree $2(q+1)$ (where $q$ is an odd power of $2$), \textbf{whose order asymptotically reaches $\mathbf{\frac{1}{2}}$ fraction of the
+Moore Bound}. Note that for $q = 2^{2m-1}$ for any 
+$m\in \mathcal{N}$, this construction generates graphs with degree values that are
+not covered by Delorme graphs~\cite{delorme1985grands}.
+
+\begin{enumerate}
+    \item \textbf{For $d_{m}=18$, we get a diameter-3 graph of $2,340$ vertices by using
+    $q=8$.}
+
+    \item \textbf{For $d_{m}=20$, we get a diameter-3 graph of $2,600$ vertices by using
+    $q=8$ and applying vertex replication\footnote{To construct the degree 
+    $20$ graph, we can can replicate all vertices in the ovoid and spread of $GQ(8,8)$ (these are the vertices that become centers of stars in Delorme graphs) using the replication strategy
+    of Delorme and Farhi~\cite{delorme1984large}. Let the resulting
+    graph by $I_r(W_r=(U_r,V_r), E_r)$.
+    We note that $I_r$ admits polarity (easy to prove), $|U_r|=|V_r|=650$, $\Delta(I_r)=3$ and $d_{m}(I_r)=10$.
+} on $I(8)$.}
+\end{enumerate}
+
+
+\paragraph{Example 2:} Same as Example 1 but with
+$q_1=2$. In this scenario, $G(U,E)$ scales to
+$15(q^3 + q^2 + q + 1)$ vertices with $d_m(G)=3(q+1)$.
+Thus, we get a family of diameter-3 graphs $G(U,E)$
+of degree $3(q+1)$, where $q$ is an odd power of $2$, \textbf{whose order asymptotically reaches $\mathbf{\frac{15}{27}}$ fraction of the
+Moore Bound}. Note that for $q = 2^{2m-1}$ where $m\in \mathcal{N}\setminus \{1\}$, this 
+construction generates graphs with degrees that are
+not covered by the Delorme graphs~\cite{delorme1985grands}.
+\begin{enumerate}
+    \item \textbf{For $d_{m}=27$, we get a diameter-3 graph of $8,775$ vertices by using
+    $q=8$.}
+    \item \textbf{For $d_{m}=30$, we get a diameter-3 graph of $9,750$ vertices by using
+    $q=8$ and applying vertex replication on $I(8)$.}
+
+
+\end{enumerate}
+
+
+\subsection{Design Space of Diameter-3 Polarity Graphs}
+
+\begin{table}[htbp]
+\centering
+\caption{New entries in Degree Diameter Table}
+\label{table:new_points}
+%\resizebox{0.9\linewidth}{!}{%
+\begin{tabular}{ccc}\hline
+\textbf{Degree}                                & \textbf{New order} &
+\textbf{Order in current Deg-Diam Table}\\ \midrule
+18 & 2,340 & 1,620 \\
+19 & 2,342 & 1,638 \\
+20 & 2,600 & 1,958 \\
+27 & 8,775 & - \\
+30 & 9,750 & - \\
+ \bottomrule
+\end{tabular}
+%}
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\caption{Design Space of Diameter-3 Polarity Graphs. Bold entries indicate Delorme Graphs.}
+\label{table:design_space}
+%\resizebox{0.9\linewidth}{!}{%
+\begin{tabular}{ccc}
+\toprule
+\textbf{Degree}                                & \textbf{Order} &
+\textbf{Percentage of Moore Bound}\\ \midrule
+8  & 128    & 28.00875 \\
+\textbf{9}  & \textbf{585}    & \textbf{88.9}     \\
+15 & 1215   & 38.3765  \\
+16 & 1600   & 41.48302 \\
+18 & 2340   & 42.3     \\
+20 & 2600   & 34.1     \\
+24 & 6144   & 46.28946 \\
+25 & 7225   & 48.08332 \\
+27 & 8775   & 46.228   \\
+30 & 9750   & 37.3     \\
+\textbf{33} & \textbf{33825}  & \textbf{96.97}    \\
+35 & 21875  & 52.47565 \\
+36 & 24336  & 53.60707 \\
+40 & 31360  & 50.22341 \\
+45 & 49005  & 54.97162 \\
+63 & 151263 & 61.45355 \\
+64 & 160000 & 61.98835\\
+ \bottomrule
+\end{tabular}
+%}
+\end{table}
+
+
+\subsubsection{Constructing Bipartite graphs from large Unipartite graphs}
+
+We explore a new construction for diameter-4
+bipartite graphs that admit 
+polarity. Let $G(U,E)$ be a graph with $\Delta(G)=3$.
+Construct a graph $G_B(W_B=(U_B,V_B),E_B)$, such that $U_B=\{U\}\times \{0\}$, $V_B=\{U\}\times \{1\}$, 
+and there is an edge between $(u, i)\in W_B$ and $(v,j)\in W_B$ if and only if $i\neq j$ and either $(u,v)\in E$ or $u=v$.
+Clearly, the graph is bipartite, $\Delta(G_B)=4$, and $d_{m}(G_B)=d_{m}(G)+1$.
+It can also be shown that $f((u, i))=(u, i\ \text{xor}\ 1)$ is a polarity map in $G_B$.
+
+Let $G_1(U_1,E_1)$ and
+$G_2(U_2,E_2)$ be any diameter-3 graphs. If we 
+construct the corresponding bipartite graphs using 
+the method described above, 
+compute their Kronecker product and the polarity
+quotient of the product, we get a diameter-3 graph
+$G(U,E)$ with $|U| = |U_1|\cdot |U_2|$, 
+$\Delta(G)=3$ and $d_{m}(G)=(1+d_m(G_1))(1+d_m(G_2))$.
+
+Still exploring this construction but haven't seen much
+benefit yet.
+
+

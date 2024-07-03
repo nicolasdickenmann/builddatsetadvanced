@@ -1,0 +1,16 @@
+##Compile
+
+make
+
+
+## Run
+
+./analyze -q <q> -i <input_adj_mat> -o <output_neigh_cluster_offset_tuple>
+
+
+## Example
+
+./analyze -q 8 -i ../../data/Delormes/Delorme.8.adj.txt -o dump
+
+Output "dump" contains adjacency lists with ``(neighbor, neighbor_cluster, neighbor_offset)`` tuple entires
+

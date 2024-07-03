@@ -1,0 +1,16 @@
+router 0 router 1 router 2 router 4 router 8 router 14 router 7 router 9 node 0 
+router 1 router 0 router 3 router 5 router 9 router 15 router 6 router 8 node 1 
+router 2 router 0 router 3 router 6 router 10 router 12 router 5 router 11 node 2 
+router 3 router 1 router 2 router 7 router 11 router 13 router 4 router 10 node 3 
+router 4 router 0 router 5 router 6 router 12 router 10 router 3 router 13 node 4 
+router 5 router 1 router 4 router 7 router 13 router 11 router 2 router 12 node 5 
+router 6 router 2 router 4 router 7 router 14 router 8 router 1 router 15 node 6 
+router 7 router 3 router 5 router 6 router 15 router 9 router 0 router 14 node 7 
+router 8 router 0 router 9 router 10 router 12 router 6 router 15 router 1 node 8 
+router 9 router 1 router 8 router 11 router 13 router 7 router 14 router 0 node 9 
+router 10 router 2 router 8 router 11 router 14 router 4 router 13 router 3 node 10 
+router 11 router 3 router 9 router 10 router 15 router 5 router 12 router 2 node 11 
+router 12 router 4 router 8 router 13 router 14 router 2 router 11 router 5 node 12 
+router 13 router 5 router 9 router 12 router 15 router 3 router 10 router 4 node 13 
+router 14 router 6 router 10 router 12 router 15 router 0 router 9 router 7 node 14 
+router 15 router 7 router 11 router 13 router 14 router 1 router 8 router 6 node 15 

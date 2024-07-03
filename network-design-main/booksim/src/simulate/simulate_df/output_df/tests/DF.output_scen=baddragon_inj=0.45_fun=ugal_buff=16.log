@@ -1,0 +1,53 @@
+BEGIN Configuration File: ./DF.conf
+injection_rate = 0.45;
+traffic = baddragon;
+use_size_power_of_two = no;
+routing_function = ugal;
+vc_buf_size = 16;
+topology = dragonflynew;
+use_noc_latency = 0;
+hold_switch_for_packet=0;
+
+k = 5;
+n = 1;
+
+packet_size  = 1;
+num_vcs      = 3;
+vc_allocator = separable_input_first; 
+sw_allocator = separable_input_first;
+
+alloc_iters   = 1;
+sample_period = 500;
+
+wait_for_tail_credit = 0;
+use_read_write       = 0;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+warmup_periods = 3;
+sim_count      = 1;
+
+priority = none;
+injection_rate_uses_flits=1;
+
+END Configuration File: ./DF.conf
+Number of nodes: 2550
+Number of routers: 510
+ Dragonfly 
+ p = 5 n = 1
+ each switch - total radix =  19
+ # of switches = 510
+ # of channels = 7140
+ # of nodes ( size of network ) = 2550
+ # of groups (_g) = 51
+ # of routers per group (_a) = 10
+Done links
+Error: Unknown traffic pattern: baddragon
